@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>롯데시네마</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/pretendard-font.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css//swiper.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/respond.css">
     <link rel="shortcut icon" href="./images/logo-icon/favicon.ico">
@@ -478,9 +480,9 @@
                     <p>+</p>
                 </div>
                 <div class="event-wrap-inner">
-                    <div class="event-left">
-                        <ul class="event-slider">
-                            <li>
+                    <div class="event-left swiper">
+                        <ul class="event-slider swiper-wrapper">
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <img src="./images/event-images/event-avatar.jpg" alt="아바타">
@@ -492,7 +494,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="main">
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <img src="./images/event-images/event-slamdunk.jpg" alt="슬램덩크">
@@ -504,7 +506,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <img src="./images/event-images/event-CrayonShin-chan.jpeg" alt="짱구는 못말려">
@@ -516,7 +518,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <img src="./images/event-images/event-EternalSunshine.jpg" alt="아바타">
@@ -528,7 +530,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <img src="./images/event-images/event-OnceWeWereUs.jpeg" alt="아바타">
@@ -540,7 +542,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <img src="./images/event-images/event-projectY.gif" alt="아바타">
@@ -553,15 +555,10 @@
                                 </a>
                             </li>
                         </ul>
-                        <ul class="arrow-btn">
-                            <li class="arrow-btn-left">
-                                <a href="#"><img src="./images/logo-icon/arrow-left-icon.png" alt="왼쪽 화살표"></a>
-                            </li>
-                            <li class="arrow-btn-right">
-                                <a href="#"><img src="./images/logo-icon/arrow-right-icon.png" alt="오른쪽 화살표"></a>
-                            </li>
-                        </ul>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
+
                     <div class="event-right">
                         <div class="preview">
                             <a href="#">
@@ -617,6 +614,7 @@
                 </div>
             </div>
         </section>
+
 
         <!-- curator section -->
         <section class="curator-part">
@@ -1081,6 +1079,19 @@
             <!-- </div> -->
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".event-left", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 50,
+            centeredSlides: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        })
+    </script>
 </body>
 
 </html>

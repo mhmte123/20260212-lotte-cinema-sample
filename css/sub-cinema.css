@@ -138,7 +138,10 @@ header .inner {
     padding: 0 12px;
     font-size: 20px;
     font-weight: bold;
+}
 
+.theater-loc-list>li>a span {
+    font-size: 0.8em;
 }
 
 .theater-loc-list>li>.active {
@@ -164,13 +167,15 @@ header .inner {
     font-weight: 500;
     height: 0;
     overflow: hidden;
-}
+} 
 
 .theater-loc-list .theater-list>li>a {
     display: block;
     padding: 10px 20px;
-    border: 1px solid rgba(250, 250, 250, 0.5);
+    background: rgba(250, 250, 250, 0.1);
     border-radius: 10px;
+    /* border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 10px; */
 }
 
 .theater-loc-list .active {
@@ -230,7 +235,7 @@ header .inner {
 
 .theater-info {
     position: relative;
-
+    display: none;
 }
 
 .theater-info .theater-name {
