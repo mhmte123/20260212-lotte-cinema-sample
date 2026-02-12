@@ -14,11 +14,9 @@
 
     header {
         position: relative;
+        width: 100%;
     }
     
-    .main-logo {
-        text-align: left;
-    }
     .ham-btn {
         display: block;
         width: 24px;
@@ -85,6 +83,7 @@
 
     .event-slider .main .img-box {
         transform: none;
+        aspect-ratio: 1/0.6;
     }
 
     .event-right {
@@ -144,4 +143,10 @@
         display: grid;
         grid-template-columns: repeat(3, auto);
     }
+
+    /* footer */
+    .footer-top {
+        flex-wrap: wrap;
+    }
+
 }
