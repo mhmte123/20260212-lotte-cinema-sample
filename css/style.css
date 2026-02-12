@@ -12,6 +12,7 @@ body {
 .ham-btn {
     display: none;
 }
+
 /* header */
 header {
     position: fixed;
@@ -28,7 +29,7 @@ header {
     height: 54px;
 }
 
-header .inner{
+header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -637,7 +638,7 @@ section {
     display: flex;
     align-items: center;
     gap: 29px;
-    padding-left: 40px ;
+    padding-left: 40px;
     padding-right: 109px;
 }
 
@@ -661,9 +662,8 @@ section {
     height: 100%;
     position: absolute;
     top: 0;
-    background: linear-gradient(to bottom,  
-    rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 50%
-    ,rgba(0,0,0,0) 75%,rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .TossPay .TossPay-img {
@@ -718,6 +718,7 @@ section {
 
 .curator-part>.inner {
     padding: 0 10px;
+    position: relative;
 }
 
 .curator-part>.inner>h2 {
@@ -760,16 +761,42 @@ section {
     font-weight: 700;
 }
 
+/* curator-part 화살표 */
+.curator-part .curator-info-wrap {
+    position: relative;
+}
+
+.curator-part .curator-info-arrow .arrow-btn>li>a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.curator-part .curator-info-arrow .arrow-btn>.arrow-btn-left>a {
+    left: 12px;
+}
+
+.curator-part .curator-info-arrow .arrow-btn>.arrow-btn-right>a {
+    right: 12px;
+}
+
 /* curator-moive-inner-wrap - 숨김처리 하는 영역*/
+.curator-moive-inner-wrap {
+    /* border: 1px solid rgba(255, 255, 255, 0.55); */
+    margin: 0 72px;
+    overflow: hidden;
+    position: relative;
+}
 
 /* curator-moive-set - 추천영화 리스트 아이템*/
 .curator-moive-set {
     display: flex;
-    gap: 24px;
-    width: calc(100% * 5 / 1.2);
+    gap: 12px;
+    width: calc(100% * 5 / 1.2 - 12px);
 }
 
-/* 추천 리스트 아이템 1번 */
+
 /* curator-moive-item */
 .curator-moive-item {
     display: flex;
@@ -782,13 +809,19 @@ section {
     height: 548px;
     /* aspect-ratio: 385/548; */
     object-fit: cover;
-    border-radius: 12px;
+    padding: 48px;
     overflow: hidden;
+}
+
+/* 추천 리스트 아이템 선택항목 */
+.curator-moive-item.active .curator-moive-poster {
+    padding: 0;
 }
 
 .curator-moive-poster>img {
     width: 100%;
     height: 100%;
+    border-radius: 30px;
 }
 
 /* 추천 리스트 아이템 - 우측영역 세로 정렬 */
@@ -796,7 +829,14 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 36px 0;
+}
+
+/* 추천 리스트 아이템 - 제목 + 한줄평 묶음 영역 */
+.curator-moive-info .curator-moive-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 /* 추천 리스트 아이템 - 제목*/
@@ -808,6 +848,9 @@ section {
 
 .curator-moive-info .title-wrap>h3 {
     font-size: 2.25em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .curator-moive-info .title-wrap>span {
@@ -830,14 +873,25 @@ section {
 
 .curator-moive-info .comment-wrap>p {
     font-size: 1.25em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* 추천 리스트 아이템 - 영화내용*/
 .curator-moive-info .plot-info {
     font-size: 1.125em;
     color: #cbcbcb;
-    max-width: 640px;
+    line-height: 1.5;
+    width: 624px;
     max-height: 128px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    padding-right: 10px;
 }
 
 /* 하단 영화 알아보기 버튼 */
@@ -859,6 +913,23 @@ section {
     background-color: #da291c;
     font-weight: 700;
 }
+
+/* 추천 영화 광고 영역 */
+
+.curator-ad-item {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 4em;
+}
+
+.curator-ad-item>li {
+    display: block;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
 
 /* -----------------------upcoming section ---------------------------*/
 /* upcoming section */
