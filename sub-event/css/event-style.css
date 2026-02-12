@@ -1,0 +1,70 @@
+body {
+    font-size: 16px;
+}
+
+/* 공동사항 */
+.section-title {
+    padding: 0 0 100px;
+}
+
+.inner {
+    background-color: rgba(127, 255, 212, 0.342);
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1600px;
+}
+
+/* 강력추천 이벤트 */
+.banner {
+    display: block;
+    /* background-color: rgba(94, 255, 0, 0.493); */
+    margin: 0 auto;
+    max-width: 100%;
+    /* padding: 20px; */
+}
+
+main section>h2 {
+    font-size: 2.25em;
+}
+
+main .event-arco-list {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.event-arco-list .img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.event-arco-list img {
+    max-width: none;
+    height: 25em;
+    border-radius:
+}
+
+.event-arco-list>li {
+    /* border: 1px dashed pink; */
+    max-width: 120px;
+}
+
+.event-arco-list>li:nth-child(3) {
+    max-width: 794px;
+}
+
+
+
+.event-arco-list .img::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+68 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.5) 50%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.event-arco-list>
