@@ -12,6 +12,7 @@ body {
 .ham-btn {
     display: none;
 }
+
 /* header */
 header {
     position: fixed;
@@ -28,7 +29,7 @@ header {
     height: 54px;
 }
 
-header .inner{
+header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -637,7 +638,7 @@ section {
     display: flex;
     align-items: center;
     gap: 29px;
-    padding-left: 40px ;
+    padding-left: 40px;
     padding-right: 109px;
 }
 
@@ -661,9 +662,8 @@ section {
     height: 100%;
     position: absolute;
     top: 0;
-    background: linear-gradient(to bottom,  
-    rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 50%
-    ,rgba(0,0,0,0) 75%,rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .TossPay .TossPay-img {
@@ -869,7 +869,7 @@ section {
 }
 
 .upcoming .upcoming-top h2 {
-    background-color: rgba(255, 255, 0, 0.5);
+    /* background-color: rgba(255, 255, 0, 0.5); */
     font-size: 2.25em;
 }
 
@@ -910,26 +910,27 @@ section {
 }
 
 .upcoming-wrap2 {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     overflow: hidden;
     margin: 0 50px;
+    /* padding: 10px; */
 }
 
 .upcoming-list {
-    background-color: rgba(0, 255, 0, 0.15);
+    /* background-color: rgba(0, 255, 0, 0.15); */
     display: flex;
     width: calc(100% * 10 / 5 + 1.6em);
     margin: 0 auto;
     gap: 2em;
 }
 
+.upcoming-list>li {
+    width: 20%;
+}
+
 .upcoming-list>li>a {
     position: relative;
     /* background-color: bisque; */
-}
-
-.upcoming-list>li {
-    width: 20%;
 }
 
 .upcoming-list .img-box {
@@ -960,6 +961,20 @@ section {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.upcoming-list .text-box>p:first-child {
+    padding: 10px 10px 5px;
+}
+
+.upcoming-list .text-box p:first-child {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.upcoming-list .text-box>p:last-child {
+    padding-bottom: 5px;
 }
 
 

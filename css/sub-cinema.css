@@ -1,0 +1,574 @@
+:root {
+    --main-color: #DA291C;
+    --div-color: #1f1f1f;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    /* background: rgba(255, 0, 0, 0.2); */
+}
+
+.main-logo {
+    width: 300px;
+    height: 54px;
+}
+
+/* header*/
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+
+}
+
+.main-menu {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 60px;
+}
+
+.main-menu>li {
+    padding: 10px 0;
+    position: relative;
+}
+
+.main-menu>li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #DA291C;
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+.main-menu>li:hover::after {
+    width: 100%;
+}
+
+.main-menu>li:hover .sub-menu {
+    /* display: block; */
+    height: auto;
+}
+
+.sub-menu {
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 500px;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+
+.sub-menu>li>a {
+    display: block;
+    /* background: rgb(32, 32, 32); */
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* .sub-menu>li>a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+} */
+
+.sub-menu>li>a:hover {
+    color: #DA291C;
+}
+
+.gnb-list {
+    display: flex;
+    gap: 20px;
+}
+
+/* main */
+
+.theater-loc {
+    width: 1319px;
+    height: 360px;
+    margin: 81px 0 120px 72px;
+    padding: 44px 0 0 42px;
+    background: #1f1f1f;
+    border-radius: 30px;
+}
+
+.theater-loc h2 {
+    padding-bottom: 24px;
+    font-size: 36px;
+}
+
+.theater-loc-list {
+    display: flex;
+}
+
+.theater-loc-list>li {
+    position: relative;
+}
+
+.theater-loc-list>li>a {
+    padding: 0 12px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.theater-loc-list>li>.active {
+    color: var(--main-color);
+    border-bottom: 2px solid;
+}
+
+.theater-loc-list .theater-list-wrap {
+    position: absolute;
+    top: 42px;
+    left: 10px;
+    width: 1100px;
+}
+
+.theater-loc-list .theater-list {
+    text-align: center;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 500;
+    height: 0;
+    overflow: hidden;
+}
+
+.theater-loc-list .theater-list>li>a {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.theater-loc-list .active {
+    height: 100%;
+}
+
+.theater-list-wrap .theater-list .active {
+    background: var(--main-color);
+    border-radius: 10px;
+}
+
+/* section */
+.theater {
+    background-image: url(../images/sub-cinema/theater-info.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 78px;
+    overflow: hidden;
+}
+
+.theater .inner {
+    padding: 0 60px;
+}
+
+.theater-tab-menu {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 78px;
+}
+
+.theater-tab-menu>li>a {
+    display: block;
+    width: 720px;
+    height: 78px;
+}
+
+.theater-tab-menu .active {
+    border-bottom: 3px solid #fff;
+}
+
+.theater-info {
+    position: relative;
+
+}
+
+.theater-info .theater-name {
+    padding: 100px 0 20px 30px;
+    margin-bottom: 85px;
+}
+
+.theater-info .theater-name h2 {
+    font-size: 36px;
+}
+
+.theater-info .theater-name>.name {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    position: relative;
+}
+
+.theater-info .theater-name>.name p>a {
+    font-size: 14px;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+}
+
+.theater-info .theater-name>.name p>a:hover .map {
+    display: block;
+}
+
+.theater-info .theater-name p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.theater-info .theater-name p>span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.theater-name .map {
+    width: 500px;
+    height: 600px;
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+    position: absolute;
+    top: 45px;
+    left: 166px;
+    display: none;
+}
+
+.theater-name .map h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 36px;
+}
+
+.theater-name .map .close-btn {
+    font-size: 24px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.theater-name .map .map-address {
+    margin-bottom: 12px;
+}
+
+.theater-name .map .map-address img {
+    margin-left: 25px;
+    margin-right: 6px;
+}
+
+.theater-name .map .map-address {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.theater-name .map-img img {
+    width: 450px;
+    height: 450px;
+    margin-left: 25px;
+}
+
+.theater-info .facilities {
+    margin-bottom: 100px;
+}
+
+.theater-info .facilities h3 {
+    font-size: 24px;
+}
+
+.facilities .facilities-list {
+    display: flex;
+    gap: 36px;
+    text-align: center;
+    margin-top: 24px;
+
+}
+
+.facilities .facilities-list img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.facilities .facilities-list p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.theater-info .floor-info h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.floor-info-list {
+    width: 500px;
+    height: 160px;
+    background: var(--div-color);
+    border-radius: 30px;
+    margin-bottom: 100px;
+    /* padding-top: 40px; */
+    padding-left: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.floor-info-list>ul {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.floor-info-list>ul>li {
+    list-style: disc;
+    margin-bottom: 12px;
+}
+
+.floor-info-list>ul>li:last-child {
+    margin-bottom: 0;
+}
+
+.traffic-info {
+    margin-bottom: 85px;
+}
+
+.traffic-info .bus {
+    width: 1120px;
+    height: 280px;
+    background: var(--div-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 45px;
+}
+
+.traffic-info .bus>div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.traffic-info .bus>div>p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.traffic-info .bus-num .jisun {
+    margin-bottom: 10px;
+}
+
+.traffic-info .bus-num .jisun span {
+    background: var(--main-color);
+    padding: 0 10px;
+    border-radius: 30px;
+    margin-right: 8px;
+}
+
+
+.traffic-info .bus-num .gansun span {
+    background: blue;
+    padding: 0 10px;
+    border-radius: 30px;
+    margin-right: 8px;
+}
+
+.bus .traffic-info-list>li {
+    list-style: disc;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.bus .traffic-info-list .traffic-info-sub-list>li {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.traffic-info .subway {
+    width: 1120px;
+    height: 130px;
+    border-radius: 30px;
+    padding-left: 40px;
+    margin: 12px 0;
+    background: var(--div-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.traffic-info .subway p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.traffic-info .car {
+    width: 1120px;
+    height: 130px;
+    border-radius: 30px;
+    padding-left: 40px;
+    background: var(--div-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.traffic-info .car p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.special-wrap .inner h2 {
+    padding-left: 60px;
+    font-size: 36px;
+}
+
+.special-theater {
+    overflow: hidden;
+    margin-top: 24px;
+    margin-bottom: 110px;
+}
+
+.special-theater-list {
+    display: flex;
+    gap: 36px;
+
+}
+
+.special-theater-list>li>a {
+    display: block;
+    width: 450px;
+    height: 250px;
+}
+
+.special-theater-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* footer */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 36px;
+
+}
+
+.footer-top .util-menu {
+    display: flex;
+    gap: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #dbdbdb;
+}
+
+.footer-top .util-menu>li:nth-child(3)>a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-top .search-wrap>a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 36px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.footer-bottom>.footer-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-bottom>div address {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    color: #dbdbdb;
+}
+
+.footer-bottom>div address span,
+strong {
+    margin-right: 14px;
+}
+
+.footer-bottom>div address span {
+    font-weight: 400;
+}
+
+.footer-bottom .footer-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 144px;
+}
+
+.footer-bottom .family {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #dbdbdb;
+}
+
+.footer-bottom .family img {
+    width: 47px;
+    height: 45px;
+}
+
+.footer-bottom .sns-list {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-bottom .sns-list>li>a {
+    display: block;
+    width: 51px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 12px 13px;
+}
