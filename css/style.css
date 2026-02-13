@@ -1034,44 +1034,34 @@ section {
     margin: 0 auto;
 }
 
-.upcoming-list .text-box>p:first-child {
-    padding: 10px 10px 5px;
-}
-
-.upcoming-list .text-box p:first-child {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.upcoming-list .text-box>p:last-child {
-    padding-bottom: 5px;
-}
-
-
 .upcoming-list .text-box>p:first-child>img {
     width: 1em;
     height: 1em;
 }
 
 .upcoming-list .text-box>p:first-child {
-    font-size: 1.25em;
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
     /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 1em 0.5em 0.5em;
 }
 
 
 .upcoming-list .text-box>p:last-child {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     color: #8F9191;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 /* arrow-btn */

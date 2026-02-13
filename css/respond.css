@@ -1,3 +1,51 @@
+@media screen and (max-width:1024px) {
+
+    /* upcoming */
+    body {
+        font-size: 14px;
+    }
+
+    .upcoming-list {
+        /* background-color: rgba(0, 255, 0, 0.15); */
+        display: flex;
+        width: calc(100% * 10 / 4);
+        margin: 0 auto;
+        gap: 2em;
+    }
+
+    .upcoming-list>li {
+        width: 30%;
+    }
+
+    .upcoming .arrow-btn>li>a {
+        display: none;
+    }
+
+    .upcoming-list .text-box>p:first-child {
+        font-size: 1.1em;
+        display: flex;
+        justify-content: center;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+
+    .upcoming-list .text-box>p:last-child {
+        font-size: 0.7rem;
+        color: #8F9191;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+
+
+}
+
+
 @media screen and (max-width:768px) {
     body {
         font-size: 12px;
@@ -6,7 +54,7 @@
     .inner {
         overflow: hidden;
     }
-    
+
     .main-menu,
     .gnb-list {
         display: none;
@@ -16,7 +64,7 @@
         position: relative;
         width: 100%;
     }
-    
+
     .ham-btn {
         display: block;
         width: 24px;
@@ -141,9 +189,23 @@
 
     /* info-section */
 
+    /* upcoming */
+    .upcoming-list {
+        /* background-color: rgba(0, 255, 0, 0.15); */
+        display: flex;
+        width: calc(100% * 10 / 3.5);
+        margin: 0 auto;
+        gap: 2em;
+    }
+
+    .upcoming-list>li {
+        width: 30%;
+    }
+
+
 
     /* footer */
-    .footer-top .util-menu{
+    .footer-top .util-menu {
         flex-wrap: wrap;
     }
 
@@ -167,4 +229,45 @@
     .footer-bottom .footer-bottom-right .search-wrap-mobile {
         display: block;
     }
+}
+
+@media screen and (max-width:440px) {
+    body {
+        font-size: 10px;
+    }
+
+    /* upcoming */
+    .upcoming-list {
+        /* background-color: rgba(0, 255, 0, 0.15); */
+        display: flex;
+        width: calc(100% * 10 / 2.5);
+        margin: 0 auto;
+        gap: 2em;
+    }
+
+    .upcoming-list>li {
+        width: 50%;
+    }
+
+    .upcoming-list .text-box>p:first-child {
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+
+    .upcoming-list .text-box>p:last-child {
+        font-size: 0.6rem;
+        color: #8F9191;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+
 }
