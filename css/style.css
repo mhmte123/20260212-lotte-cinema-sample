@@ -12,6 +12,7 @@ body {
 .ham-btn {
     display: none;
 }
+
 /* header */
 header {
     position: fixed;
@@ -28,7 +29,7 @@ header {
     height: 54px;
 }
 
-header .inner{
+header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -637,7 +638,7 @@ section {
     display: flex;
     align-items: center;
     gap: 29px;
-    padding-left: 40px ;
+    padding-left: 40px;
     padding-right: 109px;
 }
 
@@ -661,9 +662,8 @@ section {
     height: 100%;
     position: absolute;
     top: 0;
-    background: linear-gradient(to bottom,  
-    rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 50%
-    ,rgba(0,0,0,0) 75%,rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .TossPay .TossPay-img {
@@ -1017,8 +1017,7 @@ section {
 
 .info-list {
     display: flex;
-    justify-content: center;
-    gap: 156px;
+    justify-content: space-evenly;
     text-align: center;
 }
 
