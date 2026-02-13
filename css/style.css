@@ -1106,6 +1106,7 @@ section {
     justify-content: center;
     gap: 156px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .info-list>li>img {
@@ -1180,6 +1181,20 @@ strong {
     display: flex;
     align-items: center;
     gap: 144px;
+}
+
+.footer-bottom .footer-bottom-right .search-wrap-mobile {
+    display: none;
+}
+
+.footer-bottom .footer-bottom-right .search-wrap-mobile>a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 36px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom .family {

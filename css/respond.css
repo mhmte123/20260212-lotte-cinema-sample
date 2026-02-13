@@ -139,14 +139,32 @@
         display: none;
     }
 
-    .info-list {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-    }
+    /* info-section */
+
 
     /* footer */
-    .footer-top {
+    .footer-top .util-menu{
         flex-wrap: wrap;
     }
 
+    .footer-top .search-wrap {
+        display: none;
+    }
+
+    .footer-bottom {
+        display: block;
+    }
+
+    .footer-bottom .footer-bottom-left {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-bottom .footer-bottom-right {
+        margin-top: 20px;
+    }
+
+    .footer-bottom .footer-bottom-right .search-wrap-mobile {
+        display: block;
+    }
 }
