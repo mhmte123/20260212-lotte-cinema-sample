@@ -764,6 +764,7 @@ section {
 /* curator-part 화살표 */
 .curator-part .curator-info-wrap {
     position: relative;
+    /* border: 1px solid rgba(255, 0, 0, 0.75); */
 }
 
 .curator-part .curator-info-arrow .arrow-btn>li>a {
@@ -800,28 +801,36 @@ section {
 /* curator-moive-item */
 .curator-moive-item {
     display: flex;
+    align-items: center;
     gap: 36px;
+    /* border: 1px solid blue; */
 }
 
 /* 추천 리스트 아이템 - 영화 포스터*/
 .curator-moive-poster {
-    width: 385px;
-    height: 548px;
+    /* width: 385px; */
+    /* height: 548px; */
     /* aspect-ratio: 385/548; */
-    object-fit: cover;
-    padding: 48px;
+    /* object-fit: cover; */
+    /* padding: 3em; */
+    /* 상단부 주석처리 (260213) */
     overflow: hidden;
+    /* background-color: pink; */
 }
 
 /* 추천 리스트 아이템 선택항목 */
 .curator-moive-item.active .curator-moive-poster {
-    padding: 0;
+    /* padding: 0; */
 }
 
-.curator-moive-poster>img {
-    width: 100%;
-    height: 100%;
+.curator-moive-item .curator-moive-poster>img {
+    width: 60%;
+    /* height: 100%; */
     border-radius: 30px;
+}
+
+.curator-moive-item.active .curator-moive-poster>img {
+    width: 100%;
 }
 
 /* 추천 리스트 아이템 - 우측영역 세로 정렬 */
@@ -829,14 +838,15 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 36px 0;
+    gap: 1.25em;
+    /* padding: 36px 0; */
 }
 
 /* 추천 리스트 아이템 - 제목 + 한줄평 묶음 영역 */
 .curator-moive-info .curator-moive-title-wrap {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 0.8em;
 }
 
 /* 추천 리스트 아이템 - 제목*/
