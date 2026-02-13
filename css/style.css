@@ -1108,6 +1108,10 @@ section {
     flex-wrap: wrap;
 }
 
+.info-list>li i {
+    display: none;
+}
+
 .info-list>li>img {
     margin-bottom: 12px;
 }
