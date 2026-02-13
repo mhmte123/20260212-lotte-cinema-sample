@@ -17,14 +17,18 @@
         width: 100%;
     }
     
+    .main-logo {
+        width: 200px;
+    }
+
     .ham-btn {
         display: block;
         width: 24px;
         height: 16px;
-        position: absolute;
+        /* position: absolute;
         right: 20px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%); */
     }
 
     .ham-btn>a {
@@ -123,7 +127,12 @@
 
 
     .NuriCard .NuriCard-mid img {
-        width: 15%;
+        /* width: 15%; */
+        display: none;
+    }
+
+    .NuriCard .NuriCard-top {
+        gap: 12px;
     }
 
     .NuriCard .NuriCard-top>span {
@@ -143,8 +152,21 @@
 
 
     /* footer */
-    .footer-top .util-menu{
-        flex-wrap: wrap;
+    footer .inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-top {
+        padding: 25px 10px;
+    }
+
+    .footer-top .util-menu {
+        gap: 12px;
+    }
+
+    .footer-top .util-menu span{
+        display: none;
     }
 
     .footer-top .search-wrap {
@@ -162,9 +184,61 @@
 
     .footer-bottom .footer-bottom-right {
         margin-top: 20px;
+        gap: 12px;
     }
 
     .footer-bottom .footer-bottom-right .search-wrap-mobile {
         display: block;
     }
+}
+
+@media screen and (max-width:480px) {
+
+    /* event section */
+    .event-slider>li>a .img-box {
+        aspect-ratio: 1/1;
+    }
+
+    .event-slider .main .img-box {
+        aspect-ratio: 1/1;
+    }
+    
+    .event-right {
+        flex-wrap: wrap;
+    }
+    .preview {
+        width: 100%;
+    }
+
+    .sale {
+        width: 100%;
+    }
+
+    .NuriCard .NuriCard-mid img {
+        display: block;
+    }
+    /* footer */
+    .footer-bottom {
+        position: relative;
+    }
+    .footer-bottom .footer-bottom-right {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column;
+        justify-content: start;
+        align-items: start; */
+    }
+
+    .footer-bottom .family {
+        display: none;
+    }
+    /* footer 극장찾기, sns-list */
+    /* .footer-bottom .footer-bottom-right .search-wrap-mobile {
+    }
+
+    .footer-bottom .sns-list {
+        
+    } */
+
+    
 }
