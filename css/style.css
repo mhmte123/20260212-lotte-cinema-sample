@@ -1043,7 +1043,7 @@ section {
     font-size: 1.2em;
     display: flex;
     justify-content: center;
-    /* white-space: nowrap; */
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
