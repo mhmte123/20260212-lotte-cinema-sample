@@ -1,0 +1,274 @@
+body {
+    background: #000;
+    color: #fff;
+}
+
+.inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    /* background: rgba(255, 0, 0, 0.2); */
+}
+
+.ham-btn {
+    display: none;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    width: 1920px;
+    z-index: 1000;
+}
+
+.main-logo {
+    width: 300px;
+    height: 54px;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.main-menu {
+    display: flex;
+    font-size: 1.25em;
+    gap: 60px;
+}
+
+.main-menu>li {
+    padding: 10px 0;
+    position: relative;
+}
+
+.main-menu>li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #DA291C;
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+.main-menu>li:hover::after {
+    width: 100%;
+}
+
+.main-menu>li:hover .sub-menu {
+    /* display: block; */
+    height: auto;
+}
+
+.sub-menu {
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 500px;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    z-index: 100;
+}
+
+.sub-menu>li>a {
+    display: block;
+    /* background: rgb(32, 32, 32); */
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* .sub-menu>li>a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+} */
+
+.sub-menu>li>a:hover {
+    color: #DA291C;
+}
+
+.gnb-list {
+    display: flex;
+    gap: 20px;
+}
+
+/* main */
+
+.movie-slider-wrap {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.movie-slider-inner {
+    position: relative;
+    height: 100vh;
+    min-height: 720px;
+}
+
+.movie-slider-list {
+    display: flex;
+    width: calc(100% * 10);
+    height: 100%;
+}
+
+.movie-slider-list>li {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+
+.movie-slider-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.movie-slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-slider-image::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.text-box-wrap {
+    position: absolute;
+    top: 590px;
+    left: 120px;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.slider-special-cinema-logo {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.slider-special-cinema-logo img {
+    height: 26px;
+}
+
+.text-box-wrap>.movie-name {
+    font-size: 3em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+}
+
+.information>p {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px;
+    gap: 7px;
+}
+
+.information>p img {
+    display: block;
+    height: 15px;
+}
+
+.information>p>span::before {
+    content: "";
+    opacity: 0.5;
+    margin-left: 7px;
+    background: #8F9191;
+    width: 1px;
+    height: 12px;
+    display: block;
+}
+
+.movie-story {
+    color: #fff;
+    opacity: 0.7;
+    line-height: 1.5;
+    font-size: 0.88em;
+    margin-bottom: 30px;
+}
+
+.btn-wrap {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-wrap a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39px;
+    padding: 0 57px;
+    line-height: 1;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.btn-wrap .info-btn {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+}
+
+.btn-wrap .reservation-btn {
+    background: #da291c;
+    border: 1px solid #da291c;
+}
+
+
+.arrow-btn-wrap {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.arrow-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 70px;
+}
+
+.arrow-btn>li {}
+
+.arrow-btn>li img {
+    width: 14px;
+}
+
+.arrow-btn>li .left-btn {}
+
+.arrow-btn>li .right-btn {}
