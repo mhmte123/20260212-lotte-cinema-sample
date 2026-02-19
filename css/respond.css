@@ -1,6 +1,58 @@
+@media screen and (max-width: 1280px) {
+    body {
+        font-size: 14px;
+    }
+
+    header{
+        /* position: ; */
+        width: 100%;
+    }
+    
+    .event-slider {
+        margin-left: calc(-10% - 20px);
+    }
+
+    .event-slider>li {
+        flex: 0 0 calc(100% / 1.03);
+    }
+
+    .event-slider>li>a .img-box {
+        aspect-ratio: 1/0.68;
+    }
+
+    .event-slider .main .img-box {
+        aspect-ratio: 1/0.68;
+        transform: none;
+    }
+
+    .event-slider .main>a::after {
+        transform: none;
+    }
+
+    .arrow-btn {
+        display: none;
+    }
+
+    .footer-bottom>.footer-bottom-left {
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom .footer-bottom-right {
+        display: block;
+    }
+
+    .footer-bottom .family {
+        padding: 10px;
+        padding-left: 0;
+    }
+
+
+}
+
 @media screen and (max-width:768px) {
     body {
         font-size: 12px;
+        position: relative;
     }
 
     .inner {
@@ -19,6 +71,71 @@
     
     .main-logo {
         width: 200px;
+    }
+    
+    /* 모바일 메뉴 */
+    .mobile-menu-wrap {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -9999px;
+        width: 60%;
+        height: 100vh;
+        z-index: 10000;
+        background: rgba(0, 0, 0, 0.9 );
+    }
+
+    .mobile-menu-wrap .mobile-menu-list {
+        padding: 20px 20px;
+        line-height: 2.3;
+        font-size: 1.6em;
+    }    
+
+    .mobile-menu-wrap .mobile-menu-list>li>a {
+        display: block;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .mobile-menu-wrap .mobile-menu-list>li>a::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 1px;
+        background: #fff;
+        transition: 0.5s;
+    }
+
+    .mobile-menu-wrap .mobile-menu-list>li:hover>a::after {
+        width: 100%;
+    }
+
+    .mobile-menu-list .mobile-sub-menu {
+        display: block;
+        font-size: 16px;
+        text-indent: 20px;
+        /* padding: 10px; */
+    }
+
+    .mobile-menu-list .mobile-sub-menu>li>a {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-menu-list .mobile-sub-menu>li:hover>a {
+        color: #DA291C;
+    }
+
+    .mobile-menu-wrap .gnb-list {
+        display: flex;
+        padding: 10px 20px;
+    }
+
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 
     .ham-btn {
@@ -194,7 +311,15 @@
 
 @media screen and (max-width:480px) {
 
+    .mobile-menu-wrap {
+        width: 80%;
+    }
+
     /* event section */
+    .event-wrap {
+        padding-bottom: 0;
+    }
+
     .event-slider>li>a .img-box {
         aspect-ratio: 1/1;
     }
@@ -204,23 +329,49 @@
     }
     
     .event-right {
+        /* display: none; */
         flex-wrap: wrap;
+        display: block;
+        /* justify-content: center; */
     }
+
+    .event-slider {
+        margin-top: 30px;
+    }
+    
     .preview {
         width: 100%;
+        height: 40%;
+        margin-bottom: 12px;
     }
 
     .sale {
         width: 100%;
     }
 
+    .NuriCard {
+        /* display: none; */
+        height: 187PX;
+    }
+
+    .NuriCard .NuriCard-top {
+        padding-bottom: 5px;
+    }
+
     .NuriCard .NuriCard-mid img {
         display: block;
+        width: 30px;
     }
+
+    .NuriCard .NuriCard-img {
+        width: 60%;
+    }
+
     /* footer */
     .footer-bottom {
         position: relative;
     }
+
     .footer-bottom .footer-bottom-right {
         display: flex;
         flex-wrap: wrap;

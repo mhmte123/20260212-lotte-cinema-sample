@@ -20,6 +20,16 @@ body {
 }
 
 /* header*/
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    width: 1920px;
+    z-index: 1000;
+}
+
 header .inner {
     display: flex;
     justify-content: space-between;
@@ -32,8 +42,7 @@ header .inner {
 
 .main-menu {
     display: flex;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 1.25em;
     gap: 60px;
 }
 

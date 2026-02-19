@@ -10,7 +10,8 @@ body {
     padding: 0px 1em;
 }
 
-.ham-btn {
+.ham-btn,
+.close-btn {
     display: none;
 }
 
@@ -110,6 +111,11 @@ header .inner {
     display: flex;
     gap: 20px;
 }
+
+.mobile-menu-wrap {
+    display: none;
+}
+
 
 /* ----------------------- main slider -----------------------------*/
 .main-slider-wrap {
