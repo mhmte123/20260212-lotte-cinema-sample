@@ -2,11 +2,6 @@
     body {
         font-size: 14px;
     }
-
-    header{
-        /* position: ; */
-        width: 100%;
-    }
     
     .event-slider {
         margin-left: calc(-10% - 20px);
@@ -287,7 +282,11 @@
     }
 
     .footer-top .search-wrap {
-        display: none;
+        /* display: none; */
+    }
+
+    .footer-top .search-wrap>a {
+        padding: 8px 30px;
     }
 
     .footer-bottom {
@@ -305,7 +304,7 @@
     }
 
     .footer-bottom .footer-bottom-right .search-wrap-mobile {
-        display: block;
+        /* display: block; */
     }
 }
 
@@ -368,6 +367,14 @@
     }
 
     /* footer */
+    .footer-top .search-wrap {
+        display: none;
+    }
+
+    .footer-bottom .footer-bottom-right .search-wrap-mobile {
+        display: block;
+    }
+    
     .footer-bottom {
         position: relative;
     }
@@ -383,13 +390,7 @@
     .footer-bottom .family {
         display: none;
     }
-    /* footer 극장찾기, sns-list */
-    /* .footer-bottom .footer-bottom-right .search-wrap-mobile {
-    }
-
-    .footer-bottom .sns-list {
-        
-    } */
+    
 
     
 }

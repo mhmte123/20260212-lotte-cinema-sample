@@ -22,7 +22,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     background: transparent;
-    width: 1920px;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -782,7 +782,7 @@ section {
 
 /* curator-moive-inner-wrap - 숨김처리 하는 영역*/
 .curator-moive-inner-wrap {
-    border: 1px solid rgba(255, 255, 255, 0.55);    
+    border: 1px solid rgba(255, 255, 255, 0.55);
     margin: 0 72px;
     overflow: hidden;
     position: relative;
