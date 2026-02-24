@@ -1083,12 +1083,30 @@
     <script>
         let swiper = new Swiper(".event-left", {
             loop: true,
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 50,
             centeredSlides: true,
+            autoplay: {
+                delay: 3000
+            },
+
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 1  
+                },
+                1080: {
+                    slidesPerView: 1.5
+                },
+                1280: {
+                    slidesPerView: 3
+                },
             }
         })
     </script>
