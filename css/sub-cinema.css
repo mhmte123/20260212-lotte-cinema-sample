@@ -188,18 +188,20 @@ header .inner {
 }
 
 /* section */
+/* ------------------- 극장정보 ------------------- */
 .theater {
-    background-image: url(../images/sub-cinema/theater-info.png);
+    /* background-image: url(../images/sub-cinema/theater-info.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center 78px;
     overflow: hidden;
-    position: relative;
+    position: relative; */
 }
 
 .theater::after {
     content: "";
-    display: block;
+    /* display: block; */
+    display: none;
     position: absolute;
     width: 100%;
     height: 20%;
@@ -207,7 +209,6 @@ header .inner {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 70%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
 }
 
 .theater .inner {
@@ -221,12 +222,22 @@ header .inner {
     font-weight: bold;
     text-align: center;
     line-height: 78px;
+    width: 100%;
 }
 
-.theater-tab-menu>li>a {
+.theater-tab-menu .th-info{
     display: block;
-    width: 720px;
-    height: 78px;
+    width: 100%;
+}
+
+.theater-tab-menu .movie-sche{
+    display: block;
+    width: 100%;
+}
+.theater-tab-menu a {
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .theater-tab-menu .active {
@@ -235,6 +246,7 @@ header .inner {
 
 .theater-info {
     position: relative;
+    margin-bottom: 100px;
     display: none;
 }
 
@@ -409,7 +421,7 @@ header .inner {
 .traffic-info {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0 100px;
+    padding-top: 50px;
     position: relative;
 }
 
@@ -537,8 +549,195 @@ header .inner {
     font-weight: bold;
 } */
 
+/* ---------------- 상영시간표 ---------------- */
+.movie-schedule-wrap {
+    /* display: none; */
+}
+
+.movie-schedule h2 {
+    font-size: 1.5em;
+    margin-top: 50px;
+    text-indent: 30px;
+}
+
+.calendar-wrap {
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    gap: 40px;
+    align-items: center;
+    margin: 24px 0;
+    padding: 0 30px;
+}
+
+.calendar-wrap .calendar img {
+    width: 37px;
+    height: 37px;
+}
+
+.calendar-list {
+    position: relative;
+    padding: 0px 40px;
+}
+
+.calendar-list .arrow-btn>li{
+    position: absolute;
+    /* display: flex; */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.calendar-list .arrow-btn .left-btn {
+    left: 0;
+}
+
+.calendar-list .arrow-btn .right-btn {
+    right: 0;
+}
+
+.calendar-wrap .calendar-date {
+    display: flex;
+    gap: 36px;
+}
+
+.calendar-wrap .calendar-date>li>a {
+    display: block;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.calendar-wrap .calendar-date>li.today>a {
+    padding: 5px 10px;
+}
+
+.calendar-wrap .calendar-date>li.active {
+    border-bottom: 3px solid #DA291C;
+}
+
+.calendar-wrap .calendar-date>li.sat {
+    color: blue;
+}
+
+.calendar-wrap .calendar-date>li.sun {
+    color: #DA291C;
+}
+
+.calendar-wrap .calendar-date>li.none {
+    color: #8F9191;
+}
+
+.age-wrap .age-list {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+    padding-right: 100px;
+}
+
+.age-wrap .age-list>li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.age-wrap .age-list>li img {
+    width: 32px;
+    height: 32px;
+}
 
 
+.movie-time-wrap {
+    padding: 12px 0 50px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.movie-time-wrap .movie-time {
+    padding: 24px 0;
+}
+
+.movie-time-wrap .movie-time p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.movie-time-wrap .movie-time .movie-name {
+    display: flex;
+    gap: 12px;
+}
+
+.movie-time-wrap .movie-time .movie-name p {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.movie-time-wrap .movie-time .movie-name img {
+    width: 32px;
+    height: 32px;
+}
+
+.movie-time-wrap .movie-time .screen {
+    font-size: 1.25em;
+    padding: 12px 0;
+}
+
+.movie-time .movie-time-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* padding: 24px 0; */
+}
+
+.movie-time .movie-time-list .movie-time-box {
+    width: 200px;
+    padding: 20px 20px;
+    background: #1f1f1f;
+    border-radius: 20px;
+    /* margin: 10px; */
+}
+
+.movie-time .movie-time-list .movie-time-box strong {
+    font-size: 1.25em;
+    padding-bottom: 12px;
+}
+
+.more-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.more-button a{
+    /* display: block; */
+    /* width: 100%; */
+    padding: 5px 50px;
+    padding-left: 60px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    display: flex;
+}
+
+.more-button a .hover {
+    display: none;
+}
+
+.more-button a:hover {
+    display: flex;
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+.more-button a:hover i{
+    display: none;
+}
+
+.more-button a:hover .hover {
+    display: block;
+}
 .special-wrap .inner h2 {
     padding-left: 60px;
     font-size: 36px;

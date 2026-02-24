@@ -12,7 +12,8 @@
     } */
 
     .event-left {
-        margin-top: 30px;
+        margin-top: 0;
+        padding: 0;
     }
     .event-slider .swiper-slide .img-box {
         aspect-ratio: 1/1.2;

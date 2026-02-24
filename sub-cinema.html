@@ -265,10 +265,10 @@
 
         <section class="theater">
             <div class="inner">
-                <ul class="theater-tab-menu">
-                    <li class="active"><a href="#">극장정보</a></li>
-                    <li><a href="#">상영시간표</a></li>
-                </ul>
+                <div class="theater-tab-menu">
+                    <div class="th-info active"><a href="#">극장정보</a></div>
+                    <div class="movie-sche"><a href="#">상영시간표</a></div>
+                </div>
 
                 <div class="theater-info-wrap">
                     <div class="theater-info">
@@ -388,7 +388,7 @@
                         <div class="calendar-wrap">
                             <div class="calendar-list">
                                 <ul class="calendar-date">
-                                    <li>
+                                    <li class="active today">
                                         <a href="#">
                                             <p>19</p>
                                             <p>오늘</p>
@@ -400,13 +400,13 @@
                                             <p>금</p>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="sat">
                                         <a href="#">
                                             <p>21</p>
                                             <p>토</p>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="sun">
                                         <a href="#">
                                             <p>22</p>
                                             <p>일</p>
@@ -442,31 +442,31 @@
                                             <p>금</p>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="sat">
                                         <a href="#">
                                             <p>28</p>
                                             <p>토</p>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="sun">
                                         <a href="#">
                                             <p>1</p>
                                             <p>일</p>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="none">
                                         <a href="#">
                                             <p>2</p>
                                             <p>월</p>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="none">
                                         <a href="#">
                                             <p>3</p>
                                             <p>화</p>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="none">
                                         <a href="#">
                                             <p>4</p>
                                             <p>수</p>
@@ -475,16 +475,16 @@
                                 </ul>
                                 <ul class="arrow-btn">
                                     <li class="left-btn"><a href="#">
-                                            <img src="./images/logo-icon/icon-arrow-left.png" alt="arrow-left"></a>
+                                            <img src="./images/logo-icon/arrow-left-icon.png" alt="arrow-left"></a>
                                     </li>
                                     <li class="right-btn"><a href="#">
-                                            <img src="./images/logo-icon/icon-arrow-right.png" alt="arrow-right"></a>
+                                            <img src="./images/logo-icon/arrow-right-icon.png" alt="arrow-right"></a>
                                     </li>
                                 </ul>
                             </div>
-                            <p><img src="./images/logo-icon/icon-calendar.png" alt="calendar"></p>
+                            <p class="calendar"><a href="#"><img src="./images/logo-icon/icon-calendar.png" alt="calendar"></a></p>
                         </div>
-                        
+
                         <div class="age-wrap">
                             <ul class="age-list">
                                 <li>
@@ -508,8 +508,11 @@
 
                         <div class="movie-time-wrap">
                             <div class="movie-time">
-                                <p><img src="./images/age-class/age-class-12.png" alt="12세"><span>왕과 사는 남자</span></p>
-                                <p>2D</p>
+                                <div class="movie-name">
+                                    <img src="./images/age-class/age-class-12.png" alt="12세">
+                                    <p>왕과 사는 남자</p>
+                                </div>
+                                <p class="screen">2D</p>
                                 <ul class="movie-time-list">
                                     <li>
                                         <a href="#">
@@ -613,8 +616,11 @@
                                 </ul>
                             </div>
                             <div class="movie-time">
-                                <p><img src="./images/age-class/age-class-12.png" alt="12세"><span>왕과 사는 남자</span></p>
-                                <p>2D</p>
+                                <div class="movie-name">
+                                    <img src="./images/age-class/age-class-12.png" alt="12세">
+                                    <p>왕과 사는 남자</p>
+                                </div>
+                                <p class="screen">2D</p>
                                 <ul class="movie-time-list">
                                     <li>
                                         <a href="#">
@@ -673,8 +679,11 @@
                                 </ul>
                             </div>
                             <div class="movie-time">
-                                <p><img src="./images/age-class/age-class-12.png" alt="12세"><span>왕과 사는 남자</span></p>
-                                <p>2D</p>
+                                <div class="movie-name">
+                                    <img src="./images/age-class/age-class-12.png" alt="12세">
+                                    <p>왕과 사는 남자</p>
+                                </div>
+                                <p class="screen">2D</p>
                                 <ul class="movie-time-list">
                                     <li>
                                         <a href="#">
@@ -697,8 +706,11 @@
                                 </ul>
                             </div>
                             <div class="movie-time">
-                                <p><img src="./images/age-class/age-class-12.png" alt="12세"><span>왕과 사는 남자</span></p>
-                                <p>2D</p>
+                                <div class="movie-name">
+                                    <img src="./images/age-class/age-class-12.png" alt="12세">
+                                    <p>왕과 사는 남자</p>
+                                </div>
+                                <p class="screen">2D</p>
                                 <ul class="movie-time-list">
                                     <li>
                                         <a href="#">
@@ -712,8 +724,11 @@
                                 </ul>
                             </div>
                             <div class="movie-time">
-                                <p><img src="./images/age-class/age-class-12.png" alt="12세"><span>왕과 사는 남자</span></p>
-                                <p>2D</p>
+                                <div class="movie-name">
+                                    <img src="./images/age-class/age-class-12.png" alt="12세">
+                                    <p>왕과 사는 남자</p>
+                                </div>
+                                <p class="screen">2D</p>
                                 <ul class="movie-time-list">
                                     <li>
                                         <a href="#">
@@ -725,6 +740,12 @@
                                         </a>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="more-button">
+                                <a href="#">더 보기
+                                    <i><img src="./images/logo-icon/arrow-under-icon.png" alt="arrow"></i>
+                                    <i class="hover"><img src="./images/logo-icon/arrow-under-black-icon.png" alt="hover-arrow"></i>
+                                </a>
                             </div>
                         </div>
                     </div>

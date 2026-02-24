@@ -370,8 +370,8 @@ section {
 }
 
 .event-left {
-    padding: 10px 50px;
-    margin-top: 50px;
+    padding: 50px 50px;
+    margin-top: 30px;
 }
 
 .event-slider {
@@ -386,16 +386,17 @@ section {
 .event-slider .swiper-slide .img-box {
     border-radius: 30px;
     overflow: hidden;
-    aspect-ratio: 1/1.2;
+    aspect-ratio: 1/1.3;
 }
 
 .event-slider .swiper-slide-active {
     border-radius: 30px;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    /* border: 1px solid; */
 }
 
 .event-slider .swiper-slide-active .img-box {
-    aspect-ratio: 1/1.4;
+    /* aspect-ratio: 1/1.4; */
 }
 
 .event-slider .swiper-slide::after {
@@ -423,7 +424,7 @@ section {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    transform: scale(1.1);
+    /* transform: scale(1.2); */
 }
 
 .event-slider .swiper-slide .text-box {
