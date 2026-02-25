@@ -816,6 +816,10 @@ section {
     /* 상단부 주석처리 (260213) */
     overflow: hidden;
     /* background-color: pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 추천 리스트 아이템 선택항목 */
