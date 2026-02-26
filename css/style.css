@@ -7,9 +7,11 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     /* background: rgba(255, 0, 0, 0.2); */
+    padding: 0px 1em;
 }
 
-.ham-btn {
+.ham-btn,
+.close-btn {
     display: none;
 }
 
@@ -20,13 +22,12 @@ header {
     left: 50%;
     transform: translateX(-50%);
     background: transparent;
-    width: 1920px;
+    width: 100%;
     z-index: 1000;
 }
 
 .main-logo {
     width: 300px;
-    height: 54px;
 }
 
 header .inner {
@@ -111,9 +112,14 @@ header .inner {
     gap: 20px;
 }
 
+.mobile-menu-wrap {
+    display: none;
+}
+
+
 /* ----------------------- main slider -----------------------------*/
 .main-slider-wrap {
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .main-slider-inner {
@@ -364,110 +370,36 @@ section {
 }
 
 .event-left {
-    position: relative;
-    padding: 0 38px;
-    width: 100%;
-    overflow: hidden;
+    padding: 50px 50px;
+    margin-top: 30px;
 }
 
 .event-slider {
-    display: flex;
-    align-items: center;
-    gap: 36px;
     margin-top: 50px;
+    align-items: center;
 }
 
-.event-slider>li {
-    flex: 0 0 calc(100% / 3 - 23px);
+.event-slider .swiper-slide {
+    transition: 0.3s;
 }
 
-.event-slider>li>a {
-    position: relative;
-}
-
-.event-slider>li>a .img-box {
-    /* width: 302px;
-    height: 400px; */
+.event-slider .swiper-slide .img-box {
     border-radius: 30px;
     overflow: hidden;
-    aspect-ratio: 1/1.2;
+    aspect-ratio: 1/1.3;
 }
 
-.event-slider .main .img-box {
-    /* width: 400px;
-    height: 530px; */
+.event-slider .swiper-slide-active {
     border-radius: 30px;
-    transform: scale(1.1);
-    aspect-ratio: 1/1.4;
-    /* margin: 0 10px; */
+    transform: scale(1.2);
+    /* border: 1px solid; */
 }
 
-.event-slider .main>a::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    border-radius: 30px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    transform: scale(1.1);
+.event-slider .swiper-slide-active .img-box {
+    /* aspect-ratio: 1/1.4; */
 }
 
-.event-slider>li>a .img-box>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-.event-slider>li>a .text-box {
-    position: absolute;
-    gap: 12px;
-    width: 200px;
-    text-align: center;
-    bottom: 22px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-}
-
-.event-slider .main .text-box>h3 {
-    font-size: 1.25em;
-    font-weight: bold;
-}
-
-.event-slider .main .text-box>p {
-    font-size: 1em;
-    font-weight: 500;
-}
-
-.event-slider .main .text-box>span {
-    font-size: 1em;
-    font-weight: 500;
-}
-
-.event-slider>li>a .text-box>h3 {
-    padding-bottom: 4px;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.event-slider>li>a .text-box>p {
-    padding-bottom: 12px;
-    font-size: 1em;
-    font-weight: 500;
-}
-
-.event-slider>li>a .text-box>span {
-    font-size: 1em;
-    font-weight: 500;
-    color: #8F9191;
-}
-
-.event-slider>li>a::after {
+.event-slider .swiper-slide::after {
     content: "";
     display: block;
     width: 100%;
@@ -481,18 +413,67 @@ section {
     /* transform: scale(1.1) */
 }
 
-.event-wrap .arrow-btn>li>a {
+.event-slider .swiper-slide-active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 0;
+    border-radius: 30px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* transform: scale(1.2); */
 }
 
-.event-wrap .arrow-btn .arrow-btn-left>a {
-    left: 0;
+.event-slider .swiper-slide .text-box {
+    position: absolute;
+    gap: 12px;
+    width: 200px;
+    text-align: center;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
 }
 
-.event-wrap .arrow-btn .arrow-btn-right>a {
-    right: 0px;
+.event-slider .swiper-slide-active .text-box>h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.event-slider .swiper-slide-active .text-box>p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.event-slider .swiper-slide-active .text-box>span {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.event-slider .swiper-slide .text-box>h3 {
+    padding-bottom: 4px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.event-slider .swiper-slide .text-box>p {
+    padding-bottom: 12px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.event-slider .swiper-slide .text-box>span {
+    font-size: 1em;
+    font-weight: 500;
+    color: #8F9191;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
 }
 
 .preview {
@@ -609,16 +590,10 @@ section {
     transition: 0.5s;
 }
 
-.NuriCard .NuriCard-top {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 33px 31px 10px 40px;
-}
-
 
 .NuriCard .NuriCard-top {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 24px;
     padding: 33px 31px 10px 40px;
@@ -639,7 +614,6 @@ section {
     align-items: center;
     gap: 29px;
     padding-left: 40px;
-    padding-right: 109px;
 }
 
 .NuriCard .NuriCard-mid>p {
@@ -783,7 +757,7 @@ section {
 
 /* curator-moive-inner-wrap - 숨김처리 하는 영역*/
 .curator-moive-inner-wrap {
-    /* border: 1px solid rgba(255, 255, 255, 0.55); */
+    border: 1px solid rgba(255, 255, 255, 0.55);
     margin: 0 72px;
     overflow: hidden;
     position: relative;
@@ -830,6 +804,7 @@ section {
     flex-direction: column;
     justify-content: space-between;
     padding: 36px 0;
+    /* width: 100%; */
 }
 
 /* 추천 리스트 아이템 - 제목 + 한줄평 묶음 영역 */
@@ -1103,8 +1078,7 @@ section {
 
 .info-list {
     display: flex;
-    justify-content: center;
-    gap: 156px;
+    justify-content: space-evenly;
     text-align: center;
     flex-wrap: wrap;
 }
@@ -1118,8 +1092,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px 36px;
-
+    /* margin: 0 20px 36px; */
+    padding: 30px 20px;
 }
 
 .footer-top .util-menu {
@@ -1128,6 +1102,7 @@ section {
     font-size: 0.875em;
     font-weight: 400;
     color: #dbdbdb;
+    flex-wrap: wrap;
 }
 
 .footer-top .util-menu>li:nth-child(3)>a {
@@ -1191,7 +1166,7 @@ strong {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 12px 36px;
+    padding: 8px 30px;
     border: 1px solid #fff;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.1);
