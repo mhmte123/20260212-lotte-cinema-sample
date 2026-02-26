@@ -7,9 +7,11 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     /* background: rgba(255, 0, 0, 0.2); */
+    padding: 0px 1em;
 }
 
-.ham-btn {
+.ham-btn,
+.close-btn {
     display: none;
 }
 
@@ -20,13 +22,12 @@ header {
     left: 50%;
     transform: translateX(-50%);
     background: transparent;
-    width: 1920px;
+    width: 100%;
     z-index: 1000;
 }
 
 .main-logo {
     width: 300px;
-    height: 54px;
 }
 
 header .inner {
@@ -111,9 +112,14 @@ header .inner {
     gap: 20px;
 }
 
+.mobile-menu-wrap {
+    display: none;
+}
+
+
 /* ----------------------- main slider -----------------------------*/
 .main-slider-wrap {
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .main-slider-inner {
@@ -364,110 +370,36 @@ section {
 }
 
 .event-left {
-    position: relative;
-    padding: 0 38px;
-    width: 100%;
-    overflow: hidden;
+    padding: 50px 50px;
+    margin-top: 30px;
 }
 
 .event-slider {
-    display: flex;
-    align-items: center;
-    gap: 36px;
     margin-top: 50px;
+    align-items: center;
 }
 
-.event-slider>li {
-    flex: 0 0 calc(100% / 3 - 23px);
+.event-slider .swiper-slide {
+    transition: 0.3s;
 }
 
-.event-slider>li>a {
-    position: relative;
-}
-
-.event-slider>li>a .img-box {
-    /* width: 302px;
-    height: 400px; */
+.event-slider .swiper-slide .img-box {
     border-radius: 30px;
     overflow: hidden;
-    aspect-ratio: 1/1.2;
+    aspect-ratio: 1/1.3;
 }
 
-.event-slider .main .img-box {
-    /* width: 400px;
-    height: 530px; */
+.event-slider .swiper-slide-active {
     border-radius: 30px;
-    transform: scale(1.1);
-    aspect-ratio: 1/1.4;
-    /* margin: 0 10px; */
+    transform: scale(1.2);
+    /* border: 1px solid; */
 }
 
-.event-slider .main>a::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    border-radius: 30px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    transform: scale(1.1);
+.event-slider .swiper-slide-active .img-box {
+    /* aspect-ratio: 1/1.4; */
 }
 
-.event-slider>li>a .img-box>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-.event-slider>li>a .text-box {
-    position: absolute;
-    gap: 12px;
-    width: 200px;
-    text-align: center;
-    bottom: 22px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-}
-
-.event-slider .main .text-box>h3 {
-    font-size: 1.25em;
-    font-weight: bold;
-}
-
-.event-slider .main .text-box>p {
-    font-size: 1em;
-    font-weight: 500;
-}
-
-.event-slider .main .text-box>span {
-    font-size: 1em;
-    font-weight: 500;
-}
-
-.event-slider>li>a .text-box>h3 {
-    padding-bottom: 4px;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.event-slider>li>a .text-box>p {
-    padding-bottom: 12px;
-    font-size: 1em;
-    font-weight: 500;
-}
-
-.event-slider>li>a .text-box>span {
-    font-size: 1em;
-    font-weight: 500;
-    color: #8F9191;
-}
-
-.event-slider>li>a::after {
+.event-slider .swiper-slide::after {
     content: "";
     display: block;
     width: 100%;
@@ -481,18 +413,67 @@ section {
     /* transform: scale(1.1) */
 }
 
-.event-wrap .arrow-btn>li>a {
+.event-slider .swiper-slide-active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 0;
+    border-radius: 30px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* transform: scale(1.2); */
 }
 
-.event-wrap .arrow-btn .arrow-btn-left>a {
-    left: 0;
+.event-slider .swiper-slide .text-box {
+    position: absolute;
+    gap: 12px;
+    width: 200px;
+    text-align: center;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
 }
 
-.event-wrap .arrow-btn .arrow-btn-right>a {
-    right: 0px;
+.event-slider .swiper-slide-active .text-box>h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.event-slider .swiper-slide-active .text-box>p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.event-slider .swiper-slide-active .text-box>span {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.event-slider .swiper-slide .text-box>h3 {
+    padding-bottom: 4px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.event-slider .swiper-slide .text-box>p {
+    padding-bottom: 12px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.event-slider .swiper-slide .text-box>span {
+    font-size: 1em;
+    font-weight: 500;
+    color: #8F9191;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
 }
 
 .preview {
@@ -609,16 +590,10 @@ section {
     transition: 0.5s;
 }
 
-.NuriCard .NuriCard-top {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 33px 31px 10px 40px;
-}
-
 
 .NuriCard .NuriCard-top {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 24px;
     padding: 33px 31px 10px 40px;
@@ -639,7 +614,6 @@ section {
     align-items: center;
     gap: 29px;
     padding-left: 40px;
-    padding-right: 109px;
 }
 
 .NuriCard .NuriCard-mid>p {
@@ -764,6 +738,7 @@ section {
 /* curator-part 화살표 */
 .curator-part .curator-info-wrap {
     position: relative;
+    /* border: 1px solid rgba(255, 0, 0, 0.75); */
 }
 
 .curator-part .curator-info-arrow .arrow-btn>li>a {
@@ -783,7 +758,7 @@ section {
 
 /* curator-moive-inner-wrap - 숨김처리 하는 영역*/
 .curator-moive-inner-wrap {
-    /* border: 1px solid rgba(255, 255, 255, 0.55); */
+    border: 1px solid rgba(255, 255, 255, 0.55);
     margin: 0 72px;
     overflow: hidden;
     position: relative;
@@ -800,28 +775,40 @@ section {
 /* curator-moive-item */
 .curator-moive-item {
     display: flex;
+    align-items: center;
     gap: 36px;
+    /* border: 1px solid blue; */
 }
 
 /* 추천 리스트 아이템 - 영화 포스터*/
 .curator-moive-poster {
-    width: 385px;
-    height: 548px;
+    /* width: 385px; */
+    /* height: 548px; */
     /* aspect-ratio: 385/548; */
-    object-fit: cover;
-    padding: 48px;
+    /* object-fit: cover; */
+    /* padding: 3em; */
+    /* 상단부 주석처리 (260213) */
     overflow: hidden;
+    /* background-color: pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 추천 리스트 아이템 선택항목 */
 .curator-moive-item.active .curator-moive-poster {
-    padding: 0;
+    /* padding: 0; */
 }
 
-.curator-moive-poster>img {
-    width: 100%;
-    height: 100%;
+.curator-moive-item .curator-moive-poster>img {
+    width: 60%;
+    /* height: 100%; */
     border-radius: 30px;
+}
+
+.curator-moive-item.active .curator-moive-poster>img {
+    width: 100%;
 }
 
 /* 추천 리스트 아이템 - 우측영역 세로 정렬 */
@@ -829,14 +816,17 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1.25em;
+    /* padding: 36px 0; */
     padding: 36px 0;
+    /* width: 100%; */
 }
 
 /* 추천 리스트 아이템 - 제목 + 한줄평 묶음 영역 */
 .curator-moive-info .curator-moive-title-wrap {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 0.8em;
 }
 
 /* 추천 리스트 아이템 - 제목*/
@@ -932,81 +922,30 @@ section {
 
 
 /* -----------------------upcoming section ---------------------------*/
-/* upcoming section */
-.upcoming .upcoming-top {
-    display: flex;
-    margin: 50px 0;
-    justify-content: space-between;
-}
 
-.upcoming .upcoming-top h2 {
-    /* background-color: rgba(255, 255, 0, 0.5); */
-    font-size: 2.25em;
-}
-
-/* 더보기 주석 처리 */
-/* .more-area {
+.upcoming-wrap-final {
+    /* background-color: rgb(176, 212, 212); */
     position: relative;
-    width: 24px;
-    height: 40px;
-} */
-
-/* + 버튼 */
-/* .movie-search-form {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-} */
-
-
-/* hover 상태 */
-/* .more-area:hover .more-btn {
-    opacity: 0;
-    transform: scale(0.8);
 }
-
-.more-area:hover .movie-search-form {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-} */
-
-/* 상영예정작 - 리스트 */
 
 .upcoming-list>li>a {
     position: relative;
-
-}
-
-.upcoming-wrap2 {
-    /* border: 1px solid #fff; */
-    overflow: hidden;
-    margin: 0 50px;
-    /* padding: 10px; */
-}
-
-.upcoming-list {
-    /* background-color: rgba(0, 255, 0, 0.15); */
-    display: flex;
-    width: calc(100% * 10 / 5 + 1.6em);
-    margin: 0 auto;
-    gap: 2em;
 }
 
 .upcoming-list>li {
     width: 20%;
 }
 
+.upcoming-list>.swiper-slide {
+    background: none;
+    display: block;
+}
+
 .upcoming-list>li>a {
     position: relative;
-    /* background-color: bisque; */
 }
 
 .upcoming-list .img-box {
-    /* background-color: aliceblue; */
-    /* width: 16.5em; */
     position: relative;
 }
 
@@ -1016,7 +955,6 @@ section {
 }
 
 .upcoming-list .img-box .dday {
-    background-color: #8F9191;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1034,65 +972,45 @@ section {
     margin: 0 auto;
 }
 
-.upcoming-list .text-box>p:first-child {
-    padding: 10px 10px 5px;
-}
-
-.upcoming-list .text-box p:first-child {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.upcoming-list .text-box>p:last-child {
-    padding-bottom: 5px;
-}
-
-
 .upcoming-list .text-box>p:first-child>img {
     width: 1em;
     height: 1em;
 }
 
 .upcoming-list .text-box>p:first-child {
-    font-size: 1.25em;
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
-    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 1em 0.5em 0.5em;
 }
 
 
 .upcoming-list .text-box>p:last-child {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     color: #8F9191;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    padding-bottom: 5px;
 }
 
-/* arrow-btn */
-.upcoming .inner {
-    position: relative;
+.swiper-button-prev,
+.swiper-button-next {
+    color: #da291c;
 }
 
-.upcoming .arrow-btn>li>a {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 100;
-    margin-top: 50px;
+.upcoming-wrap-final .swiper-button-prev {
+    left: -100px;
 }
 
-.upcoming .arrow-btn>.left-btn>a {
-    left: 12px;
-}
-
-.upcoming .arrow-btn>.right-btn>a {
-    right: 12px;
+.upcoming-wrap-final .swiper-button-next {
+    right: -100px;
 }
 
 /* ---------------------- info section --------------------------*/
@@ -1103,10 +1021,13 @@ section {
 
 .info-list {
     display: flex;
-    justify-content: center;
-    gap: 156px;
+    justify-content: space-evenly;
     text-align: center;
     flex-wrap: wrap;
+}
+
+.info-list>li i {
+    display: none;
 }
 
 .info-list>li>img {
@@ -1118,8 +1039,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px 36px;
-
+    /* margin: 0 20px 36px; */
+    padding: 30px 20px;
 }
 
 .footer-top .util-menu {
@@ -1128,6 +1049,7 @@ section {
     font-size: 0.875em;
     font-weight: 400;
     color: #dbdbdb;
+    flex-wrap: wrap;
 }
 
 .footer-top .util-menu>li:nth-child(3)>a {
@@ -1191,7 +1113,7 @@ strong {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 12px 36px;
+    padding: 8px 30px;
     border: 1px solid #fff;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.1);
