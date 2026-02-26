@@ -1000,7 +1000,7 @@ section {
     padding-bottom: 5px;
 }
 
-.swiper-button-prev,
+.upcoming-swiper .swiper-button-prev,
 .swiper-button-next {
     color: #da291c;
 }
