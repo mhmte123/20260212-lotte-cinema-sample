@@ -381,6 +381,26 @@
         display: block;
         width: 30px;
     }
+}
+
+@media screen and (max-width:480px) {
+
+    .info-list>li {
+        flex: 1;
+    }
+
+    .info-list>li i {
+        display: block;
+    }
+
+    .info-list>li>img {
+        width: 30px;
+
+    }
+
+    .info-list>li>p>span {
+        display: none;
+    }
 
     .NuriCard .NuriCard-img {
         width: 60%;
