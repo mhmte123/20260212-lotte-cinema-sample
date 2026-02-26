@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/pretendard-font.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css//swiper.css">
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/respond.css">
     <link rel="shortcut icon" href="./images/logo-icon/favicon.ico">
@@ -809,11 +809,10 @@
                 <div class="upcoming-top">
                     <h2>상영예정작</h2>
                 </div>
-                <div class="upcoming-wrap">
-                    <div class="upcoming-wrap2">
-                        <!-- ul.upcoming-list>li*10>a[href="#"]>(div.img-box>img)+div.text-box>(p>img+span{프로젝트Y})+p{상영 예정일 : 2026.01.21} -->
-                        <ul class="upcoming-list">
-                            <li>
+                <div class="upcoming-wrap-final">
+                    <div class="upcoming-wrap swiper">
+                        <ul class="upcoming-list swiper-wrapper">
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <div class="dday"><img src="./images/upcoming/D-DAY.png" alt="D-DAY마크"></div>
@@ -827,7 +826,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <div class="dday"><img src="./images/upcoming/D-1.png" alt="D-1 마크"></div>
@@ -842,7 +841,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <div class="dday"><img src="./images/upcoming/D-2.png" alt="D-2 마크"></div>
@@ -856,7 +855,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <div class="dday"><img src="./images/upcoming/D-3.png" alt="D-3 마크"></div>
@@ -870,7 +869,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <div class="dday"><img src="./images/upcoming/D-4.png" alt="D-4 마크"></div>
@@ -884,7 +883,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <div class="dday"><img src="./images/upcoming/D-5.png" alt="D-5 마크"></div>
@@ -898,7 +897,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <div class="dday"><img src="./images/upcoming/D-6.png" alt="D-6 마크"></div>
@@ -912,7 +911,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <div class="dday"><img src="./images/upcoming/D-7.png" alt="D-7 마크"></div>
@@ -926,7 +925,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <div class="dday"><img src="./images/upcoming/D-8.png" alt="D-8 마크"></div>
@@ -940,7 +939,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="swiper-slide">
                                 <a href="#">
                                     <div class="img-box">
                                         <div class="dday"><img src="./images/upcoming/D-9.png" alt="D-9 마크"></div>
@@ -956,28 +955,25 @@
                             </li>
                         </ul>
                     </div>
-                    <ul class="arrow-btn">
-                        <li class="left-btn"><a href="#"><img src="./images/upcoming/arrow-left.png" alt="왼쪽화살표"></a>
-                        </li>
-                        <li class="right-btn"><a href="#"><img src="./images/upcoming/arrow-right.png" alt="오른쪽화살표"></a>
-                        </li>
-                    </ul>
-                    <!-- </div>
-                    <div class="more-area">
-                        <div class="more-btn">
-                            <img src="./images/logo-icon/plus-icon.png" alt="더보기 버튼">
-                        </div>
-                        <form class="movie-search-form">
-                            <button>
-                                <img src="./images/logo-icon/search-icon.png" alt="검색">
-                            </button>
-                            <input type="text" placeholder="상영예정작 더 보기">
-                        </form>
-                    </div> -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </section>
-
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script>
+            let swiper = new Swiper(".upcoming-wrap", {
+                loop: true,
+                slidesPerView: 5,
+                spaceBetween: 40,
+                centeredSlides: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
         <!-- info section -->
         <section class="info-wrap">
             <div class="inner">

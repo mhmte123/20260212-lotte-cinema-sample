@@ -1,0 +1,368 @@
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    width: 1920px;
+    z-index: 1000;
+}
+
+.main-logo {
+    width: 300px;
+    height: 54px;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.main-menu {
+    display: flex;
+    font-size: 1.25em;
+    gap: 60px;
+}
+
+.main-menu>li {
+    padding: 10px 0;
+    position: relative;
+}
+
+.main-menu>li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #DA291C;
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+.main-menu>li:hover::after {
+    width: 100%;
+}
+
+.main-menu>li:hover .sub-menu {
+    /* display: block; */
+    height: auto;
+}
+
+.sub-menu {
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 500px;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    z-index: 100;
+}
+
+.sub-menu>li>a {
+    display: block;
+    /* background: rgb(32, 32, 32); */
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* .sub-menu>li>a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+} */
+
+.sub-menu>li>a:hover {
+    color: #DA291C;
+}
+
+.gnb-list {
+    display: flex;
+    gap: 20px;
+}
+
+
+body {
+    font-size: 16px;
+}
+
+/* footer */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 36px;
+
+}
+
+.footer-top .util-menu {
+    display: flex;
+    gap: 24px;
+    font-size: 0.875em;
+    font-weight: 400;
+    color: #dbdbdb;
+}
+
+.footer-top .util-menu>li:nth-child(3)>a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-top .search-wrap>a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 36px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.footer-bottom>.footer-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-bottom>div address {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.875em;
+    color: #dbdbdb;
+}
+
+.footer-bottom>div address span,
+strong {
+    margin-right: 14px;
+}
+
+.footer-bottom>div address span {
+    font-weight: 400;
+}
+
+.footer-bottom .footer-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 144px;
+}
+
+.footer-bottom .family {
+    display: flex;
+    align-items: center;
+    font-size: 0.875em;
+    color: #dbdbdb;
+}
+
+.footer-bottom .family img {
+    width: 47px;
+    height: 45px;
+}
+
+.footer-bottom .sns-list {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-bottom .sns-list>li>a {
+    display: block;
+    width: 51px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 12px 13px;
+}
+
+/* 공동사항 */
+.section-title {
+    padding: 50px 25px;
+}
+
+.inner {
+    background-color: rgba(127, 255, 212, 0.342);
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1600px;
+}
+
+/* 이달의 추천 상품 */
+.banner {
+    display: block;
+    /* background-color: rgba(94, 255, 0, 0.493); */
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 100px;
+}
+
+main section>h2 {
+    font-size: 2.25em;
+}
+
+main .store-arco-list {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding-bottom: 50px;
+}
+
+.store-arco-list .img-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.store-arco-list img {
+    max-width: none;
+    height: 25em;
+    display: block;
+}
+
+.store-arco-list>li {
+    /* border: 1px dashed pink; */
+    max-width: 180px;
+}
+
+.store-arco-list>li:nth-child(3) {
+    max-width: 1020px;
+}
+
+.store-arco-list .img-box::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.store-arco-list>li>a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.store-arco-list .text-box {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    white-space: nowrap;
+    font-size: 1.2em;
+    color: black;
+}
+
+.store-arco-list .text-box>p {
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.store-arco-list .text-box .arco-category {
+    /* background-color: aqua; */
+    display: inline-block;
+    /* width: auto; */
+    /* border-bottom: 5px solid #DA291C; */
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.store-arco-list .text-box .arco-title {
+    display: none;
+}
+
+.store-arco-list .text-box .arco-content {
+    display: none;
+}
+
+
+.store-arco-list>li:nth-child(3) .text-box .arco-title {
+    display: block;
+}
+
+.store-arco-list>li:nth-child(3) .text-box .arco-content {
+    display: block;
+}
+
+
+
+
+/* 스토어 */
+
+.store-sub-tab-menu-list {
+    display: flex;
+    padding: 0 25px 20px;
+    gap: 1em;
+    align-items: center;
+    font-size: 1.25em;
+    font-weight: 500;
+
+}
+
+.store-sub-tab-menu-list>li:hover a {
+    color: #DA291C;
+    transition: 0.3s;
+}
+
+.store-sub-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding: 50px 48px;
+    gap: 1.5em;
+}
+
+.store-sub-list>li {
+    position: relative;
+}
+
+.store-sub-list .img-box {
+    border: 1px dashed red;
+    border-radius: 30px;
+    background: #333;
+    overflow: hidden;
+}
+
+
+.store-sub-list .text-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #2d2d2d;
+    padding: 1em;
+    border-radius: 0 0 30px 30px;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    gap: 2em;
+}
+
+.store-sub-list .text-wrap .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    /* font-size: 1vw; */
+}
