@@ -1,3 +1,5 @@
+@media screen and (max-width:1024px) {
+}
 @media screen and (max-width:1280px) {
     .curator-part>.inner>h2 {
         font-size: 2em;
@@ -7,10 +9,11 @@
     .curator-moive-item .curator-moive-poster>img {
         border-radius: 18px;
     }
-@media screen and (max-width: 1280px) {
+
     body {
         font-size: 14px;
     }
+  }
 
     /* .event-slider {
         margin-left: calc(-10% - 20px);
@@ -280,6 +283,20 @@
 
     /* info-section */
 
+    /* upcoming */
+    .upcoming-list {
+        /* background-color: rgba(0, 255, 0, 0.15); */
+        display: flex;
+        width: calc(100% * 10 / 3.5);
+        margin: 0 auto;
+        gap: 2em;
+    }
+
+    .upcoming-list>li {
+        width: 30%;
+    }
+
+
 
     /* footer */
     .footer-top .util-menu {
@@ -357,6 +374,45 @@
     .event-slider {
         margin-top: 30px;
     }
+}
+
+@media screen and (max-width:440px) {
+    body {
+        font-size: 10px;
+    }
+
+    /* upcoming */
+    .upcoming-list {
+        /* background-color: rgba(0, 255, 0, 0.15); */
+        display: flex;
+        width: calc(100% * 10 / 2.5);
+        margin: 0 auto;
+        gap: 2em;
+    }
+
+    .upcoming-list>li {
+        width: 50%;
+    }
+
+    .upcoming-list .text-box>p:first-child {
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+
+    .upcoming-list .text-box>p:last-child {
+        font-size: 0.6rem;
+        color: #8F9191;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
 
     .preview {
         width: 100%;
@@ -380,6 +436,26 @@
     .NuriCard .NuriCard-mid img {
         display: block;
         width: 30px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .info-list>li {
+        flex: 1;
+    }
+
+    .info-list>li i {
+        display: block;
+    }
+
+    .info-list>li>img {
+        width: 30px;
+
+    }
+
+    .info-list>li>p>span {
+        display: none;
     }
 
     .NuriCard .NuriCard-img {
