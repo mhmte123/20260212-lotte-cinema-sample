@@ -932,81 +932,30 @@ section {
 
 
 /* -----------------------upcoming section ---------------------------*/
-/* upcoming section */
-.upcoming .upcoming-top {
-    display: flex;
-    margin: 50px 0;
-    justify-content: space-between;
-}
 
-.upcoming .upcoming-top h2 {
-    /* background-color: rgba(255, 255, 0, 0.5); */
-    font-size: 2.25em;
-}
-
-/* 더보기 주석 처리 */
-/* .more-area {
+.upcoming-wrap-final {
+    /* background-color: rgb(176, 212, 212); */
     position: relative;
-    width: 24px;
-    height: 40px;
-} */
-
-/* + 버튼 */
-/* .movie-search-form {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-} */
-
-
-/* hover 상태 */
-/* .more-area:hover .more-btn {
-    opacity: 0;
-    transform: scale(0.8);
 }
-
-.more-area:hover .movie-search-form {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-} */
-
-/* 상영예정작 - 리스트 */
 
 .upcoming-list>li>a {
     position: relative;
-
-}
-
-.upcoming-wrap2 {
-    /* border: 1px solid #fff; */
-    overflow: hidden;
-    margin: 0 50px;
-    /* padding: 10px; */
-}
-
-.upcoming-list {
-    /* background-color: rgba(0, 255, 0, 0.15); */
-    display: flex;
-    width: calc(100% * 10 / 5 + 1.6em);
-    margin: 0 auto;
-    gap: 2em;
 }
 
 .upcoming-list>li {
     width: 20%;
 }
 
+.upcoming-list>.swiper-slide {
+    background: none;
+    display: block;
+}
+
 .upcoming-list>li>a {
     position: relative;
-    /* background-color: bisque; */
 }
 
 .upcoming-list .img-box {
-    /* background-color: aliceblue; */
-    /* width: 16.5em; */
     position: relative;
 }
 
@@ -1016,7 +965,6 @@ section {
 }
 
 .upcoming-list .img-box .dday {
-    background-color: #8F9191;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1043,7 +991,6 @@ section {
     font-size: 1.2em;
     display: flex;
     justify-content: center;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
@@ -1057,32 +1004,23 @@ section {
 .upcoming-list .text-box>p:last-child {
     font-size: 0.8rem;
     color: #8F9191;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
     padding-bottom: 5px;
 }
 
-/* arrow-btn */
-.upcoming .inner {
-    position: relative;
+.swiper-button-prev,
+.swiper-button-next {
+    color: #da291c;
 }
 
-.upcoming .arrow-btn>li>a {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 100;
-    margin-top: 50px;
+.upcoming-wrap-final .swiper-button-prev {
+    left: -100px;
 }
 
-.upcoming .arrow-btn>.left-btn>a {
-    left: 12px;
-}
-
-.upcoming .arrow-btn>.right-btn>a {
-    right: 12px;
+.upcoming-wrap-final .swiper-button-next {
+    right: -100px;
 }
 
 /* ---------------------- info section --------------------------*/
