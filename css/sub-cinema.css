@@ -12,14 +12,19 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     /* background: rgba(255, 0, 0, 0.2); */
+    padding: 0px 1em;
 }
 
 .main-logo {
     width: 300px;
-    height: 54px;
 }
 
-/* header*/
+.ham-btn,
+.close-btn {
+    display: none;
+}
+
+/* header */
 header {
     position: fixed;
     top: 0;
@@ -30,6 +35,10 @@ header {
     z-index: 1000;
 }
 
+.main-logo {
+    width: 300px;
+}
+
 header .inner {
     display: flex;
     justify-content: space-between;
@@ -37,7 +46,6 @@ header .inner {
     height: 54px;
     margin-top: 23px;
     margin-bottom: 23px;
-
 }
 
 .main-menu {
@@ -85,7 +93,8 @@ header .inner {
     top: 46px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 16px;
+    font-size: 1rem;
+    z-index: 100;
 }
 
 .sub-menu>li>a {
@@ -110,6 +119,10 @@ header .inner {
 .gnb-list {
     display: flex;
     gap: 20px;
+}
+
+.mobile-menu-wrap {
+    display: none;
 }
 
 /* main */
@@ -698,8 +711,9 @@ header .inner {
     /* margin: 10px; */
 }
 
-.movie-time .movie-time-list .movie-time-box strong {
+.movie-time .movie-time-list .movie-time-box span {
     font-size: 1.25em;
+    font-weight: bold;
     padding-bottom: 12px;
 }
 
@@ -780,16 +794,17 @@ header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px 36px;
-
+    /* margin: 0 20px 36px; */
+    padding: 30px 20px;
 }
 
 .footer-top .util-menu {
     display: flex;
     gap: 24px;
-    font-size: 12px;
+    font-size: 0.875em;
     font-weight: 400;
     color: #dbdbdb;
+    flex-wrap: wrap;
 }
 
 .footer-top .util-menu>li:nth-child(3)>a {
@@ -826,7 +841,7 @@ header .inner {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    font-size: 14px;
+    font-size: 0.875em;
     color: #dbdbdb;
 }
 
@@ -845,10 +860,24 @@ strong {
     gap: 144px;
 }
 
+.footer-bottom .footer-bottom-right .search-wrap-mobile {
+    display: none;
+}
+
+.footer-bottom .footer-bottom-right .search-wrap-mobile>a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 30px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .footer-bottom .family {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875em;
     color: #dbdbdb;
 }
 
