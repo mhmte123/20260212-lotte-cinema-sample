@@ -738,6 +738,7 @@ section {
 /* curator-part 화살표 */
 .curator-part .curator-info-wrap {
     position: relative;
+    /* border: 1px solid rgba(255, 0, 0, 0.75); */
 }
 
 .curator-part .curator-info-arrow .arrow-btn>li>a {
@@ -774,28 +775,40 @@ section {
 /* curator-moive-item */
 .curator-moive-item {
     display: flex;
+    align-items: center;
     gap: 36px;
+    /* border: 1px solid blue; */
 }
 
 /* 추천 리스트 아이템 - 영화 포스터*/
 .curator-moive-poster {
-    width: 385px;
-    height: 548px;
+    /* width: 385px; */
+    /* height: 548px; */
     /* aspect-ratio: 385/548; */
-    object-fit: cover;
-    padding: 48px;
+    /* object-fit: cover; */
+    /* padding: 3em; */
+    /* 상단부 주석처리 (260213) */
     overflow: hidden;
+    /* background-color: pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 추천 리스트 아이템 선택항목 */
 .curator-moive-item.active .curator-moive-poster {
-    padding: 0;
+    /* padding: 0; */
 }
 
-.curator-moive-poster>img {
-    width: 100%;
-    height: 100%;
+.curator-moive-item .curator-moive-poster>img {
+    width: 60%;
+    /* height: 100%; */
     border-radius: 30px;
+}
+
+.curator-moive-item.active .curator-moive-poster>img {
+    width: 100%;
 }
 
 /* 추천 리스트 아이템 - 우측영역 세로 정렬 */
@@ -803,6 +816,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1.25em;
+    /* padding: 36px 0; */
     padding: 36px 0;
     /* width: 100%; */
 }
@@ -811,7 +826,7 @@ section {
 .curator-moive-info .curator-moive-title-wrap {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 0.8em;
 }
 
 /* 추천 리스트 아이템 - 제목*/
@@ -907,81 +922,30 @@ section {
 
 
 /* -----------------------upcoming section ---------------------------*/
-/* upcoming section */
-.upcoming .upcoming-top {
-    display: flex;
-    margin: 50px 0;
-    justify-content: space-between;
-}
 
-.upcoming .upcoming-top h2 {
-    /* background-color: rgba(255, 255, 0, 0.5); */
-    font-size: 2.25em;
-}
-
-/* 더보기 주석 처리 */
-/* .more-area {
+.upcoming-wrap-final {
+    /* background-color: rgb(176, 212, 212); */
     position: relative;
-    width: 24px;
-    height: 40px;
-} */
-
-/* + 버튼 */
-/* .movie-search-form {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-} */
-
-
-/* hover 상태 */
-/* .more-area:hover .more-btn {
-    opacity: 0;
-    transform: scale(0.8);
 }
-
-.more-area:hover .movie-search-form {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-} */
-
-/* 상영예정작 - 리스트 */
 
 .upcoming-list>li>a {
     position: relative;
-
-}
-
-.upcoming-wrap2 {
-    /* border: 1px solid #fff; */
-    overflow: hidden;
-    margin: 0 50px;
-    /* padding: 10px; */
-}
-
-.upcoming-list {
-    /* background-color: rgba(0, 255, 0, 0.15); */
-    display: flex;
-    width: calc(100% * 10 / 5 + 1.6em);
-    margin: 0 auto;
-    gap: 2em;
 }
 
 .upcoming-list>li {
     width: 20%;
 }
 
+.upcoming-list>.swiper-slide {
+    background: none;
+    display: block;
+}
+
 .upcoming-list>li>a {
     position: relative;
-    /* background-color: bisque; */
 }
 
 .upcoming-list .img-box {
-    /* background-color: aliceblue; */
-    /* width: 16.5em; */
     position: relative;
 }
 
@@ -991,7 +955,6 @@ section {
 }
 
 .upcoming-list .img-box .dday {
-    background-color: #8F9191;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1009,65 +972,45 @@ section {
     margin: 0 auto;
 }
 
-.upcoming-list .text-box>p:first-child {
-    padding: 10px 10px 5px;
-}
-
-.upcoming-list .text-box p:first-child {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.upcoming-list .text-box>p:last-child {
-    padding-bottom: 5px;
-}
-
-
 .upcoming-list .text-box>p:first-child>img {
     width: 1em;
     height: 1em;
 }
 
 .upcoming-list .text-box>p:first-child {
-    font-size: 1.25em;
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
-    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 1em 0.5em 0.5em;
 }
 
 
 .upcoming-list .text-box>p:last-child {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     color: #8F9191;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    padding-bottom: 5px;
 }
 
-/* arrow-btn */
-.upcoming .inner {
-    position: relative;
+.swiper-button-prev,
+.swiper-button-next {
+    color: #da291c;
 }
 
-.upcoming .arrow-btn>li>a {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 100;
-    margin-top: 50px;
+.upcoming-wrap-final .swiper-button-prev {
+    left: -100px;
 }
 
-.upcoming .arrow-btn>.left-btn>a {
-    left: 12px;
-}
-
-.upcoming .arrow-btn>.right-btn>a {
-    right: 12px;
+.upcoming-wrap-final .swiper-button-next {
+    right: -100px;
 }
 
 /* ---------------------- info section --------------------------*/
@@ -1081,6 +1024,10 @@ section {
     justify-content: space-evenly;
     text-align: center;
     flex-wrap: wrap;
+}
+
+.info-list>li i {
+    display: none;
 }
 
 .info-list>li>img {
