@@ -1,0 +1,405 @@
+@media screen and (max-width: 1280px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* .event-slider {
+        margin-left: calc(-10% - 20px);
+    }
+
+    .event-slider>li {
+        flex: 0 0 calc(100% / 1.03);
+    } */
+
+    .event-left {
+        margin-top: 0;
+        padding: 0;
+    }
+    .event-slider .swiper-slide .img-box {
+        aspect-ratio: 1/1.2;
+    }
+
+    .event-slider .swiper-slide-active {
+        transform: none;
+    }
+
+    .event-slider .swiper-slide-active .img-box {
+        aspect-ratio: 1/1.2;
+    }
+
+    /* .event-slider .main .img-box {
+        aspect-ratio: 1/0.68;
+        transform: none;
+    } */
+
+    .event-slider .swiper-slide-active::after {
+        transform: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .footer-bottom>.footer-bottom-left {
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom .footer-bottom-right {
+        display: block;
+    }
+
+    .footer-bottom .family {
+        padding: 10px;
+        padding-left: 0;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    body {
+        font-size: 12px;
+        position: relative;
+    }
+
+    .inner {
+        overflow: hidden;
+    }
+
+    .main-menu,
+    .gnb-list {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    .main-logo {
+        width: 200px;
+    }
+
+    /* 모바일 메뉴 */
+    .mobile-menu-wrap {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -9999px;
+        width: 60%;
+        height: 100vh;
+        z-index: 10000;
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .mobile-menu-wrap .mobile-menu-list {
+        padding: 20px 20px;
+        line-height: 2.3;
+        font-size: 1.6em;
+    }
+
+    .mobile-menu-wrap .mobile-menu-list>li>a {
+        display: block;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .mobile-menu-wrap .mobile-menu-list>li>a::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 1px;
+        background: #fff;
+        transition: 0.5s;
+    }
+
+    .mobile-menu-wrap .mobile-menu-list>li:hover>a::after {
+        width: 100%;
+    }
+
+    .mobile-menu-list .mobile-sub-menu {
+        display: block;
+        font-size: 16px;
+        text-indent: 20px;
+        /* padding: 10px; */
+    }
+
+    .mobile-menu-list .mobile-sub-menu>li>a {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-menu-list .mobile-sub-menu>li:hover>a {
+        color: #DA291C;
+    }
+
+    .mobile-menu-wrap .gnb-list {
+        display: flex;
+        padding: 10px 20px;
+    }
+
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .ham-btn {
+        display: block;
+        width: 24px;
+        height: 16px;
+        /* position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%); */
+    }
+
+    .ham-btn>a {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .ham-btn>a>span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+
+    /* event section */
+    .event-wrap {
+        padding: 50px 10px;
+    }
+
+    .event-wrap-inner {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .event-left {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* .event-slider {
+        width: calc(100% * 6 / 1);
+        margin-left: calc(-26% - 20px);
+    } */
+
+    .event-slider>li:hover .img-box>img {
+        transform: scale(1.2);
+    }
+
+    .event-slider .img-box>img {
+        transition: 0.5s;
+    }
+
+    .event-slider>li {
+        /* flex: 0 0 calc(100% / 1); */
+        /* padding: 0 10px; */
+    }
+
+    .event-slider .swiper-slide .img-box {
+        aspect-ratio: 1/0.6;
+    }
+
+    .event-slider .swiper-slide-active .img-box {
+        aspect-ratio: 1/0.6;
+    }
+
+    .event-right {
+        display: flex;
+        gap: 12px;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+
+    .preview {
+        width: 50%;
+        /* background: #fff; */
+        margin: 0;
+    }
+
+    .sale {
+        width: 50%;
+        /* background: #fff; */
+    }
+
+    .sale-list {
+        display: block;
+    }
+
+    .preview .img-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .NuriCard {
+        width: 100%;
+    }
+
+    .NuriCard .NuriCard-img {
+        width: 80%;
+    }
+
+
+    .NuriCard .NuriCard-mid img {
+        /* width: 15%; */
+        display: none;
+    }
+
+    .NuriCard .NuriCard-top {
+        gap: 12px;
+    }
+
+    .NuriCard .NuriCard-top>span {
+        font-size: 2em;
+    }
+
+    .NuriCard .NuriCard-mid>p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .TossPay {
+        display: none;
+    }
+
+    /* info-section */
+
+
+    /* footer */
+    footer .inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-top {
+        padding: 25px 10px;
+    }
+
+    .footer-top .util-menu {
+        gap: 12px;
+    }
+
+    .footer-top .util-menu span {
+        display: none;
+    }
+
+    .footer-top .search-wrap {
+        /* display: none; */
+    }
+
+    .footer-top .search-wrap>a {
+        padding: 8px 30px;
+    }
+
+    .footer-bottom {
+        display: block;
+    }
+
+    .footer-bottom .footer-bottom-left {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-bottom .footer-bottom-right {
+        margin-top: 20px;
+        gap: 12px;
+    }
+
+    .footer-bottom .footer-bottom-right .search-wrap-mobile {
+        /* display: block; */
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .mobile-menu-wrap {
+        width: 80%;
+    }
+
+    /* event section */
+    .event-wrap {
+        padding-bottom: 0;
+    }
+
+    .event-slider .swiper-slide .img-box {
+        aspect-ratio: 1/1;
+    }
+
+    .event-slider .swiper-slide-active .img-box {
+        aspect-ratio: 1/1;
+    }
+
+    .event-right {
+        /* display: none; */
+        flex-wrap: wrap;
+        display: block;
+        /* justify-content: center; */
+    }
+
+    .event-slider {
+        margin-top: 30px;
+    }
+
+    .preview {
+        width: 100%;
+        height: 40%;
+        margin-bottom: 12px;
+    }
+
+    .sale {
+        width: 100%;
+    }
+
+    .NuriCard {
+        /* display: none; */
+        height: 187PX;
+    }
+
+    .NuriCard .NuriCard-top {
+        padding-bottom: 5px;
+    }
+
+    .NuriCard .NuriCard-mid img {
+        display: block;
+        width: 30px;
+    }
+
+    .NuriCard .NuriCard-img {
+        width: 60%;
+    }
+
+    /* footer */
+    .footer-top .search-wrap {
+        display: none;
+    }
+
+    .footer-bottom .footer-bottom-right .search-wrap-mobile {
+        display: block;
+    }
+
+    .footer-bottom {
+        position: relative;
+    }
+
+    .footer-bottom .footer-bottom-right {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column;
+        justify-content: start;
+        align-items: start; */
+    }
+
+    .footer-bottom .family {
+        display: none;
+    }
+
+
+
+}
