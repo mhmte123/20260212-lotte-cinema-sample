@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/respond.css">
+    <script defer src="./js/index.js"></script>
     <link rel="shortcut icon" href="./images/logo-icon/favicon.ico">
 </head>
 
@@ -19,7 +20,7 @@
     <header>
         <div class="inner">
             <p class="ham-btn"><a href="#"><span></span><span></span><span></span></a></p>
-            <h1 class="main-logo"><a href="#"><img src="./images/logo-icon/main-logo.png" alt="롯데시네마"></a></h1>
+            <h1 class="main-logo"><a href="./index.html"><img src="./images/logo-icon/main-logo.png" alt="롯데시네마"></a></h1>
             <nav>
                 <ul class="main-menu">
                     <li>
@@ -41,7 +42,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="./sub-event/index.html">이벤트</a>
+                        <a href="./sub-event/event-index.html">이벤트</a>
                         <ul class="sub-menu">
                             <li><a href="#">현재 진행중인 이벤트</a></li>
                             <li><a href="#">영화관련 이벤트</a></li>
@@ -50,7 +51,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">스토어</a>
+                        <a href="./sub-store/store-index.html">스토어</a>
                         <ul class="sub-menu">
                             <li><a href="#">굿즈</a></li>
                             <li><a href="#">관람권</a></li>
@@ -68,7 +69,7 @@
         </div>
     </header>
     <div class="mobile-menu-wrap">
-        <p class="close-btn"><a href="#"><img src="./images/logo-icon/close-btn-icon.png" alt="closebtn"></p>
+        <p class="close-btn"><a href="#"><img src="./images/logo-icon/close-btn-icon.png" alt="closebtn"></a></p>
         <ul class="mobile-menu-list">
             <li>
                 <a href="#">예매</a>
@@ -555,8 +556,8 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next event-next"></div>
+                        <div class="swiper-button-prev event-prev"></div>
                     </div>
 
                     <div class="event-right">
@@ -955,25 +956,12 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next upcoming-next"></div>
+                    <div class="swiper-button-prev upcoming-prev"></div>
                 </div>
             </div>
         </section>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-        <script>
-            let swiper = new Swiper(".upcoming-wrap", {
-                loop: true,
-                slidesPerView: 5,
-                spaceBetween: 40,
-                centeredSlides: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-        </script>
+
         <!-- info section -->
         <section class="info-wrap">
             <div class="inner">
@@ -1075,9 +1063,24 @@
             <!-- </div> -->
         </div>
     </footer>
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
-        let swiper = new Swiper(".event-left", {
+        let swiper1 = new Swiper(".upcoming-wrap", {
+            loop: true,
+            slidesPerView: 5,
+            spaceBetween: 40,
+            centeredSlides: true,
+            navigation: {
+                nextEl: ".upcoming-next",
+                prevEl: ".upcoming-prev",
+            },
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        let swiper2 = new Swiper(".event-left", {
             loop: true,
             slidesPerView: 1,
             spaceBetween: 50,
@@ -1087,15 +1090,15 @@
             },
 
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
+                nextEl: ".event-next",
+                prevEl: ".event-prev"
             },
             breakpoints: {
                 480: {
                     slidesPerView: 1
                 },
                 768: {
-                    slidesPerView: 1  
+                    slidesPerView: 1
                 },
                 1080: {
                     slidesPerView: 1.5

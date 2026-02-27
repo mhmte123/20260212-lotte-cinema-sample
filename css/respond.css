@@ -1,19 +1,7 @@
-@media screen and (max-width:1024px) {
-}
-@media screen and (max-width:1280px) {
-    .curator-part>.inner>h2 {
-        font-size: 2em;
-    }
-
-    /* ----------------------- curator section -----------------------------*/
-    .curator-moive-item .curator-moive-poster>img {
-        border-radius: 18px;
-    }
-
+@media screen and (max-width: 1280px) {
     body {
         font-size: 14px;
     }
-  }
 
     /* .event-slider {
         margin-left: calc(-10% - 20px);
@@ -28,7 +16,7 @@
         padding: 0;
     }
     .event-slider .swiper-slide .img-box {
-        aspect-ratio: 1/1.2;
+        aspect-ratio: 1/1.1;
     }
 
     .event-slider .swiper-slide-active {
@@ -36,7 +24,7 @@
     }
 
     .event-slider .swiper-slide-active .img-box {
-        aspect-ratio: 1/1.2;
+        aspect-ratio: 1/1.1;
     }
 
     /* .event-slider .main .img-box {
@@ -48,11 +36,21 @@
         transform: none;
     }
 
-    .swiper-button-next,
-    .swiper-button-prev {
+    .event-next,
+    .event-prev {
         display: none;
     }
 
+    .curator-part>.inner>h2 {
+        font-size: 2em;
+    }
+
+    /* ----------------------- curator section -----------------------------*/
+    .curator-moive-item .curator-moive-poster>img {
+        border-radius: 18px;
+    }
+
+    /* footer */
     .footer-bottom>.footer-bottom-left {
         flex-wrap: wrap;
     }
@@ -96,90 +94,12 @@
     /* 모바일 메뉴 */
     .mobile-menu-wrap {
         display: block;
-        position: fixed;
-        top: 0;
-        left: -9999px;
-        width: 60%;
-        height: 100vh;
-        z-index: 10000;
-        background: rgba(0, 0, 0, 0.9);
-    }
-
-    .mobile-menu-wrap .mobile-menu-list {
-        padding: 20px 20px;
-        line-height: 2.3;
-        font-size: 1.6em;
-    }
-
-    .mobile-menu-wrap .mobile-menu-list>li>a {
-        display: block;
-        width: 100%;
-        /* background-color: red; */
-    }
-
-    .mobile-menu-wrap .mobile-menu-list>li>a::after {
-        content: "";
-        display: block;
-        width: 0%;
-        height: 1px;
-        background: #fff;
         transition: 0.5s;
-    }
-
-    .mobile-menu-wrap .mobile-menu-list>li:hover>a::after {
-        width: 100%;
-    }
-
-    .mobile-menu-list .mobile-sub-menu {
-        display: block;
-        font-size: 16px;
-        text-indent: 20px;
-        /* padding: 10px; */
-    }
-
-    .mobile-menu-list .mobile-sub-menu>li>a {
-        display: block;
-        width: 100%;
-    }
-
-    .mobile-menu-list .mobile-sub-menu>li:hover>a {
-        color: #DA291C;
-    }
-
-    .mobile-menu-wrap .gnb-list {
-        display: flex;
-        padding: 10px 20px;
-    }
-
-    .close-btn {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        /* left: 0; */
     }
 
     .ham-btn {
         display: block;
-        width: 24px;
-        height: 16px;
-        /* position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%); */
-    }
-
-    .ham-btn>a {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .ham-btn>a>span {
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: #fff;
     }
 
     /* event section */
@@ -283,24 +203,45 @@
 
     /* info-section */
 
-    /* upcoming */
-    .upcoming-list {
-        /* background-color: rgba(0, 255, 0, 0.15); */
-        display: flex;
-        width: calc(100% * 10 / 3.5);
-        margin: 0 auto;
-        gap: 2em;
+    
+    /* curator-moive-set - 추천영화 리스트 아이템*/
+    .curator-moive-set {
+        width: calc(100% * 5 + 24px);
     }
 
-    .upcoming-list>li {
-        width: 30%;
+    /* curator-part 화살표 */
+    .curator-part .curator-info-arrow .arrow-btn>li>a {
+        display: block;
     }
 
+    /* curator-moive-item */
+    .curator-moive-item {
+        /* border: 1px solid blue; */
+        flex-direction: column;
+    }
 
+    .curator-moive-item .curator-moive-poster>img {
+        width: 50%;
+        border-radius: 12px;
+    }
+
+    .curator-moive-item.active .curator-moive-poster>img {
+        width: 50%;
+    }
+
+    /* 추천 리스트 아이템 - 영화내용*/
+    .curator-moive-info .plot-info {
+        display: none;
+    }
+
+    /* 추천 영화 광고 영역 */
+
+    .curator-ad-item {
+        flex-direction: column;
+    }
+    
 
     /* footer */
-    .footer-top .util-menu {
-        flex-wrap: wrap;
     footer .inner {
         display: flex;
         flex-direction: column;
@@ -343,6 +284,8 @@
     .footer-bottom .footer-bottom-right .search-wrap-mobile {
         /* display: block; */
     }
+
+    
 }
 
 @media screen and (max-width:480px) {
@@ -374,45 +317,6 @@
     .event-slider {
         margin-top: 30px;
     }
-}
-
-@media screen and (max-width:440px) {
-    body {
-        font-size: 10px;
-    }
-
-    /* upcoming */
-    .upcoming-list {
-        /* background-color: rgba(0, 255, 0, 0.15); */
-        display: flex;
-        width: calc(100% * 10 / 2.5);
-        margin: 0 auto;
-        gap: 2em;
-    }
-
-    .upcoming-list>li {
-        width: 50%;
-    }
-
-    .upcoming-list .text-box>p:first-child {
-        font-size: 1em;
-        display: flex;
-        justify-content: center;
-        /* white-space: nowrap; */
-        overflow: hidden;
-        text-overflow: ellipsis;
-        text-align: center;
-    }
-
-
-    .upcoming-list .text-box>p:last-child {
-        font-size: 0.6rem;
-        color: #8F9191;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        text-align: center;
-    }
 
     .preview {
         width: 100%;
@@ -437,26 +341,6 @@
         display: block;
         width: 30px;
     }
-}
-
-@media screen and (max-width:480px) {
-
-    .info-list>li {
-        flex: 1;
-    }
-
-    .info-list>li i {
-        display: block;
-    }
-
-    .info-list>li>img {
-        width: 30px;
-
-    }
-
-    .info-list>li>p>span {
-        display: none;
-    }
 
     .NuriCard .NuriCard-img {
         width: 60%;
@@ -471,47 +355,6 @@
         display: block;
     }
 
-    /* ----------------------- curator section -----------------------------*/
-    /* curator-moive-set - 추천영화 리스트 아이템*/
-    .curator-moive-set {
-        width: calc(100% * 5 + 24px);
-    }
-
-    /* curator-part 화살표 */
-    .curator-part .curator-info-arrow .arrow-btn>li>a {
-        display: block;
-    }
-
-    /* curator-moive-item */
-    .curator-moive-item {
-        /* border: 1px solid blue; */
-        flex-direction: column;
-    }
-
-    .curator-moive-item .curator-moive-poster>img {
-        width: 50%;
-        border-radius: 12px;
-    }
-
-    .curator-moive-item.active .curator-moive-poster>img {
-        width: 50%;
-    }
-
-    /* 추천 리스트 아이템 - 영화내용*/
-    .curator-moive-info .plot-info {
-        display: none;
-    }
-
-    /* 추천 영화 광고 영역 */
-
-    .curator-ad-item {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:480px) {
-
-    /* ----------------------- curator section -----------------------------*/
     .footer-bottom {
         position: relative;
     }
