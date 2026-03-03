@@ -925,6 +925,10 @@ section {
     text-align: center;
 }
 
+.info-list>li {
+    flex: 1;
+}
+
 .info-list>li i {
     display: none;
 }
