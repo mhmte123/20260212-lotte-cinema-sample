@@ -1,64 +1,6 @@
 @media screen and (max-width:1280px) {
-    .curator-part>.inner>h2 {
-        font-size: 2em;
-    }
-
-    /* ----------------------- curator section -----------------------------*/
-    .curator-moive-item .curator-moive-poster>img {
-        border-radius: 18px;
-    }
-
     body {
         font-size: 14px;
-    }
-}
-
-/* .event-slider {
-        margin-left: calc(-10% - 20px);
-    }
-
-    .event-slider>li {
-        flex: 0 0 calc(100% / 1.03);
-    } */
-
-.event-left {
-    margin-top: 0;
-    padding: 0;
-}
-
-.event-slider .swiper-slide .img-box {
-    aspect-ratio: 1/1.2;
-}
-
-.event-slider .swiper-slide-active {
-    transform: none;
-}
-
-.event-slider .swiper-slide-active .img-box {
-    aspect-ratio: 1/1.2;
-}
-
-/* .event-slider .main .img-box {
-        aspect-ratio: 1/0.68;
-        transform: none;
-    } */
-
-    .event-slider .swiper-slide-active::after {
-        transform: none;
-    }
-
-    .event-next,
-    .event-prev {
-        display: none;
-    }
-
-    .curator-part>.inner>h2 {
-        font-size: 2em;
-    }
-
-    /* ----------------------- curator section -----------------------------*/
-    .curator-moive-item .curator-moive-poster>img {
-        border-radius: 18px;
     }
 
     /* footer */
@@ -66,24 +8,19 @@
         flex-wrap: wrap;
     }
 
-.swiper-button-next,
-.swiper-button-prev {
-    display: none;
-}
+    .footer-bottom>.footer-bottom-left {
+        flex-wrap: wrap;
+    }
 
-.footer-bottom>.footer-bottom-left {
-    flex-wrap: wrap;
-}
+    .footer-bottom .footer-bottom-right {
+        display: block;
+    }
 
-.footer-bottom .footer-bottom-right {
-    display: block;
+    .footer-bottom .family {
+        padding: 10px;
+        padding-left: 0;
+    }
 }
-
-.footer-bottom .family {
-    padding: 10px;
-    padding-left: 0;
-}
-
 
 @media screen and (max-width:768px) {
     body {
@@ -119,145 +56,6 @@
     .ham-btn {
         display: block;
     }
-
-    /* event section */
-    .event-wrap {
-        padding: 50px 10px;
-    }
-
-    .event-wrap-inner {
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    .event-left {
-        padding: 0;
-        margin: 0;
-    }
-
-    /* .event-slider {
-        width: calc(100% * 6 / 1);
-        margin-left: calc(-26% - 20px);
-    } */
-
-    .event-slider>li:hover .img-box>img {
-        transform: scale(1.2);
-    }
-
-    .event-slider .img-box>img {
-        transition: 0.5s;
-    }
-
-    .event-slider>li {
-        /* flex: 0 0 calc(100% / 1); */
-        /* padding: 0 10px; */
-    }
-
-    .event-slider .swiper-slide .img-box {
-        aspect-ratio: 1/0.6;
-    }
-
-    .event-slider .swiper-slide-active .img-box {
-        aspect-ratio: 1/0.6;
-    }
-
-    .event-right {
-        display: flex;
-        gap: 12px;
-        width: 100%;
-        /* border: 1px solid; */
-    }
-
-    .preview {
-        width: 50%;
-        /* background: #fff; */
-        margin: 0;
-    }
-
-    .sale {
-        width: 50%;
-        /* background: #fff; */
-    }
-
-    .sale-list {
-        display: block;
-    }
-
-    .preview .img-box {
-        width: 100%;
-        height: 100%;
-    }
-
-    .NuriCard {
-        width: 100%;
-    }
-
-    .NuriCard .NuriCard-img {
-        width: 80%;
-    }
-
-
-    .NuriCard .NuriCard-mid img {
-        /* width: 15%; */
-        display: none;
-    }
-
-    .NuriCard .NuriCard-top {
-        gap: 12px;
-    }
-
-    .NuriCard .NuriCard-top>span {
-        font-size: 2em;
-    }
-
-    .NuriCard .NuriCard-mid>p {
-        font-size: 1.5em;
-        text-align: center;
-    }
-
-    .TossPay {
-        display: none;
-    }
-
-    /* info-section */
-
-    
-    /* curator-moive-set - 추천영화 리스트 아이템*/
-    .curator-moive-set {
-        width: calc(100% * 5 + 24px);
-    }
-
-    /* curator-part 화살표 */
-    .curator-part .curator-info-arrow .arrow-btn>li>a {
-        display: block;
-    }
-
-    /* curator-moive-item */
-    .curator-moive-item {
-        /* border: 1px solid blue; */
-        flex-direction: column;
-    }
-
-    .curator-moive-item .curator-moive-poster>img {
-        width: 50%;
-        border-radius: 12px;
-    }
-
-    .curator-moive-item.active .curator-moive-poster>img {
-        width: 50%;
-    }
-
-    /* 추천 리스트 아이템 - 영화내용*/
-    .curator-moive-info .plot-info {
-        display: none;
-    }
-
-    /* 추천 영화 광고 영역 */
-
-    .curator-ad-item {
-        flex-direction: column;
-    }
-    
 
     /* footer */
     footer .inner {
@@ -303,7 +101,7 @@
         /* display: block; */
     }
 
-    
+
 }
 
 
@@ -311,58 +109,6 @@
 
     .mobile-menu-wrap {
         width: 80%;
-    }
-
-    /* event section */
-    .event-wrap {
-        padding-bottom: 0;
-    }
-
-    .event-slider .swiper-slide .img-box {
-        aspect-ratio: 1/1;
-    }
-
-    .event-slider .swiper-slide-active .img-box {
-        aspect-ratio: 1/1;
-    }
-
-    .event-right {
-        /* display: none; */
-        flex-wrap: wrap;
-        display: block;
-        /* justify-content: center; */
-    }
-
-    .event-slider {
-        margin-top: 30px;
-    }
-
-    .preview {
-        width: 100%;
-        height: 40%;
-        margin-bottom: 12px;
-    }
-
-    .sale {
-        width: 100%;
-    }
-
-    .NuriCard {
-        /* display: none; */
-        height: 187PX;
-    }
-
-    .NuriCard .NuriCard-top {
-        padding-bottom: 5px;
-    }
-
-    .NuriCard .NuriCard-mid img {
-        display: block;
-        width: 30px;
-    }
-
-    .NuriCard .NuriCard-img {
-        width: 60%;
     }
 
     /* footer */
@@ -389,7 +135,5 @@
     .footer-bottom .family {
         display: none;
     }
-
-
 
 }
