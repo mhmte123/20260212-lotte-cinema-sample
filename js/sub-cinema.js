@@ -53,3 +53,17 @@ theaterList.forEach((list, id) => {
     })
 })
 
+let theaterTab = document.querySelectorAll(".theater-tab-menu div");
+let tabContent = document.querySelectorAll(".theater-info-sche-wrap .info-sche")
+console.log(theaterTab);
+
+theaterTab.forEach((tab, id) => {
+    tab.addEventListener("click", ()=>{
+        theaterTab.forEach((t, i) => {
+            t.classList.remove("active")
+            tabContent[i].classList.remove("active")
+        })
+        tab.classList.add("active")
+        tabContent[id].classList.add("active")
+    })
+})
