@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/respond-event.css">
     <link rel="stylesheet" href="./css/respond-curator.css">
     <link rel="stylesheet" href="./css/respond-upcoming.css">
+    <link rel="stylesheet" href="./css/respond-info.css">
     <script defer src="./js/index.js"></script>
     <link rel="shortcut icon" href="./images/logo-icon/favicon.ico">
 </head>
@@ -25,7 +26,8 @@
     <header>
         <div class="inner">
             <p class="ham-btn"><a href="#"><span></span><span></span><span></span></a></p>
-            <h1 class="main-logo"><a href="./index.html"><img src="./images/logo-icon/main-logo.png" alt="롯데시네마"></a></h1>
+            <h1 class="main-logo"><a href="./index.html"><img src="./images/logo-icon/main-logo.png" alt="롯데시네마"></a>
+            </h1>
             <nav>
                 <ul class="main-menu">
                     <li>
@@ -1073,13 +1075,30 @@
     <script>
         let swiper1 = new Swiper(".upcoming-wrap", {
             loop: true,
-            slidesPerView: 5,
-            spaceBetween: 40,
             centeredSlides: true,
+            spaceBetween: 40,
+            autoplay: {
+                delay: 3000
+            },
             navigation: {
                 nextEl: ".upcoming-next",
                 prevEl: ".upcoming-prev",
             },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 40,
+                }
+            }
         });
     </script>
 
