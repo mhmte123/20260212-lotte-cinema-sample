@@ -9,3 +9,18 @@ hamBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     menuWrap.classList.remove("active");
 })
+
+let nav = document.querySelector("header")
+let logoHeight = document.querySelector("nav").offsetHeight;
+console.log(logoHeight);
+// let sPos = document.documentElement.scrollTop;
+
+
+document.addEventListener("scroll", function (e) {
+    let sPos = document.documentElement.scrollTop;
+    if (sPos > logoHeight) {
+        nav.classList.add("active");
+    } else {
+        nav.classList.remove("active");
+    }
+})
