@@ -926,7 +926,10 @@ section {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    flex-wrap: wrap;
+}
+
+.info-list>li {
+    flex: 1;
 }
 
 .info-list>li i {
