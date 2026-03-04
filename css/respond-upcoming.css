@@ -1,11 +1,11 @@
 @media screen and (max-width:1280px) {
 
+    .upcoming-next,
+    .upcoming-prev {
+        display: none;
+    }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px) {}
 
-}
-
-@media screen and (max-width:480px) {
-    
-}
+@media screen and (max-width:480px) {}
