@@ -11,6 +11,12 @@ header {
     z-index: 1000;
 }
 
+header.active {
+    position: fixed;
+    background: black;
+    height: 100px;
+}
+
 .main-logo {
     width: 300px;
 }

@@ -822,6 +822,9 @@ section {
 
 
 /* -----------------------upcoming section ---------------------------*/
+.upcoming-top {
+    padding-bottom: 50px;
+}
 
 .upcoming-wrap-final {
     /* background-color: rgb(176, 212, 212); */
