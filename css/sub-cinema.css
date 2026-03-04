@@ -108,14 +108,14 @@ body {
 
 /* section */
 /* ------------------- 극장정보 ------------------- */
-/* .theater {
+.theater {
     background-image: url(../images/sub-cinema/theater-info.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center 78px;
     overflow: hidden;
     position: relative;
-} */
+}
 
 .theater::after {
     content: "";
@@ -168,9 +168,14 @@ body {
     margin-bottom: 100px;
     /* display: none; */
 }
+
+.theater-info-sche-wrap {
+    position: relative;
+}
 .theater-info-sche-wrap .info-sche {
     position: absolute;
     opacity: 0;
+    top: 0;
 }
 
 .theater-info-sche-wrap .info-sche.active {
