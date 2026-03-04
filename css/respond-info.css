@@ -1,0 +1,32 @@
+@media (max-width: 480px) {
+
+
+    .info-list>li:nth-child(2) p>span {
+        display: none;
+    }
+
+    .info-list>li:nth-child(2) p>i {
+        display: inline;
+        font-style: normal;
+    }
+
+
+    .info-list>li:nth-child(3) p>span {
+        display: none;
+    }
+
+
+    .info-list>li:nth-child(4) p>span {
+        display: none;
+    }
+
+
+    .info-list>li:nth-child(5) p>span {
+        display: none;
+    }
+
+
+    .info-list>li:nth-child(6) p>span {
+        display: none;
+    }
+}
