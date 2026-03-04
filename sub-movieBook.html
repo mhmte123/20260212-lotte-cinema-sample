@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데시네마</title>
+    <link rel="stylesheet" href="./css/pretendard-font.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub-movieBook.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/respond.css">
+    <!-- (반응형 respond) -->
+    <link rel="shortcut icon" href="./images/logo-icon/favicon.ico">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="inner">
+            <p class="ham-btn"><a href="#"><span></span><span></span><span></span></a></p>
+            <h1 class="main-logo"><a href="./index.html"><img src="./images/logo-icon/main-logo.png" alt="롯데시네마"></a>
+            </h1>
+            <nav>
+                <ul class="main-menu">
+                    <li>
+                        <a href="#">예매</a>
+                    </li>
+                    <li>
+                        <a href="./sub-movie.html">영화</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">박스오피스</a></li>
+                            <li><a href="#">상영예정작</a></li>
+                            <li><a href="#">롯데온리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub-cinema.html">영화관</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">전체극장</a></li>
+                            <li><a href="#">특별관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub-event/event-index.html">이벤트</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">현재 진행중인 이벤트</a></li>
+                            <li><a href="#">영화관련 이벤트</a></li>
+                            <li><a href="#">시사회</a></li>
+                            <li><a href="#">제휴할인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub-store/store-index.html">스토어</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">굿즈</a></li>
+                            <li><a href="#">관람권</a></li>
+                            <li><a href="#">스낵&음료</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="gnb-list">
+                <li><a href="#"><img src="./images/logo-icon/user-icon.png" alt="사용자"></a></li>
+                <li><a href="#"><img src="./images/logo-icon/ticket-icon.png" alt="티켓"></a></li>
+                <li><a href="#"><img src="./images/logo-icon/search-icon.png" alt="검색"></a></li>
+            </ul>
+
+        </div>
+    </header>
+    <div class="mobile-menu-wrap">
+        <p class="close-btn"><a href="#"><img src="./images/logo-icon/close-btn-icon.png" alt="closebtn"></a></p>
+        <ul class="mobile-menu-list">
+            <li>
+                <a href="#">예매</a>
+            </li>
+            <li>
+                <a href="./sub-movie.html">영화</a>
+                <ul class="mobile-sub-menu">
+                    <li><a href="#">박스오피스</a></li>
+                    <li><a href="#">상영예정작</a></li>
+                    <li><a href="#">롯데온리</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./sub-cinema.html">영화관</a>
+                <ul class="mobile-sub-menu">
+                    <li><a href="#">전체극장</a></li>
+                    <li><a href="#">특별관</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./sub-event/index.html">이벤트</a>
+                <ul class="mobile-sub-menu">
+                    <li><a href="#">현재 진행중인 이벤트</a></li>
+                    <li><a href="#">영화관련 이벤트</a></li>
+                    <li><a href="#">시사회</a></li>
+                    <li><a href="#">제휴할인</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./sub-event/event-index.html">스토어</a>
+                <ul class="mobile-sub-menu">
+                    <li><a href="#">굿즈</a></li>
+                    <li><a href="#">관람권</a></li>
+                    <li><a href="#">스낵&음료</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="gnb-list">
+            <li><a href="#"><img src="./images/logo-icon/user-icon.png" alt="사용자"></a></li>
+            <li><a href="#"><img src="./images/logo-icon/ticket-icon.png" alt="티켓"></a></li>
+            <li><a href="#"><img src="./images/logo-icon/search-icon.png" alt="검색"></a></li>
+        </ul>
+    </div>
+    <!-- 서브페이지 - 영화 예매 영역 -->
+    <main>
+        <div class="inner">
+            <div class="moviebook-top-area">
+                <section class="movie-select-area">
+                    <h2 class="blind">영화선택</h2>
+                    <!-- 영화 유형 선택 -->
+                    <div class="movie-type-area">
+                        <ul class="movie-type-list">
+                            <li class="active"><a href="#">전체</a></li>
+                            <li><a href="#">현재 상영작</a></li>
+                            <li><a href="#">상영 예정작</a></li>
+                            <li><a href="#">롯시픽</a></li>
+                            <li><a href="#">아르떼</a></li>
+                        </ul>
+                    </div>
+                    <!-- 해당 영화 리스트 선택 -->
+                    <div class="movie-select-area">
+                        <div class="movie-select-wrap">
+                            <!-- 영화 리스트 -->
+                            <div class="movie-select-inner-wrap">
+                                <ul class="movie-select-list">
+                                    <li class="pre3"><img src="./images/movie-poster/movie-poster-02.jpg"
+                                            alt="movie-poster"></li>
+                                    <li class="pre2"><img src="./images/movie-poster/movie-poster-05.jpg"
+                                            alt="movie-poster"></li>
+                                    <li class="pre1"><img src="./images/movie-poster/movie-poster-01.jpg"
+                                            alt="movie-poster"></li>
+                                    <li class="selected"><img src="./images/movie-poster/movie-poster-09.jpg"
+                                            alt="movie-poster"></li>
+                                    <li class="pre1"><img src="./images/movie-poster/movie-poster-06.jpg"
+                                            alt="movie-poster"></li>
+                                    <li class="pre2"><img src="./images/movie-poster/movie-poster-10.jpg"
+                                            alt="movie-poster"></li>
+                                    <li class="pre3"><img src="./images/movie-poster/movie-poster-03-2.jpg"
+                                            alt="movie-poster"></li>
+                                    <li><img src="./images/movie-poster/movie-poster-11.jpg" alt="movie-poster"></li>
+                                    <li><img src="./images/movie-poster/movie-poster-04.jpg" alt="movie-poster"></li>
+                                    <li><img src="./images/movie-poster/movie-poster-08.jpg" alt="movie-poster"></li>
+                                </ul>
+                                <!-- 화살표 아이콘 -->
+                                <ul class="arrow-btn">
+                                    <li class="arrow-btn-left"><a href="#"><img
+                                                src="./images/logo-icon/arrow-left-icon.png" alt="왼쪽 화살표"></a></li>
+                                    <li class="arrow-btn-right"><a href="#"><img
+                                                src="./images/logo-icon/arrow-right-icon.png" alt="오른쪽 화살표"></a></li>
+                                </ul>
+                            </div>
+                            <!-- 선택영화 주요 정보 -->
+                            <div class="movie-select-inner-text-wrap">
+                                <div class="title-wrap">
+                                    <span><img src="./images/curator/Age-12.png" alt="15세 관람가"></span>
+                                    <h3>왕과 사는 남자</h3>
+                                </div>
+                                <span>1시간 57분</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="moviebook-under-area">
+                <section class="cinema-select-area">
+                    <h2 class="blind">영화관선택</h2>
+                    <div class="cinema-type-area">
+                        <!-- 영화관 유형 선택 -->
+                        <ul class="cinema-type-tabmenu-list">
+                            <li class="active"><a href="#">전체</a></li>
+                            <li><a href="#">스페셜관</a></li>
+                        </ul>
+                    </div>
+                    <!-- 검색 아이콘 -->
+                    <div class="cinema-search-wrap">
+                        <a href="#">
+                            <span>극장찾기</span>
+                            <img src="./images/logo-icon/search-icon.png" alt="극장찾기">
+                        </a>
+                    </div>
+                    <!-- 지역별 영화관 리스트 -->
+                    <div class="cinema-list-area active">
+                        <div class="cinema-list-wrap loc-type">
+                            <ul class="cinema-list-left">
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">MY 영화관<span>(0)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="inner-wrap">서울<span>(23)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">경기/인천<span>(43)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">충청/대전<span>(12)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">전라/광주<span>(11)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">경북/대구<span>(15)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">경남/부산/울산<span>(23)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">강원<span>(5)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">제주<span>(2)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="cinema-list-right">
+                                <li class="active">
+                                    <a href="#">가산디지털<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">가양<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">강동<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">건대입구<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">김포공항<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">노원<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">도곡<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">독산<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">서울대입구<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">수락산<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">수유<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">신대방(구로디지털역)<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">신도림<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">신림<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">에비뉴엘(명동)<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">영등포<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">용산<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">월드타워<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">은평(롯데몰)<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">중랑<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">청량리<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">합정<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">홍대입구<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 스페셜 영화관 리스트 -->
+                    <div class="cinema-list-area">
+                        <div class="cinema-list-wrap sp-type">
+                            <ul class="cinema-list-left">
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="inner-wrap">샤롯데<span>(10)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">수퍼플렉스<span>(11)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">수퍼MX4D<span>(2)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">수퍼LED<span>(4)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">광음시네마<span>(19)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">광음LED<span>(2)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">리클라이너<span>(25)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">수퍼 4D<span>(4)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">씨네패밀리<span>(1)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="inner-wrap">씨네커플<span>(20)</span></div>
+                                        <span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="cinema-list-right">
+                                <li class="active">
+                                    <a href="#">월드타워<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">동탄<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">건대입구<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">에비뉴엘(명동)<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">김포공항<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">안산<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">평촌(범계역)<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">광주(백화점)<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#">광복<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">센텀시티<span><img src="./images/logo-icon/check_circle_fill.svg"
+                                                alt="icon-checked"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="time-select-area">
+                    <h2 class="blind">상영시간선택</h2>
+                    <!-- 날짜 선택 -->
+                    <div class="select-date-area">
+                        <div class="select-date-inner-wrap">
+                            <ul class="select-date-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>월</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>화</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>수</span></div>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>목</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>금</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>토</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>일</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>월</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>화</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>수</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>목</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>금</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="date-wrap"><span>00</span><span>토</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="arrow-btn">
+                                <li class="arrow-btn-left"><a href="#"><img src="./images/logo-icon/arrow-left-icon.png"
+                                            alt="왼쪽 화살표"></a></li>
+                                <li class="arrow-btn-right"><a href="#"><img
+                                            src="./images/logo-icon/arrow-right-icon.png" alt="오른쪽 화살표"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 영화관 선택 -->
+                    <div class="selected-cinema-list-area">
+                        <ul class="selected-cinema-list">
+                            <li><a href="#">가산디지털</a></li>
+                            <li><a href="#">김포공항</a></li>
+                            <li><a href="#">에비뉴엘(명동)</a></li>
+                            <li class="active"><a href="#">월드타워</a></li>
+                            <li><a href="#">청량리</a></li>
+                        </ul>
+                    </div>
+                    <!-- 시간대 선택 -->
+                    <div class="time-list-area">
+                        <ul class="select-date-type-list">
+                            <li class="active"><a href="#">전체</a></li>
+                            <li><a href="#">스페셜관</a></li>
+                            <li><a href="#">Atmos</a></li>
+                            <li><a href="#">오전</a></li>
+                            <li><a href="#">13시 이후</a></li>
+                            <li><a href="#">19시 이후</a></li>
+                            <li><a href="#">심야</a></li>
+                        </ul>
+                    </div>
+                    <!-- 상영 시간 선택 -->
+                    <div class="time-select-under-area">
+                        <div class="time-list-wrap">
+                            <div class="screen-list-wrap">
+                                <div class="screen-type-title">
+                                    <p class="screen-type">샤롯데<span class="screen-type-info">1관 샤롯데 LASER</span></p>
+                                    <span>2D</span>
+                                </div>
+                                <ul class="time-list">
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">09:30</span><span
+                                                        class="end-time"><span>-</span>11:37</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">12:10</span><span
+                                                        class="end-time"><span>-</span>14:17</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">14:50</span><span
+                                                        class="end-time"><span>-</span>16:57</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">17:30</span><span
+                                                        class="end-time"><span>-</span>19:37</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">20:10</span><span
+                                                        class="end-time"><span>-</span>22:17</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="screen-list-wrap">
+                                <div class="screen-type-title">
+                                    <p class="screen-type">샤롯데<span class="screen-type-info">2관 샤롯데 LASER</span></p>
+                                    <span>2D</span>
+                                </div>
+                                <ul class="time-list">
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">11:10</span><span
+                                                        class="end-time"><span>-</span>13:17</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">13:50</span><span
+                                                        class="end-time"><span>-</span>15:57</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">16:30</span><span
+                                                        class="end-time"><span>-</span>18:37</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">19:10</span><span
+                                                        class="end-time"><span>-</span>21:17</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">21:50</span><span
+                                                        class="end-time"><span>-</span>23:57</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="screen-list-wrap">
+                                <div class="screen-type-title">
+                                    <p class="screen-type">영어자막<span class="screen-type-info">3관 LASER</span></p>
+                                    <span>2D</span>
+                                </div>
+                                <ul class="time-list">
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">13:10</span><span
+                                                        class="end-time"><span>-</span>15:17</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="time-item-wrap">
+                                                <p class="time-info"><span class="start-time">15:50</span><span
+                                                        class="end-time"><span>-</span>17:57</span></p>
+                                                <p class="seat-status"><span class="current">88</span><span
+                                                        class="total"><span>/</span>120석</span></p>
+                                                <p class="screen-info">1관</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="inner">
+            <!-- <div class="footer-left"> -->
+            <div class="footer-top">
+                <ul class="util-menu">
+                    <li><a href="#"><span>회사소개</span></a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">L.POINT회원안내</a></li>
+                    <li><a href="#"><span>이메일무단수집거부</span></a></li>
+                    <li><a href="#"><span>고정형 영상정보처리기기 운영 및</span></a></li>
+                    <li><a href="#"><span>배정기준</span></a></li>
+                    <li><a href="#"><span>채용안내</span></a></li>
+                    <li><a href="#"><span>광고/임대문의</span></a></li>
+                    <li><a href="#"><span>사회적책임</span></a></li>
+                </ul>
+
+                <div class="search-wrap search">
+                    <a href="#">
+                        <img src="./images/logo-icon/search-icon.png" alt="극장찾기">
+                        <p>극장찾기</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p class="footer-logo"><img src="./images/logo-icon/footer-logo.png" alt="롯데시네마"></p>
+                    <address>
+                        <p>
+                            <strong>롯데컬처웍스㈜</strong>
+                            <span>서울특별시 송파구 올림픽로 295 삼성생명 잠실빌딩 18F</span>
+                        </p>
+                        <p>
+                            <span>대표 이메일 lottecultureworks@lotte.net</span>
+                            <span>고객센터 1544-8855 (유료)</span>
+                            <span>사업자등록번호 313-87-00979</span>
+                            <span>통신판매신고번호 2018-서울송파-1184</span>
+                        </p>
+                        <p>
+                            <span>대표이사 김종열</span>
+                            <span>개인정보 보호 책임자 이수민</span>
+                            <span>호스팅 제공자 롯데이노베이트</span>
+                        </p>
+                        <p class="copy">Copyright © LOTTE Cultureworks All Right Reserved.</p>
+                    </address>
+                </div>
+
+                <div class="footer-bottom-right">
+                    <div class="search-wrap-mobile search">
+                        <a href="#">
+                            <img src="./images/logo-icon/search-icon.png" alt="극장찾기">
+                            <p>극장찾기</p>
+                        </a>
+                    </div>
+
+                    <div class="family">
+                        <img src="./images/logo-icon/family-friendly.png" alt="가족친화 인증기업선정">
+                        <p>가족친화<br> 인증기업<br> 선정</p>
+                    </div>
+
+                    <ul class="sns-list">
+                        <li><a href="#"><img src="./images/logo-icon/youtube-icon.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="./images/logo-icon/insta-icon.png" alt="insta"></a></li>
+                        <li><a href="#"><img src="./images/logo-icon/facebook-icon.png" alt="facebook"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="footer-right"> -->
+            <!-- </div> -->
+        </div>
+    </footer>
+</body>
+
+</html>
