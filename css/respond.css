@@ -62,6 +62,17 @@
         transition: 0.5s;
         /* left: 0; */
     }
+    
+    .mobile-menu-list>li {
+        /* padding: 20px; */
+        line-height: 3;
+    }
+
+    .mobile-sub-menu {
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
 
     .ham-btn {
         display: block;
