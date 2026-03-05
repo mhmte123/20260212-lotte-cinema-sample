@@ -24,14 +24,15 @@
 <body>
     <!-- header -->
     <header>
+        <div class="sub-bg"></div>
         <div class="inner">
             <p class="ham-btn"><a href="#"><span></span><span></span><span></span></a></p>
             <h1 class="main-logo"><a href="./index.html"><img src="./images/logo-icon/main-logo.png" alt="롯데시네마"></a>
             </h1>
             <nav>
                 <ul class="main-menu">
-                    <li>
-                        <a href="#">예매</a>
+                    <li class="n-sub">
+                        <a href="./sub-movieBook.html">예매</a>
                     </li>
                     <li>
                         <a href="./sub-movie.html">영화</a>
@@ -79,34 +80,34 @@
         <p class="close-btn"><a href="#"><img src="./images/logo-icon/close-btn-icon.png" alt="closebtn"></a></p>
         <ul class="mobile-menu-list">
             <li>
-                <a href="#">예매</a>
+                <a href="./sub-movieBook.html">예매</a>
             </li>
             <li>
-                <a href="./sub-movie.html">영화</a>
+                <a href="#">영화</a>
                 <ul class="mobile-sub-menu">
-                    <li><a href="#">박스오피스</a></li>
+                    <li><a href="./sub-movie.html">박스오피스</a></li>
                     <li><a href="#">상영예정작</a></li>
                     <li><a href="#">롯데온리</a></li>
                 </ul>
             </li>
             <li>
-                <a href="./sub-cinema.html">영화관</a>
+                <a href="#">영화관</a>
                 <ul class="mobile-sub-menu">
-                    <li><a href="#">전체극장</a></li>
+                    <li><a href="./sub-cinema.html">전체극장</a></li>
                     <li><a href="#">특별관</a></li>
                 </ul>
             </li>
             <li>
-                <a href="./sub-event/index.html">이벤트</a>
+                <a href="#">이벤트</a>
                 <ul class="mobile-sub-menu">
-                    <li><a href="#">현재 진행중인 이벤트</a></li>
+                    <li><a href="./sub-event/event-index.html">현재 진행중인 이벤트</a></li>
                     <li><a href="#">영화관련 이벤트</a></li>
                     <li><a href="#">시사회</a></li>
                     <li><a href="#">제휴할인</a></li>
                 </ul>
             </li>
             <li>
-                <a href="./sub-event/event-index.html">스토어</a>
+                <a href="#">스토어</a>
                 <ul class="mobile-sub-menu">
                     <li><a href="#">굿즈</a></li>
                     <li><a href="#">관람권</a></li>
@@ -124,9 +125,9 @@
 
     <!-- main-slider -->
     <div class="main-slider-wrap">
-        <div class="main-slider-inner">
-            <ul class="main-slider-list">
-                <li>
+        <div class="main-slider-inner Swiper">
+            <ul class="main-slider-list swiper-wrapper">
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-01.jpg" alt="no1-movie-image">
                     </div>
@@ -155,7 +156,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-02.jpg" alt="no1-movie-image">
                     </div>
@@ -184,7 +185,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-03.jpg" alt="no1-movie-image">
                     </div>
@@ -213,7 +214,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-04.jpg" alt="no1-movie-image">
                     </div>
@@ -240,7 +241,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-05.jpg" alt="no1-movie-image">
                     </div>
@@ -268,7 +269,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-06.jpg" alt="no1-movie-image">
                     </div>
@@ -297,7 +298,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-07.jpg" alt="no1-movie-image">
                     </div>
@@ -326,7 +327,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-08.jpg" alt="no1-movie-image">
                     </div>
@@ -355,7 +356,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-09.jpg" alt="no1-movie-image">
                     </div>
@@ -384,7 +385,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-10.jpg" alt="no1-movie-image">
                     </div>
@@ -470,10 +471,10 @@
                     </li>
                 </ul>
                 <ul class="arrow-btn">
-                    <li class="left-btn"><a href="#">
+                    <li class="left-btn main-slider-prev"><a href="#">
                             <img src="./images/logo-icon/icon-arrow-left.png" alt="arrow-left"></a>
                     </li>
-                    <li class="right-btn"><a href="#">
+                    <li class="right-btn main-slider-next"><a href="#">
                             <img src="./images/logo-icon/icon-arrow-right.png" alt="arrow-right"></a></li>
                 </ul>
             </div>
@@ -963,8 +964,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="swiper-button-next upcoming-next"></div>
-                    <div class="swiper-button-prev upcoming-prev"></div>
+                    <!-- <div class="swiper-button-next upcoming-next"></div>
+                    <div class="swiper-button-prev upcoming-prev"></div> -->
                 </div>
             </div>
         </section>
@@ -1071,6 +1072,22 @@
         </div>
     </footer>
     <!-- Swiper JS -->
+    <!-- swiper main -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        let swiperMain = new Swiper(".main-slider-inner", {
+            loop: true,
+            navigation: {
+                nextEl: ".main-slider-next",
+                prevEl: ".main-slider-prev"
+            },
+            autoplay: {
+                delay: 3000,
+            },
+            effect: "fade"
+        })
+    </script>
+    <!-- swiper upcoming -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         let swiper1 = new Swiper(".upcoming-wrap", {
@@ -1087,21 +1104,21 @@
 
             breakpoints: {
                 320: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 20,
+                    slidesPerView: 2.2,
+                    spaceBetween: 10,
                 },
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 30,
+                    spaceBetween: 10,
                 },
                 1024: {
                     slidesPerView: 5,
-                    spaceBetween: 40,
+                    spaceBetween: 30,
                 }
             }
         });
     </script>
-
+    <!-- swiper event -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         let swiper2 = new Swiper(".event-left", {
