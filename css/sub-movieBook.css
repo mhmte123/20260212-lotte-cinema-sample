@@ -215,7 +215,7 @@ body {
 
 .cinema-list-wrap>ul {
     height: 35em;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .cinema-list-wrap>ul>li>a {
@@ -258,6 +258,7 @@ body {
 .cinema-list-right {
     flex: 1;
     /* border: 1px solid skyblue; */
+    overflow-y: scroll;
 }
 
 .cinema-list-right>li {
@@ -347,6 +348,21 @@ body {
 .select-date-list>.active>a>div {
     font-weight: 700;
     border-color: #da291c;
+}
+
+.select-date-list>li>a>.sat {
+    color: blue;
+}
+
+.select-date-list>li>a>.sun,
+.select-date-list>li>a>.holi {
+    color: #da291c;
+}
+
+.select-date-list>li>a>.none {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.45;
 }
 
 /* 영화관 선택 */
@@ -592,4 +608,19 @@ strong {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     padding: 12px 13px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #161616;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DA291C;
+    border-radius: 10px;
 }

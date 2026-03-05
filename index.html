@@ -125,9 +125,9 @@
 
     <!-- main-slider -->
     <div class="main-slider-wrap">
-        <div class="main-slider-inner">
-            <ul class="main-slider-list">
-                <li>
+        <div class="main-slider-inner Swiper">
+            <ul class="main-slider-list swiper-wrapper">
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-01.jpg" alt="no1-movie-image">
                     </div>
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-02.jpg" alt="no1-movie-image">
                     </div>
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-03.jpg" alt="no1-movie-image">
                     </div>
@@ -214,7 +214,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-04.jpg" alt="no1-movie-image">
                     </div>
@@ -241,7 +241,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-05.jpg" alt="no1-movie-image">
                     </div>
@@ -269,7 +269,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-06.jpg" alt="no1-movie-image">
                     </div>
@@ -298,7 +298,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-07.jpg" alt="no1-movie-image">
                     </div>
@@ -327,7 +327,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-08.jpg" alt="no1-movie-image">
                     </div>
@@ -356,7 +356,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-09.jpg" alt="no1-movie-image">
                     </div>
@@ -385,7 +385,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="swiper-slide">
                     <div class="main-slider-image">
                         <img src="./images/movie-images/movie-image-10.jpg" alt="no1-movie-image">
                     </div>
@@ -471,10 +471,10 @@
                     </li>
                 </ul>
                 <ul class="arrow-btn">
-                    <li class="left-btn"><a href="#">
+                    <li class="left-btn main-slider-prev"><a href="#">
                             <img src="./images/logo-icon/icon-arrow-left.png" alt="arrow-left"></a>
                     </li>
-                    <li class="right-btn"><a href="#">
+                    <li class="right-btn main-slider-next"><a href="#">
                             <img src="./images/logo-icon/icon-arrow-right.png" alt="arrow-right"></a></li>
                 </ul>
             </div>
@@ -964,8 +964,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="swiper-button-next upcoming-next"></div>
-                    <div class="swiper-button-prev upcoming-prev"></div>
+                    <!-- <div class="swiper-button-next upcoming-next"></div>
+                    <div class="swiper-button-prev upcoming-prev"></div> -->
                 </div>
             </div>
         </section>
@@ -1072,6 +1072,22 @@
         </div>
     </footer>
     <!-- Swiper JS -->
+    <!-- swiper main -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        let swiperMain = new Swiper(".main-slider-inner", {
+            loop: true,
+            navigation: {
+                nextEl: ".main-slider-next",
+                prevEl: ".main-slider-prev"
+            },
+            autoplay: {
+                delay: 3000,
+            },
+            effect: "fade"
+        })
+    </script>
+    <!-- swiper upcoming -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         let swiper1 = new Swiper(".upcoming-wrap", {
@@ -1088,21 +1104,21 @@
 
             breakpoints: {
                 320: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 20,
+                    slidesPerView: 2.2,
+                    spaceBetween: 10,
                 },
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 30,
+                    spaceBetween: 10,
                 },
                 1024: {
                     slidesPerView: 5,
-                    spaceBetween: 40,
+                    spaceBetween: 30,
                 }
             }
         });
     </script>
-
+    <!-- swiper event -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         let swiper2 = new Swiper(".event-left", {
