@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이벤트-롯데시네마</title>
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
     <link rel="stylesheet" href="./css/event-style.css">
     <link rel="stylesheet" href="./css/pretendard-font.css">
 </head>
@@ -72,7 +73,7 @@
                 <h2 class="section-title">롯데시네마 강력추천 이벤트!</h2>
                 <div class="event-arco-wrap">
                     <ul class="event-arco-list">
-                        <li>
+                        <li class="active">
                             <a href="#">
                                 <div class="img-box"><img src="./images/acrco-main1.png" alt="영화 햄넷 아카데미 기획전">
                                 </div>
@@ -135,7 +136,7 @@
                 <h2 class="section-title">현재 진행중인 이벤트</h2>
                 <div class="event-sub-tab-wrap">
                     <ul class="event-sub-tab-menu-list">
-                        <li><a href="#">전체</a></li>
+                        <li class="active"><a href="#">전체</a></li>
                         <li><a href="#">굿즈패키지</a></li>
                         <li><a href="#">시사회</a></li>
                         <li><a href="#">무대인사</a></li>
@@ -143,7 +144,7 @@
                         <li><a href="#">제휴할인혜택</a></li>
                     </ul>
                     <div class="event-sub-wrap">
-                        <ul class="event-sub-list">
+                        <ul class="event-sub-list active">
                             <li>
                                 <a href="#">
                                     <div class="img-box"><img src="./images/sub-event8.png" alt="휴민트 무대인사"></div>
@@ -247,12 +248,12 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- page -->
-                        <div class="page">
-                            <a href="#"><img src="./images/pg-left.png" alt="왼쪽 페이지"></a>
-                            <div class="pagenb"> <span>1 </span><span>/ 10</span></div>
-                            <a href="#"><img src="./images/pg-right.png" alt="오른쪽 페이지"></a>
-                        </div>
+                    </div>
+                    <!-- page -->
+                    <div class="page">
+                        <a href="#"><img src="./images/pg-left.png" alt="왼쪽 페이지"></a>
+                        <div class="pagenb"> <span>1 </span><span>/ 10</span></div>
+                        <a href="#"><img src="./images/pg-right.png" alt="오른쪽 페이지"></a>
                     </div>
                     <!-- 더 찾아보기 -->
                     <form class="event-search">
@@ -330,6 +331,31 @@
             <!-- </div> -->
         </div>
     </footer>
+    <script>
+        let arco = document.querySelectorAll(".event-arco-list>li");
+        arco.forEach((v) => {
+            v.addEventListener("mouseenter", () => {
+                arco.forEach(vv => vv.classList.remove("active"))
+                v.classList.add("active");
+            })
+        })
+
+        let tabTitles = document.querySelectorAll(".event-sub-tab-menu-list>li");
+        console.log(tabTitles);
+
+        tabTitles.forEach((tab, id) => {
+            console.log(tabTitles);
+            tab.addEventListener("click", () => {
+                tabTitles.forEach((t, i) => {
+                    t.classList.remove("active");
+                })
+                tab.classList.add("active");
+            })
+        })
+
+
+
+    </script>
 </body>
 
 </html>

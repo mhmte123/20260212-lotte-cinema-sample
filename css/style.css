@@ -823,7 +823,11 @@ section {
 
 /* -----------------------upcoming section ---------------------------*/
 .upcoming-top {
-    padding-bottom: 50px;
+    padding-bottom: 3.125em;
+}
+
+.upcoming h2 {
+    font-size: 2.25em;
 }
 
 .upcoming-wrap-final {
@@ -903,7 +907,7 @@ section {
     padding-bottom: 5px;
 }
 
-.upcoming-next,
+/* .upcoming-next,
 .upcoming-prev {
     color: #da291c;
 }
@@ -914,7 +918,7 @@ section {
 
 .upcoming-wrap-final .swiper-button-next {
     right: -100px;
-}
+} */
 
 /* ---------------------- info section --------------------------*/
 .info-wrap {
