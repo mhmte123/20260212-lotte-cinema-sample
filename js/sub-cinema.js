@@ -89,3 +89,16 @@ calendarDate.forEach((cal, id) => {
         movieList[id].classList.add("active");
     })
 })
+
+let movieWrap = document.querySelector(".movie-list-wrap");
+let moreBtn = document.querySelector(".more-button");
+// console.log(moreBtn);
+
+
+moreBtn.addEventListener("click", (e)=>{
+    e.preventDefault();
+    let mHeight = movieWrap.scrollHeight;
+    console.log(mHeight);
+    movieWrap.style.height = mHeight + "px";
+    moreBtn.style.display = "none";
+})

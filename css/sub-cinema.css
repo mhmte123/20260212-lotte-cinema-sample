@@ -176,7 +176,9 @@ body {
 
 .theater-info-sche-wrap {
     position: relative;
+    overflow: hidden;
 }
+
 .theater-info-sche-wrap .info-sche {
     position: absolute;
     opacity: 0;
@@ -603,6 +605,10 @@ body {
     height: 32px;
 }
 
+.movie-list-wrap {
+    height: 850px;
+    overflow: hidden;
+}
 
 .movie-time-wrap {
     padding: 12px 0 50px;
