@@ -3,6 +3,16 @@
         font-size: 14px;
     }
 
+    .slider-poster-list-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider-poster-list {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+
     /* footer */
     .footer-bottom>.footer-bottom-left {
         flex-wrap: wrap;
