@@ -215,7 +215,7 @@ body {
 
 .cinema-list-wrap>ul {
     height: 35em;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .cinema-list-wrap>ul>li>a {
@@ -258,6 +258,7 @@ body {
 .cinema-list-right {
     flex: 1;
     /* border: 1px solid skyblue; */
+    overflow-y: scroll;
 }
 
 .cinema-list-right>li {

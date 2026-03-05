@@ -25,6 +25,11 @@ let cinemaLocTypeLists = document.querySelectorAll(".loc-type>.cinema-list-left>
 let cinemaSpTypeLists = document.querySelectorAll(".sp-type>.cinema-list-left>li");
 console.log(cinemaLocTypeLists, cinemaSpTypeLists)
 
+// 지역별 영화관 지점 리스트 지정하는 변수
+let theaterLocTypeLists = document.querySelectorAll(".loc-type>.cinema-list-right>li")
+// 스폐셜관 영화관 지점 리스트 지정하는 변수
+let theaterSpTypeLists = document.querySelectorAll(".sp-type>.cinema-list-right>li")
+
 
 // forEach로 특정 메뉴를 클릭할 때 active 적용
 cinemaTypeTabTitles.forEach((tab, i) => {
@@ -60,6 +65,20 @@ cinemaSpTypeLists.forEach((sp, i) => {
         cinemaSpTypeLists[i].classList.add("active");
     })
 })
+
+// 영화관 지점 선택할 때 active 적용
+theaterLocTypeLists.forEach((loc, i) => {
+    loc.addEventListener("click", (e) => {
+        e.preventDefault();
+        theaterLocTypeLists.forEach((l) => {
+            l.classList.remove("active");
+        })
+        theaterLocTypeLists[i].classList.add("active");
+    })
+})
+
+// theaterSpTypeLists.forEach((sp, i) => { })
+
 
 // 우측영역 날짜 영역을 지정하는 변수 지정
 let selectDateItems = document.querySelectorAll(".select-date-list>li");
