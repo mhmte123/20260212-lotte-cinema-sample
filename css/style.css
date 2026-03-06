@@ -15,8 +15,6 @@ body {
     display: none;
 }
 
-
-
 /* ----------------------- main slider -----------------------------*/
 .main-slider-wrap {
     overflow: hidden;
@@ -63,11 +61,10 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
-
 .text-box-wrap {
     position: absolute;
     top: 220px;
-    left: 120px;
+    left: 150px;
     z-index: 2;
     max-width: 600px;
 }
@@ -124,8 +121,8 @@ body {
     opacity: 0.7;
     line-height: 1.5;
     font-size: 0.88em;
-    margin-bottom: 60px;
-    text-align: left;
+    margin-bottom: 30px;
+    text-align: start;
 }
 
 .btn-wrap {
@@ -155,25 +152,26 @@ body {
 }
 
 .slider-poster-list-wrap {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    z-index: 100;
+    overflow: hidden;
+    /* background-color: pink; */
+    width: 70%;
 }
 
-.slider-poster-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
+.slider-poster-list-wrap .swiper-slide {
+    transform: scale(0.8);
+    transition: 0.3s;
 }
 
-.slider-poster-list>li {
-    position: relative;
-    display: none;
-    flex-shrink: 0;
+.slider-poster-list-wrap .swiper-slide-prev {
+    transform: scale(0.9) translateX(-18px);
+}
+
+.slider-poster-list-wrap .swiper-slide-next {
+    transform: scale(0.9) translateX(18px);
+}
+
+.slider-poster-list-wrap .swiper-slide-active {
+    transform: scale(1);
 }
 
 .slider-poster-list>li img {
@@ -197,51 +195,42 @@ body {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.slider-poster-list .rank-08,
-.slider-poster-list .rank-04 {
-    display: block;
-    width: 140px;
+
+.slider-poster-list-wrap-outer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1600px;
+    z-index: 100;
+    /* border: 2px solid blue; */
 }
 
-.slider-poster-list .rank-09,
-.slider-poster-list .rank-03 {
-    display: block;
-    width: 160px;
-}
-
-.slider-poster-list .rank-10,
-.slider-poster-list .rank-02 {
-    display: block;
-    width: 180px;
-}
-
-.slider-poster-list .rank-01 {
-    display: block;
-    width: 200px;
-}
-
-.slider-poster-list-wrap .arrow-btn {
+.slider-poster-list-wrap-outer .arrow-btn {
     position: absolute;
     top: 50%;
-    left: 0;
     width: 100%;
     transform: translateY(-50%);
 }
 
-.slider-poster-list-wrap .arrow-btn>li {
+.slider-poster-list-wrap-outer .arrow-btn>li {
     position: absolute;
+    z-index: 1000;
+    /* border: 1px solid red; */
 }
 
-.slider-poster-list-wrap .arrow-btn>li img {
-    width: 10px;
+.slider-poster-list-wrap-outer .arrow-btn>li>a {
+    display: block;
+    /* background-color: green; */
+    width: 20px;
 }
 
-.slider-poster-list-wrap .arrow-btn .left-btn {
-    left: 15%;
+.slider-poster-list-wrap-outer .arrow-btn .left-btn {
+    left: 210px;
 }
 
-.slider-poster-list-wrap .arrow-btn .right-btn {
-    right: 15%;
+.slider-poster-list-wrap-outer .arrow-btn .right-btn {
+    right: 210px;
 }
 
 /* section */
