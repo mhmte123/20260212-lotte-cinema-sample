@@ -9,6 +9,20 @@
     }
 }
 
+@media screen and (max-width:860px) {
+    .curator-moive-poster {
+        width: 38%;
+    }
+
+    .curator-moive-info {
+        width: 65%;
+    }
+
+    .curator-moive-info .plot-info {
+        width: auto;
+    }
+}
+
 @media screen and (max-width:768px) {
 
     /* curator-moive-set - 추천영화 리스트 아이템*/
@@ -21,24 +35,20 @@
         display: block;
     }
 
-    /* curator-moive-item */
-    .curator-moive-item {
-        /* border: 1px solid blue; */
-        flex-direction: column;
-    }
+
 
     .curator-moive-item .curator-moive-poster>img {
-        width: 50%;
+        /* width: 50%; */
         border-radius: 12px;
     }
 
     .curator-moive-item.active .curator-moive-poster>img {
-        width: 50%;
+        /* width: 50%; */
     }
 
     /* 추천 리스트 아이템 - 영화내용*/
     .curator-moive-info .plot-info {
-        display: none;
+        /* display: none; */
     }
 
     /* 추천 영화 광고 영역 */
@@ -46,6 +56,44 @@
     .curator-ad-item {
         flex-direction: column;
     }
+
+    .curator-moive-act-wrap>li>a {
+        padding: 0.5rem 1rem;
+    }
 }
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+
+    /* curator-moive-item */
+    .curator-moive-item {
+        /* border: 1px solid blue; */
+        flex-direction: column;
+    }
+
+    .curator-moive-poster {
+        width: 90%;
+    }
+
+    .curator-moive-item.swiper-slide .curator-moive-poster>img {
+        transform: scale(1);
+    }
+
+    .curator-moive-info {
+        width: 90%;
+    }
+
+
+    .curator-moive-item.swiper-slide {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    /* 추천 리스트 아이템 - 영화내용*/
+    .curator-moive-info .plot-info {
+        display: none;
+    }
+
+    .curator-moive-act-wrap {
+        justify-content: center;
+    }
+}
