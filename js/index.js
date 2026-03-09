@@ -25,7 +25,7 @@ document.addEventListener("scroll", function (e) {
     }
 })
 
-let mobileWrap = document.querySelector(".mobile-menu-wrap");
+// let mobileWrap = document.querySelector(".mobile-menu-wrap");
 let mainMenu = document.querySelectorAll(".main-menu>li");
 // let fMain = document.querySelectorAll(".main-menu>li>a");
 let subMenu = document.querySelectorAll(".sub-menu");
@@ -43,7 +43,7 @@ siteInit();
 
 window.addEventListener("resize", () => {
     siteInit();
-    mobileWrap.style.left = "-9999px";
+    menuWrap.classList.remove("active");
 })
 
 mainMenu.forEach(main => {
@@ -80,7 +80,7 @@ mobileMenu.forEach(mobile => {
     mobile.addEventListener("click", (e) => {
         if (wWidth <= 768) {
             let m = mobile.nextElementSibling;
-            console.log(m);
+            // console.log(m);
             // 서브메뉴 높이
             let sHeight = m.scrollHeight;
             console.log(sHeight);

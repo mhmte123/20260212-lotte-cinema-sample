@@ -79,7 +79,7 @@
                 <h2 class="section-title">스토어</h2>
                 <div class="store-sub-tab-wrap">
                     <ul class="store-sub-tab-menu-list">
-                        <li><a href="#">전체</a></li>
+                        <li class="active"><a href="#">전체</a></li>
                         <li><a href="#">관람권</a></li>
                         <li><a href="#">스낵음료</a></li>
                         <li><a href="#">굿즈</a></li>
@@ -195,7 +195,7 @@
                             <a href="#"><img src="./images/pg-right.png" alt="오른쪽 페이지"></a>
                         </div>
                         <div class="naver-store"><a href="#"><img src="./images/naver-store-icon.png"
-                                    alt="네이버스토어 바로가기"></a></div>
+                                    alt="네이버스토어 바로가기"><span> 바로가기</span></a></div>
                     </div>
                 </div>
             </section>
@@ -204,11 +204,31 @@
     <script>
         let arco = document.querySelectorAll(".store-arco-list>li");
         arco.forEach((v) => {
-            v.addEventListener("mouseenter", () => {
+            v.addEventListener("click", () => {
                 arco.forEach(vv => vv.classList.remove("active"))
                 v.classList.add("active");
             })
         })
+        // let current = 0;
+        // function slideMove() {
+        //     current++;
+        //     if (current == 5) {
+        //         current = 0;
+        //     }
+        //     arco.forEach(vv => classList.remove("active"));
+        //     arco[current].classList.add("active");
+        // }
+        let tabTitles = document.querySelectorAll(".store-sub-tab-menu-list>li");
+        tabTitles.forEach((tab, id) => {
+            tab.addEventListener("click", (e) => {
+                e.preventDefault();
+                tabTitles.forEach((t, i) => {
+                    t.classList.remove("active");
+                })
+                tab.classList.add("active");
+            })
+        })
+
     </script>
 </body>
 
