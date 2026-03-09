@@ -641,17 +641,20 @@ section {
 }
 
 .curator-part .curator-info-arrow .arrow-btn>.arrow-btn-left>a {
-    left: 12px;
+    left: -50px;
+    /* background: gray; */
 }
 
 .curator-part .curator-info-arrow .arrow-btn>.arrow-btn-right>a {
-    right: 12px;
+    right: -50px;
+    /* background: green; */
 }
 
 /* curator-moive-inner-wrap - 숨김처리 하는 영역*/
 .curator-moive-inner-wrap {
     /* border: 1px solid rgba(255, 255, 255, 0.55); */
-    margin: 0 72px;
+    /* background-color: darkcyan; */
+    /* margin: 0 72px; */
     overflow: hidden;
     position: relative;
 }
@@ -659,8 +662,8 @@ section {
 /* curator-moive-set - 추천영화 리스트 아이템*/
 .curator-moive-set {
     display: flex;
-    gap: 12px;
-    width: calc(100% * 5 / 1.2 - 12px);
+    /* gap: 12px; */
+    /* width: calc(100% * 5 / 1.2 - 12px); */
 }
 
 
@@ -668,13 +671,13 @@ section {
 .curator-moive-item {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 2em;
     /* border: 1px solid blue; */
 }
 
 /* 추천 리스트 아이템 - 영화 포스터*/
 .curator-moive-poster {
-    /* width: 385px; */
+    width: 50%;
     /* height: 548px; */
     /* aspect-ratio: 385/548; */
     /* object-fit: cover; */
@@ -693,14 +696,28 @@ section {
     /* padding: 0; */
 }
 
-.curator-moive-item .curator-moive-poster>img {
-    width: 60%;
-    /* height: 100%; */
-    border-radius: 30px;
+.curator-moive-item.swiper-slide {
+    opacity: 0.3;
+    filter: blur(0.8px);
 }
 
-.curator-moive-item.active .curator-moive-poster>img {
-    width: 100%;
+.curator-moive-item.swiper-slide-active {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.curator-moive-item.swiper-slide .curator-moive-poster>img {
+    /* width: 60%; */
+    /* height: 100%; */
+    transform: scale(0.75);
+    /* transform-origin: 0 50%; */
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.curator-moive-item.swiper-slide-active .curator-moive-poster>img {
+    /* width: 100%; */
+    transform: scale(1);
 }
 
 /* 추천 리스트 아이템 - 우측영역 세로 정렬 */
@@ -774,6 +791,7 @@ section {
     word-break: keep-all;
     text-overflow: ellipsis;
     padding-right: 10px;
+    text-align: start;
 }
 
 /* 하단 영화 알아보기 버튼 */
