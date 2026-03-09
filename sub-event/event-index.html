@@ -248,6 +248,34 @@
                                 </a>
                             </li>
                         </ul>
+                        <ul class="event-sub-list">
+                            <li>
+                                <a href="#">
+                                    <div class="img-box"><img src="./images/sub-event3.png" alt="텔레토비 터비토스트 키링 콤보 런칭">
+                                    </div>
+                                    <div class="text-box">
+                                        <p>굿즈패키지</p>
+                                        <div class="text-title">
+                                            <p> 텔레토비 터비토스트 키링 콤보 런칭</p>
+                                        </div>
+                                        <span>2026.02.01 ~ 2026.03.31</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-box"><img src="./images/sub-event3.png" alt="텔레토비 터비토스트 키링 콤보 런칭">
+                                    </div>
+                                    <div class="text-box">
+                                        <p>굿즈패키지</p>
+                                        <div class="text-title">
+                                            <p> 텔레토비 터비토스트 키링 콤보 런칭</p>
+                                        </div>
+                                        <span>2026.02.01 ~ 2026.03.31</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <!-- page -->
                     <div class="page">
@@ -334,18 +362,30 @@
     <script>
         let arco = document.querySelectorAll(".event-arco-list>li");
         arco.forEach((v) => {
-            v.addEventListener("mouseenter", () => {
+            v.addEventListener("click", () => {
                 arco.forEach(vv => vv.classList.remove("active"))
                 v.classList.add("active");
             })
         })
+        // let current = 0;
+        // function slideMove() {
+        //     current++;
+        //     if (current == 5) {
+        //         current = 0;
+        //     }
+        //     arco.forEach(vv => vv.classList.remove("active"));
+        //     arco[current].classList.add("active");
+        // }
+        // setInterval(slideMove, 3000);
+
 
         let tabTitles = document.querySelectorAll(".event-sub-tab-menu-list>li");
         console.log(tabTitles);
 
         tabTitles.forEach((tab, id) => {
             console.log(tabTitles);
-            tab.addEventListener("click", () => {
+            tab.addEventListener("click", (e) => {
+                e.preventDefault();
                 tabTitles.forEach((t, i) => {
                     t.classList.remove("active");
                 })
