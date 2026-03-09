@@ -15,8 +15,6 @@ body {
     display: none;
 }
 
-
-
 /* ----------------------- main slider -----------------------------*/
 .main-slider-wrap {
     overflow: hidden;
@@ -63,11 +61,10 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
-
 .text-box-wrap {
     position: absolute;
     top: 220px;
-    left: 120px;
+    left: 150px;
     z-index: 2;
     max-width: 600px;
 }
@@ -124,8 +121,8 @@ body {
     opacity: 0.7;
     line-height: 1.5;
     font-size: 0.88em;
-    margin-bottom: 60px;
-    text-align: left;
+    margin-bottom: 30px;
+    text-align: start;
 }
 
 .btn-wrap {
@@ -155,25 +152,26 @@ body {
 }
 
 .slider-poster-list-wrap {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    z-index: 100;
+    overflow: hidden;
+    /* background-color: pink; */
+    width: 70%;
 }
 
-.slider-poster-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
+.slider-poster-list-wrap .swiper-slide {
+    transform: scale(0.8);
+    transition: 0.3s;
 }
 
-.slider-poster-list>li {
-    position: relative;
-    display: none;
-    flex-shrink: 0;
+.slider-poster-list-wrap .swiper-slide-prev {
+    transform: scale(0.9) translateX(-18px);
+}
+
+.slider-poster-list-wrap .swiper-slide-next {
+    transform: scale(0.9) translateX(18px);
+}
+
+.slider-poster-list-wrap .swiper-slide-active {
+    transform: scale(1);
 }
 
 .slider-poster-list>li img {
@@ -197,51 +195,42 @@ body {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.slider-poster-list .rank-08,
-.slider-poster-list .rank-04 {
-    display: block;
-    width: 140px;
+
+.slider-poster-list-wrap-outer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1600px;
+    z-index: 100;
+    /* border: 2px solid blue; */
 }
 
-.slider-poster-list .rank-09,
-.slider-poster-list .rank-03 {
-    display: block;
-    width: 160px;
-}
-
-.slider-poster-list .rank-10,
-.slider-poster-list .rank-02 {
-    display: block;
-    width: 180px;
-}
-
-.slider-poster-list .rank-01 {
-    display: block;
-    width: 200px;
-}
-
-.slider-poster-list-wrap .arrow-btn {
+.slider-poster-list-wrap-outer .arrow-btn {
     position: absolute;
     top: 50%;
-    left: 0;
     width: 100%;
     transform: translateY(-50%);
 }
 
-.slider-poster-list-wrap .arrow-btn>li {
+.slider-poster-list-wrap-outer .arrow-btn>li {
     position: absolute;
+    z-index: 1000;
+    /* border: 1px solid red; */
 }
 
-.slider-poster-list-wrap .arrow-btn>li img {
-    width: 10px;
+.slider-poster-list-wrap-outer .arrow-btn>li>a {
+    display: block;
+    /* background-color: green; */
+    width: 20px;
 }
 
-.slider-poster-list-wrap .arrow-btn .left-btn {
-    left: 15%;
+.slider-poster-list-wrap-outer .arrow-btn .left-btn {
+    left: 210px;
 }
 
-.slider-poster-list-wrap .arrow-btn .right-btn {
-    right: 15%;
+.slider-poster-list-wrap-outer .arrow-btn .right-btn {
+    right: 210px;
 }
 
 /* section */
@@ -652,17 +641,20 @@ section {
 }
 
 .curator-part .curator-info-arrow .arrow-btn>.arrow-btn-left>a {
-    left: 12px;
+    left: -50px;
+    /* background: gray; */
 }
 
 .curator-part .curator-info-arrow .arrow-btn>.arrow-btn-right>a {
-    right: 12px;
+    right: -50px;
+    /* background: green; */
 }
 
 /* curator-moive-inner-wrap - 숨김처리 하는 영역*/
 .curator-moive-inner-wrap {
     /* border: 1px solid rgba(255, 255, 255, 0.55); */
-    margin: 0 72px;
+    /* background-color: darkcyan; */
+    /* margin: 0 72px; */
     overflow: hidden;
     position: relative;
 }
@@ -670,8 +662,8 @@ section {
 /* curator-moive-set - 추천영화 리스트 아이템*/
 .curator-moive-set {
     display: flex;
-    gap: 12px;
-    width: calc(100% * 5 / 1.2 - 12px);
+    /* gap: 12px; */
+    /* width: calc(100% * 5 / 1.2 - 12px); */
 }
 
 
@@ -679,13 +671,13 @@ section {
 .curator-moive-item {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 2em;
     /* border: 1px solid blue; */
 }
 
 /* 추천 리스트 아이템 - 영화 포스터*/
 .curator-moive-poster {
-    /* width: 385px; */
+    width: 50%;
     /* height: 548px; */
     /* aspect-ratio: 385/548; */
     /* object-fit: cover; */
@@ -704,14 +696,28 @@ section {
     /* padding: 0; */
 }
 
-.curator-moive-item .curator-moive-poster>img {
-    width: 60%;
-    /* height: 100%; */
-    border-radius: 30px;
+.curator-moive-item.swiper-slide {
+    opacity: 0.3;
+    filter: blur(0.8px);
 }
 
-.curator-moive-item.active .curator-moive-poster>img {
-    width: 100%;
+.curator-moive-item.swiper-slide-active {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.curator-moive-item.swiper-slide .curator-moive-poster>img {
+    /* width: 60%; */
+    /* height: 100%; */
+    transform: scale(0.75);
+    /* transform-origin: 0 50%; */
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.curator-moive-item.swiper-slide-active .curator-moive-poster>img {
+    /* width: 100%; */
+    transform: scale(1);
 }
 
 /* 추천 리스트 아이템 - 우측영역 세로 정렬 */
@@ -785,6 +791,7 @@ section {
     word-break: keep-all;
     text-overflow: ellipsis;
     padding-right: 10px;
+    text-align: start;
 }
 
 /* 하단 영화 알아보기 버튼 */

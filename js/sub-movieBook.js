@@ -70,14 +70,41 @@ cinemaSpTypeLists.forEach((sp, i) => {
 theaterLocTypeLists.forEach((loc, i) => {
     loc.addEventListener("click", (e) => {
         e.preventDefault();
-        theaterLocTypeLists.forEach((l) => {
-            l.classList.remove("active");
-        })
-        theaterLocTypeLists[i].classList.add("active");
+        // 현재 활성화된 active 개수 파악
+        let activeCount = document.querySelectorAll(".loc-type>.cinema-list-right>li.active").length;
+        // console.log(activeCount);
+        // active 있는 요소 해제
+        if (loc.classList.contains("active")) {
+            loc.classList.remove("active");
+            console.log(activeCount);
+        }
+        // active 없는 요소 중 현재 5개 미만이면 추가
+        else if (activeCount < 5) {
+            loc.classList.add("active");
+            console.log(activeCount);
+        }
+        // active 있는 요소가 5개 초과할 경우 알림창
+        else { alert("최대 5개까지 선택 가능합니다.") }
     })
 })
 
-// theaterSpTypeLists.forEach((sp, i) => { })
+theaterSpTypeLists.forEach((sp, i) => {
+    sp.addEventListener("click", (e) => {
+        e.preventDefault();
+        // 현재 활성화된 active 개수 파악
+        let activeCount = document.querySelectorAll(".sp-type>.cinema-list-right>li.active").length;
+        // active 있는 요소 해제
+        if (sp.classList.contains("active")) {
+            sp.classList.remove("active")
+        }
+        // active 없는 요소 중 현재 5개 미만이면 추가
+        else if (activeCount < 5) {
+            sp.classList.add("active")
+        }
+        // active 있는 요소가 5개 초과할 경우 알림창
+        else { alert("최대 5개까지 선택 가능합니다.") }
+    })
+})
 
 
 // 우측영역 날짜 영역을 지정하는 변수 지정
