@@ -80,7 +80,7 @@
         <p class="close-btn"><a href="#"><img src="./images/logo-icon/close-btn-icon.png" alt="closebtn"></a></p>
         <ul class="mobile-menu-list">
             <li>
-                <a href="./sub-movieBook.html">예매</a>
+                <a href="#">예매</a>
             </li>
             <li>
                 <a href="#">영화</a>
@@ -472,41 +472,6 @@
             </ul>
         </div>
 
-        <!-- main slider swiper -->
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-        <script>
-            // thumb
-            var thumSwiper = new Swiper(".slider-poster-list-wrap", {
-                loop: true,
-                slidesPerView: 5,
-                spaceBetween: 10,
-                centeredSlides: true,
-                slideToClickedSlide: true,
-                navigation: {
-                    nextEl: ".right-btn",
-                    prevEl: ".left-btn"
-                },
-                autoplay: {
-                    delay: 3000,
-                },
-                on: {
-                    slideChange: function () {
-                        if (mainSwiper) {
-                            mainSwiper.slideToLoop(this.realIndex)
-                        }
-                    }
-                }
-            })
-            // main
-            var mainSwiper = new Swiper(".main-slider-inner", {
-                loop: true,
-                effect: "fade"
-            })
-        </script>
-
-        <!-- main -->
-        <!-- event section -->
         <main>
             <section class="event-wrap">
                 <div class="inner">
@@ -650,6 +615,7 @@
                 </div>
             </section>
 
+
             <!-- curator section -->
             <section class="curator-part">
                 <div class="inner">
@@ -662,19 +628,19 @@
                         <!-- 화살표 -->
                         <div class="curator-info-arrow">
                             <ul class="arrow-btn">
-                                <li class="arrow-btn-left"><a href="#"><img src="./images/logo-icon/arrow-left-icon.png"
-                                            alt="왼쪽 화살표"></a></li>
-                                <li class="arrow-btn-right"><a href="#"><img
+                                <li class="arrow-btn-left curator-slider-prev"><a href="#"><img
+                                            src="./images/logo-icon/arrow-left-icon.png" alt="왼쪽 화살표"></a></li>
+                                <li class="arrow-btn-right curator-slider-next"><a href="#"><img
                                             src="./images/logo-icon/arrow-right-icon.png" alt="오른쪽 화살표"></a></li>
                             </ul>
                         </div>
                         <!-- 인디케이터 -->
                         <div class="curator-info-pager"></div>
-                        <div class="curator-moive-inner-wrap">
+                        <div class="curator-moive-inner-wrap swiper">
                             <!-- 추천 리스트 감싸는 영역-->
-                            <ul class="curator-moive-set">
+                            <ul class="curator-moive-set swiper-wrapper">
                                 <!-- 추천 리스트 아이템 -->
-                                <li class="curator-moive-item active">
+                                <li class="curator-moive-item swiper-slide">
                                     <!-- 좌측영역 -->
                                     <div class="curator-moive-poster">
                                         <img src="./images/curator/curator-movie-img-01.jpg" alt="movie-poster">
@@ -707,7 +673,7 @@
                                     </div>
                                 </li>
                                 <!-- 추천 리스트 아이템 2 ~ 5 -->
-                                <li class="curator-moive-item">
+                                <li class="curator-moive-item swiper-slide">
                                     <!-- 좌측영역 -->
                                     <div class="curator-moive-poster">
                                         <img src="./images/curator/curator-movie-img-02.jpg" alt="movie-poster">
@@ -735,7 +701,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="curator-moive-item">
+                                <li class="curator-moive-item swiper-slide">
                                     <!-- 좌측영역 -->
                                     <div class="curator-moive-poster">
                                         <img src="./images/curator/curator-movie-img-03.jpg" alt="movie-poster">
@@ -764,7 +730,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="curator-moive-item">
+                                <li class="curator-moive-item swiper-slide">
                                     <!-- 좌측영역 -->
                                     <div class="curator-moive-poster">
                                         <img src="./images/curator/curator-movie-img-04.jpg" alt="movie-poster">
@@ -796,7 +762,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="curator-moive-item">
+                                <li class="curator-moive-item swiper-slide">
                                     <!-- 좌측영역 -->
                                     <div class="curator-moive-poster">
                                         <img src="./images/curator/curator-movie-img-05.jpg" alt="movie-poster">
@@ -937,10 +903,9 @@
                                             </div>
                                         </div>
                                         <div class="text-box">
-                                            <p><img src="./images/upcoming/Age-12.png"
-                                                    alt="12세관람가 표시"><span>프로젝트Y</span>
+                                            <p><img src="./images/upcoming/Age-12.png" alt="12세관람가 표시"><span>슈가</span>
                                             </p>
-                                            <p>상영 예정일 : 2026.01.21</p>
+                                            <p>상영 예정일 : 2026.01.26</p>
                                         </div>
                                     </a>
                                 </li>
@@ -952,10 +917,10 @@
                                             </div>
                                         </div>
                                         <div class="text-box">
-                                            <p><img src="./images/upcoming/Age-12.png"
-                                                    alt="12세관람가 표시"><span>프로젝트Y</span>
+                                            <p><img src="./images/upcoming/Age-12.png" alt="12세관람가 표시"><span>데몬
+                                                    프린스</span>
                                             </p>
-                                            <p>상영 예정일 : 2026.01.21</p>
+                                            <p>상영 예정일 : 2026.01.27</p>
                                         </div>
                                     </a>
                                 </li>
@@ -967,10 +932,10 @@
                                             </div>
                                         </div>
                                         <div class="text-box">
-                                            <p><img src="./images/upcoming/Age-12.png"
-                                                    alt="12세관람가 표시"><span>프로젝트Y</span>
+                                            <p><img src="./images/upcoming/Age-12.png" alt="12세관람가 표시"><span>나는
+                                                    갱년기다</span>
                                             </p>
-                                            <p>상영 예정일 : 2026.01.21</p>
+                                            <p>상영 예정일 : 2026.01.28</p>
                                         </div>
                                     </a>
                                 </li>
@@ -982,10 +947,10 @@
                                             </div>
                                         </div>
                                         <div class="text-box">
-                                            <p><img src="./images/upcoming/Age-12.png"
-                                                    alt="12세관람가 표시"><span>프로젝트Y</span>
+                                            <p><img src="./images/upcoming/Age-19.png"
+                                                    alt="19세관람가 표시"><span>프라이메이트</span>
                                             </p>
-                                            <p>상영 예정일 : 2026.01.21</p>
+                                            <p>상영 예정일 : 2026.01.29</p>
                                         </div>
                                     </a>
                                 </li>
@@ -998,9 +963,9 @@
                                         </div>
                                         <div class="text-box">
                                             <p><img src="./images/upcoming/Age-12.png"
-                                                    alt="12세관람가 표시"><span>프로젝트Y</span>
+                                                    alt="12세관람가 표시"><span>빠라밤캐리밴드</span>
                                             </p>
-                                            <p>상영 예정일 : 2026.01.21</p>
+                                            <p>상영 예정일 : 2026.01.30</p>
                                         </div>
                                     </a>
                                 </li>
@@ -1114,6 +1079,37 @@
             </div>
         </footer>
         <!-- Swiper JS -->
+        <!-- main slider swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script>
+            // thumb
+            var thumSwiper = new Swiper(".slider-poster-list-wrap", {
+                loop: true,
+                slidesPerView: 5,
+                spaceBetween: 10,
+                centeredSlides: true,
+                slideToClickedSlide: true,
+                navigation: {
+                    nextEl: ".right-btn",
+                    prevEl: ".left-btn"
+                },
+                autoplay: {
+                    delay: 3000,
+                },
+                on: {
+                    slideChange: function () {
+                        if (mainSwiper) {
+                            mainSwiper.slideToLoop(this.realIndex)
+                        }
+                    }
+                }
+            })
+            // main
+            var mainSwiper = new Swiper(".main-slider-inner", {
+                loop: true,
+                effect: "fade"
+            })
+        </script>
         <!-- swiper upcoming -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <script>
@@ -1153,6 +1149,7 @@
                 slidesPerView: 1,
                 spaceBetween: 50,
                 centeredSlides: true,
+                slideToClickedSlide: true,
                 autoplay: {
                     delay: 3000
                 },
@@ -1173,6 +1170,33 @@
                     },
                     1280: {
                         slidesPerView: 3
+                    },
+                }
+            })
+        </script>
+        <!-- swiper curator -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script>
+            let swiperCurator = new Swiper(".curator-moive-inner-wrap", {
+                loop: true,
+                slidesPerView: 1.1,
+                // centeredSlides: true,
+                navigation: {
+                    nextEl: ".curator-slider-next",
+                    prevEl: ".curator-slider-prev",
+                },
+                breakpoints: {
+                    // 480: {
+                    //     slidesPerView: 1
+                    // },
+                    768: {
+                        slidesPerView: 1.1
+                    },
+                    // 1080: {
+                    //     slidesPerView: 1.5
+                    // },
+                    1280: {
+                        slidesPerView: 1.4
                     },
                 }
             })
