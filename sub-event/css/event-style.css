@@ -10,6 +10,10 @@ body {
 }
 
 /* 공동사항 */
+section {
+    padding-bottom: 50px;
+}
+
 .section-title {
     padding: 50px 25px;
 }

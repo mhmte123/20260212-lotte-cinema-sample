@@ -125,9 +125,9 @@ main section>h2 {
 
 }
 
-.store-sub-tab-menu-list>li:hover a {
+.store-sub-tab-menu-list .active {
     color: #DA291C;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
 .store-sub-list {
@@ -169,4 +169,34 @@ main section>h2 {
     flex-direction: column;
     gap: 1em;
     /* font-size: 1vw; */
+}
+
+/* page btn */
+.page {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+
+}
+
+.page span:last-child {
+    color: #777
+}
+
+/* 네이버스토어 바로가기 */
+.store-sub-wrap {
+    position: relative;
+}
+
+.naver-store a {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /* background-color: #DA291C; */
+    top: 0;
+    right: 0;
+}
+
+.naver-store span {
+    margin-left: 5px;
 }
