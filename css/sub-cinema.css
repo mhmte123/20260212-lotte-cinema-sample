@@ -744,13 +744,15 @@ body {
 }
 
 .special-theater-list>li {
-    flex: 0 0 calc(100% / 5 - 29px);
+    /* flex: 0 0 calc(100% / 5 - 29px); */
+    /* aspect-ratio: 1/0.6; */
 }
 
 .special-theater-list>li>a {
     display: block;
-    /* width: 450px;
-    height: 250px; */
+    width: 430px;
+    /* height: 250px; */
+    aspect-ratio: 1/0.6;
 }
 
 .special-theater-list img {
@@ -758,7 +760,6 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
-    aspect-ratio: 1/0.6;
 }
 
 /* footer */
