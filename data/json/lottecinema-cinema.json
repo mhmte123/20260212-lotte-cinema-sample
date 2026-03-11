@@ -1,0 +1,254 @@
+[
+  {
+    "img": "movie-poster-01.jpg",
+    "age": "Age-12.png",
+    "name": "아바타-불과재",
+    "time": "1시간 52분",
+    "category": "현재 상영작"
+  },
+  {
+    "img": "movie-poster-02.jpg",
+    "age": "Age-15.png",
+    "name": "주토피아2",
+    "time": "2시간 05분",
+    "category": "상영 예정작"
+  },
+  {
+    "img": "movie-poster-03.jpg",
+    "age": "Age-ALL.png",
+    "name": "만약에우리",
+    "time": "1시간 47분",
+    "category": "롯시픽"
+  },
+  {
+    "img": "movie-poster-04.jpg",
+    "age": "Age-19.png",
+    "name": "더 퍼스트 슬램덩크",
+    "time": "2시간 12분",
+    "category": "아르떼"
+  },
+  {
+    "img": "movie-poster-05.jpg",
+    "age": "Age-12.png",
+    "name": "하트맨",
+    "time": "1시간 44분",
+    "category": "현재 상영작"
+  },
+  {
+    "img": "movie-poster-06.jpg",
+    "age": "Age-15.png",
+    "name": "휴민트",
+    "time": "2시간 18분",
+    "category": "롯시픽"
+  },
+  {
+    "img": "movie-poster-07.jpg",
+    "age": "Age-ALL.png",
+    "name": "극장판 짱구는못말려",
+    "time": "1시간 55분",
+    "category": "상영 예정작"
+  },
+  {
+    "img": "movie-poster-08.jpg",
+    "age": "Age-19.png",
+    "name": "끝이 없는 스칼렛",
+    "time": "2시간 01분",
+    "category": "아르떼"
+  },
+  {
+    "img": "movie-poster-09.jpg",
+    "age": "Age-12.png",
+    "name": "왕과 사는 남자",
+    "time": "1시간 59분",
+    "category": "롯시픽"
+  },
+  {
+    "img": "movie-poster-10.jpg",
+    "age": "Age-ALL.png",
+    "name": "프로젝트Y",
+    "time": "2시간 07분",
+    "category": "현재 상영작"
+  },
+  {
+    "img": "movie-poster-11.jpg",
+    "age": "Age-15.png",
+    "name": "731",
+    "time": "1시간 42분",
+    "category": "상영 예정작"
+  },
+  {
+    "img": "movie-poster-12.jpg",
+    "age": "Age-19.png",
+    "name": "초속5센티미터",
+    "time": "2시간 14분",
+    "category": "아르떼"
+  },
+  {
+    "img": "movie-poster-13.jpg",
+    "age": "Age-ALL.png",
+    "name": "햄넷",
+    "time": "1시간 50분",
+    "category": "현재 상영작"
+  },
+  {
+    "img": "movie-poster-14.jpg",
+    "age": "Age-12.png",
+    "name": "센티멘탈 밸류",
+    "time": "2시간 09분",
+    "category": "롯시픽"
+  },
+  {
+    "img": "movie-poster-15.jpg",
+    "age": "Age-15.png",
+    "name": "렌탈 패밀리",
+    "time": "1시간 57분",
+    "category": "상영 예정작"
+  },
+  {
+    "img": "movie-poster-16.jpg",
+    "age": "Age-19.png",
+    "name": "28년후 뼈의사원",
+    "time": "2시간 16분",
+    "category": "아르떼"
+  },
+  {
+    "img": "movie-poster-17.jpg",
+    "age": "Age-ALL.png",
+    "name": "호퍼스",
+    "time": "1시간 46분",
+    "category": "현재 상영작"
+  },
+  {
+    "img": "movie-poster-18.jpg",
+    "age": "Age-12.png",
+    "name": "극장판 귀멸의칼날",
+    "time": "2시간 03분",
+    "category": "롯시픽"
+  },
+  {
+    "img": "movie-poster-19.jpg",
+    "age": "Age-15.png",
+    "name": "헌팅시즌",
+    "time": "1시간 41분",
+    "category": "상영 예정작"
+  },
+  {
+    "img": "movie-poster-20.jpg",
+    "age": "Age-19.png",
+    "name": "극장판 주술회전",
+    "time": "2시간 19분",
+    "category": "아르떼"
+  },
+  {
+    "img": "movie-poster-21.jpg",
+    "age": "Age-ALL.png",
+    "name": "나우유씨미3",
+    "time": "1시간 53분",
+    "category": "현재 상영작"
+  },
+  {
+    "img": "movie-poster-22.jpg",
+    "age": "Age-12.png",
+    "name": "인터스텔라",
+    "time": "2시간 11분",
+    "category": "롯시픽"
+  },
+  {
+    "img": "movie-poster-23.jpg",
+    "age": "Age-15.png",
+    "name": "슈퍼마리오 갤럭시",
+    "time": "1시간 48분",
+    "category": "상영 예정작"
+  },
+  {
+    "img": "movie-poster-24.jpg",
+    "age": "Age-19.png",
+    "name": "톰과제리 황금나침반 대소동",
+    "time": "2시간 06분",
+    "category": "아르떼"
+  },
+  {
+    "img": "movie-poster-25.jpg",
+    "age": "Age-ALL.png",
+    "name": "F1 더무비",
+    "time": "1시간 56분",
+    "category": "현재 상영작"
+  },
+  {
+    "img": "movie-poster-26.jpg",
+    "age": "Age-12.png",
+    "name": "쥬라기월드",
+    "time": "2시간 13분",
+    "category": "롯시픽"
+  },
+  {
+    "img": "movie-poster-27.jpg",
+    "age": "Age-15.png",
+    "name": "쇼생크탈출",
+    "time": "1시간 49분",
+    "category": "상영 예정작"
+  },
+  {
+    "img": "movie-poster-28.jpg",
+    "age": "Age-19.png",
+    "name": "슈퍼맨",
+    "time": "2시간 02분",
+    "category": "아르떼"
+  },
+  {
+    "img": "movie-poster-29.jpg",
+    "age": "Age-ALL.png",
+    "name": "극장판 체인소맨",
+    "time": "1시간 54분",
+    "category": "현재 상영작"
+  },
+  {
+    "img": "movie-poster-30.jpg",
+    "age": "Age-12.png",
+    "name": "트론 아레스",
+    "time": "2시간 08분",
+    "category": "롯시픽"
+  },
+  {
+    "img": "movie-poster-31.jpg",
+    "age": "Age-15.png",
+    "name": "직장상사길들이기",
+    "time": "1시간 43분",
+    "category": "상영 예정작"
+  },
+  {
+    "img": "movie-poster-32.jpg",
+    "age": "Age-19.png",
+    "name": "머즐2 늑대의도시",
+    "time": "2시간 17분",
+    "category": "아르떼"
+  },
+  {
+    "img": "movie-poster-33.jpg",
+    "age": "Age-ALL.png",
+    "name": "스폰지밥 더무비",
+    "time": "1시간 45분",
+    "category": "현재 상영작"
+  },
+  {
+    "img": "movie-poster-34.jpg",
+    "age": "Age-12.png",
+    "name": "데드풀과 울버린",
+    "time": "2시간 10분",
+    "category": "롯시픽"
+  },
+  {
+    "img": "movie-poster-35.jpg",
+    "age": "Age-15.png",
+    "name": "슈퍼마리오 브라더스",
+    "time": "1시간 58분",
+    "category": "상영 예정작"
+  },
+  {
+    "img": "movie-poster-36.jpg",
+    "age": "Age-19.png",
+    "name": "어벤져스 인피니티 워",
+    "time": "2시간 04분",
+    "category": "아르떼"
+  }
+]
