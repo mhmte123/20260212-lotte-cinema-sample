@@ -55,3 +55,34 @@ moreBtn.addEventListener('click', function () {
         moreBtn.innerHTML = '펼쳐보기 <img src="./images/sub-menu-images/lyra-icon-Arrow 31.png" alt="">';
     }
 });
+
+
+const likeBtns = document.querySelectorAll('.review-list .like a:first-child');
+
+likeBtns.forEach(function (btn) {
+
+    btn.addEventListener('click', function (e) {
+
+        e.preventDefault();
+
+        const countSpan = btn.querySelector('span');
+        let count = parseInt(countSpan.textContent);
+
+
+        if (btn.classList.contains('active')) {
+
+            count--;
+            btn.classList.remove('active');
+
+        } else {
+
+            count++;
+            btn.classList.add('active');
+
+        }
+
+        countSpan.textContent = count;
+
+    });
+
+});
