@@ -54,6 +54,7 @@ main section>h2 {
     border-radius: 20px;
     transition: 0.5s;
     cursor: pointer;
+    background: #888;
 }
 
 .store-arco-list>li.active {
@@ -62,6 +63,7 @@ main section>h2 {
 
 .store-arco-list>li.active img {
     width: 100%;
+    opacity: 1;
 }
 
 .store-arco-list .img-box {
@@ -73,6 +75,7 @@ main section>h2 {
     height: 100%;
     display: block;
     transition: 0.3s;
+    opacity: 0;
 }
 
 .store-arco-list .text-box {
