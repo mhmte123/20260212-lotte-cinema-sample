@@ -35,27 +35,23 @@ tabs.forEach((tab) => {
     })
 })
 
-let likes = document.querySelectorAll(".like>a:first-child");
-let review = document.querySelector(".review-list-wrap")
-let moreBtn = document.querySelector(".review-more-btn")
-console.log(likes);
+const moreBtn = document.querySelector('.review-more-toggle');
+const hiddenReviews = document.querySelectorAll('.hidden-review');
 
-likes.forEach(like => {
-    like.addEventListener("click", (e) => {
-        e.preventDefault();
-        console.log(like)
-        let likeCount = like.children(1);
-        console.log(likeCount);
-        let count = parseInt(likeCount, innerHTML);
-        count++;
-        likeCount.innerHTML = count;
-    })
-})
+moreBtn.addEventListener('click', function () {
+    const isOpened = moreBtn.classList.contains('active');
 
-moreBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    let reviewHeight = review.scrollHeight;
-    review.style.height = reviewHeight + "px";
-    moreBtn.style.display = "none";
-
-})
+    if (!isOpened) {
+        hiddenReviews.forEach(function (review) {
+            review.classList.add('show');
+        });
+        moreBtn.classList.add('active');
+        moreBtn.innerHTML = '접어보기 <img src="./images/sub-menu-images/lyra-icon-Arrow 31.png" alt="">';
+    } else {
+        hiddenReviews.forEach(function (review) {
+            review.classList.remove('show');
+        });
+        moreBtn.classList.remove('active');
+        moreBtn.innerHTML = '펼쳐보기 <img src="./images/sub-menu-images/lyra-icon-Arrow 31.png" alt="">';
+    }
+});
