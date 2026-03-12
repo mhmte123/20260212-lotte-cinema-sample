@@ -1,11 +1,9 @@
 @media screen and (max-width:1280px) {
-
+    .top5-section {
+        padding-left: 100px;
+    }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px) {}
 
-}
-
-@media screen and (max-width:480px) {
-    
-}
+@media screen and (max-width:480px) {}

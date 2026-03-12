@@ -282,8 +282,7 @@ header .inner {
     width: 1600px;
     padding-top: 50px;
     padding-bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
 }
 
 .section-title-wrap {
