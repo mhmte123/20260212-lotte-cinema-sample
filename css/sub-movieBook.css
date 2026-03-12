@@ -89,7 +89,11 @@ body {
     flex-shrink: 0;
 }
 
-.movie-select-list>li img {
+.movie-select-list>li .img-box {
+    margin-bottom: 12px;
+}
+
+.movie-select-list>li .img-box img {
     position: relative;
     display: block;
     border-radius: 15px;
@@ -119,7 +123,7 @@ body {
 }
 
 /* 선택한 영화 정보 표출 */
-.movie-select-inner-text-wrap {
+.txt-box {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -127,18 +131,33 @@ body {
     text-align: center;
 }
 
-.movie-select-inner-text-wrap .title-wrap {
+.txt-box .title-wrap {
     display: flex;
     gap: 8px;
     justify-content: center;
     align-items: center;
 }
 
-.movie-select-inner-text-wrap .title-wrap span {
+.txt-box .title-wrap span {
     width: 24px;
 }
 
+.txt-box .title-wrap h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+/* 선택한 항목만 영화제목 보이게 처리 */
+
+.movie-select-list .txt-box {
+    opacity: 0;
+    ;
+}
+
+.movie-select-list>.selected .txt-box {
+    opacity: 1;
+}
 
 
 /* moviebook-under-area */

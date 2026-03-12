@@ -1,7 +1,7 @@
 let mapBtn = document.querySelector(".map-btn");
 let mapClose = document.querySelector(".map-close-btn");
-let map = document.querySelector(".map");
-let mapCloseBtn = document.querySelector(".theater-name .map .close-btn")
+let map = document.querySelector(".map-wrap");
+let mapCloseBtn = document.querySelector(".map .close-btn")
 
 mapBtn.addEventListener("click", (e) => {
     e.preventDefault();
