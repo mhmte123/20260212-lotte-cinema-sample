@@ -17,10 +17,8 @@ body {
 header {
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     background: transparent;
-    width: 1920px;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -115,7 +113,7 @@ header .inner {
 
 .movie-slider-wrap {
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .movie-slider-inner {
@@ -279,7 +277,7 @@ header .inner {
 
 .top5-section {
     position: relative;
-    width: 1600px;
+    max-width: 1600px;
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0 auto;
@@ -305,7 +303,13 @@ header .inner {
     margin-left: 10px;
 }
 
-.top5-list-wrap {}
+.top5-list-wrap {
+    overflow-x: auto;
+}
+
+.top5-list-wrap::-webkit-scrollbar {
+    display: none;
+}
 
 .top5-list {
     display: flex;
@@ -318,6 +322,7 @@ header .inner {
     border: 1px solid #8F919160;
     border-radius: 20px;
     overflow: hidden;
+    flex: 0 0 300px;
 }
 
 .top5-list>li .poster {
