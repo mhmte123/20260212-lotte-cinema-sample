@@ -499,6 +499,14 @@ a {
     object-fit: contain;
 }
 
+.review-list-wrap {
+    /* border: 1px solid red; */
+    height: 300px;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
 .review-wrap {
     color: #fff;
     padding: 80px;
