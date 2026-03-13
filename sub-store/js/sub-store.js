@@ -29,56 +29,56 @@ const storeData = [
     {
         title: "일반 관람권(2D)",
         price: "13,000원",
-        img: "./images/store1.png",
+        img: "./sub-store/images/store1.png",
         category: "ticket"
     },
 
     {
         title: "BEST COMBO 교환권",
         price: "12,500원",
-        img: "./images/store4.png",
+        img: "./sub-store/images/store4.png",
         category: "snack"
     },
 
     {
         title: "드래곤 길들이기 투슬리스 키링",
         price: "12,900원",
-        img: "./images/store3.png",
+        img: "./sub-store/images/store3.png",
         category: "goods"
     },
 
     {
         title: "텔레토비 터비 토스트 키링",
         price: "9,900원",
-        img: "./images/store2.png",
+        img: "./sub-store/images/store2.png",
         category: "goods"
     },
 
     {
         title: "미니언즈 팝콘 키링",
         price: "8,000원",
-        img: "./images/store5.png",
+        img: "./sub-store/images/store5.png",
         category: "goods"
     },
 
     {
         title: "위키드 우정 키링",
         price: "10,900원",
-        img: "./images/store6.png",
+        img: "./sub-store/images/store6.png",
         category: "goods"
     },
 
     {
         title: "짱구 침낭 피규어",
         price: "7,500원",
-        img: "./images/store7.png",
+        img: "./sub-store/images/store7.png",
         category: "goods"
     },
 
     {
         title: "포켓몬스터 키링",
         price: "11,900원",
-        img: "./images/store8.png",
+        img: "./sub-store/images/store8.png",
         category: "goods"
     }
 
@@ -109,7 +109,7 @@ function renderStore(data) {
 </div>
 
 <div class="buy-btn">
-<img src="./images/shop-icon.png">
+<img src="./sub-store/images/shop-icon.png">
 </div>
 
 </div>
