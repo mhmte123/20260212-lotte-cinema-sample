@@ -28,11 +28,13 @@ fetch("header.html").then(res => {
     let mobileMenu = document.querySelectorAll(".mobile-menu-list>li>a");
     let subBg = document.querySelector(".sub-bg");
 
-    hamBtn.addEventListener("click", () => {
+    hamBtn.addEventListener("click", (e) => {
+        e.preventDefault();
         menuWrap.classList.add("active");
     })
 
-    closeBtn.addEventListener("click", () => {
+    closeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
         menuWrap.classList.remove("active");
     })
 
@@ -83,6 +85,7 @@ fetch("header.html").then(res => {
 
     mobileMenu.forEach(mobile => {
         mobile.addEventListener("click", (e) => {
+            e.preventDefault();
             if (wWidth <= 768) {
                 let m = mobile.nextElementSibling;
                 // console.log(m);

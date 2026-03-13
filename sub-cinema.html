@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="./css/header-footer.css">
     <link rel="stylesheet" href="./css/respond.css">
     <link rel="stylesheet" href="./css/sub-cinema-respond.css">
-    <script src="./js/header-footer.js"></script>   
+    <script src="./js/header-footer.js"></script>
     <!-- <script defer src="./js/index.js"></script> -->
     <script defer src="./js/sub-cinema.js"></script>
-    
+
     <link rel="shortcut icon" href="./images/logo-icon/favicon.ico">
 </head>
 
@@ -294,57 +294,45 @@
                             </div>
                         </div>
 
-                        <div class="traffic-info">
-                            <div class="traffic-title">
+                        <div class="traffic-info-wrap">
+                            <h3 class="traffic-title">대중교통 안내</h3>
+                            <p class="traffic-sub-title">영화관에 오시는 교통방법에 대해 안내드립니다</p>
+                            <div class="traffic-info">
+
+                                <!-- <div class="traffic-title">
                                 <div>
                                     <h2>대중교통 안내</h2>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="bus-hover">
-                                <div>
-                                    <img src="./images/logo-icon/bus-icon.png" alt="버스">
-                                    <p>버스로 오시는 길</p>
-                                    <div class="bus-num">
-                                        <p class="jisun"><span>지선</span>5536, 5616, 5712, 5714</p>
-                                        <p class="gansun"><span>간선</span>503, 504, 571, 652</p>
+                                <div class="bus wrap">
+                                    <div>
+                                        <img src="./images/logo-icon/bus-icon.png" alt="지하철">
+                                        <p>버스로 오시는 길</p>
+                                        <div class="link"><a href="#">자세히 보기 <span><img
+                                                        src="./images/logo-icon/link-arrow-icon.png" alt=""></span></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <ul class="traffic-info-list">
-                                    <li>구로방면
-                                        <ul class="traffic-info-sub-list">
-                                            <li>금천 패션아울렛 사거리 [W몰] 하차하여 현대아울렛까지 도보 2분 이동</li>
-                                        </ul>
-                                    </li>
-                                    <li>가산디지털 방면
-                                        <ul class="traffic-info-sub-list">
-                                            <li>금천 패션아울렛 사거리 [마리오 아울렛] 하차하여 현대아울렛까지 도보 2분 이동</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        안내되어있는 버스 노선 변경 등에 따라 오시는 길이 변경될 수 있습니다.출발 전 버스 노선을 반드시 확인해주세요.
-                                    </li>
-                                </ul>
-                            </div>
 
-                            <div class="bus wrap">
-                                <div>
-                                    <img src="./images/logo-icon/subway-icon.png" alt="지하철">
-                                    <p>버스로 오시는 길</p>
+                                <div class="subway wrap">
+                                    <div>
+                                        <img src="./images/logo-icon/subway-icon.png" alt="지하철">
+                                        <p>지하철로 오시는 길</p>
+                                        <div class="link"><a href="#">자세히 보기 <span><img
+                                                        src="./images/logo-icon/link-arrow-icon.png" alt=""></span></a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="subway wrap">
-                                <div>
-                                    <img src="./images/logo-icon/subway-icon.png" alt="지하철">
-                                    <p>지하철로 오시는 길</p>
-                                </div>
-                            </div>
-
-                            <div class="car wrap">
-                                <div>
-                                    <img src="./images/logo-icon/car-icon.png" alt="자가용">
-                                    <p>자가용으로 오시는 길</p>
+                                <div class="car wrap">
+                                    <div>
+                                        <img src="./images/logo-icon/car-icon.png" alt="자가용">
+                                        <p>자가용으로 오시는 길</p>
+                                        <div class="link"><a href="#">자세히 보기 <span><img
+                                                        src="./images/logo-icon/link-arrow-icon.png" alt=""></span></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -3352,13 +3340,108 @@
             <p class="map-img"><img src="./images/sub-cinema/map.png" alt="지도 사진"></p>
         </div>
     </div>
+
+    <!-- 버스 팝업 -->
+    <div class="bus-wrap">
+        <div class="bus-hover">
+            <p class="close-btn"><a href="#"><img src="./images/logo-icon/close-btn-icon.png" alt="close-btn"></a></p>
+            <div class="bus-h">
+                <img src="./images/logo-icon/bus-icon.png" alt="버스">
+                <p>버스로 오시는 길</p>
+            </div>
+            <div class="bus-num">
+                <p class="jisun"><span>지선</span><span class="num"> 5536 </span><span class="num"> 5616 </span><span
+                        class="num"> 5712 </span><span class="num"> 5714</span></p>
+                <p class="gansun"><span>간선</span><span class="num"> 503 </span><span class="num"> 504 </span><span
+                        class="num"> 571 </span><span class="num"> 652</span></p>
+            </div>
+            <hr>
+            <ul class="traffic-info-list">
+                <li>구로방면
+                    <ul class="traffic-info-sub-list">
+                        <li>금천 패션아울렛 사거리 [W몰] 하차하여 현대아울렛까지 도보 2분 이동</li>
+                    </ul>
+                </li>
+                <li>가산디지털 방면
+                    <ul class="traffic-info-sub-list">
+                        <li>금천 패션아울렛 사거리 [마리오 아울렛] 하차하여 현대아울렛까지 도보 2분 이동</li>
+                    </ul>
+                </li>
+                <li>안내
+                    <ul class="traffic-info-sub-list">
+                        <li>안내되어있는 버스 노선 변경 등에 따라 오시는 길이 변경될 수 있습니다.출발 전 버스 노선을 반드시 확인해주세요.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 지하철 팝업 -->
+    <div class="subway-wrap">
+        <div class="subway-hover">
+            <p class="close-btn"><a href="#"><img src="./images/logo-icon/close-btn-icon.png" alt="close-btn"></a></p>
+            <div class="subway-h">
+                <img src="./images/logo-icon/subway-icon.png" alt="subway">
+                <p>지하철로 오시는 길</p>
+            </div>
+            <div class="subway-num">
+                <p class="hosun"><span><span class="num">1</span>호선</span> 가산디지털단지역 하차</p>
+            </div>
+            <hr>
+            <ul class="traffic-info-list">
+                <li>
+                    <ul class="traffic-info-sub-list">
+                        <li>1번 출구 앞 시내 버스 정류장에서 5616, 5712 이용하여 [W몰] 정류장 하차 후 현대아울렛까지 도보 2분 이동 / 4번 출구에서 도보 600M 이동</li>
+                    </ul>
+                </li>
+                <li>건물 영업시간 외 이용방법
+                    <ul class="traffic-info-sub-list">
+                        <li>도보 이동 시 현대아울렛 옆 우리은행 건물에서 우회전하여 춘천옥 맞은편 출입구 이용 / 자차 이동 시 현대아울렛 주차장 이용(상시 개방)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 자가용 팝업 -->
+    <div class="car-wrap">
+        <div class="car-hover">
+            <p class="close-btn"><a href="#"><img src="./images/logo-icon/close-btn-icon.png" alt="close-btn"></a></p>
+            <div class="car-h">
+                <img src="./images/logo-icon/car-icon.png" alt="car">
+                <p>자가용으로 오시는 길</p>
+            </div>
+            <div class="car-num">
+                <p class="navi"><span>네비게이션</span> <span class="address">서울시 금천구 디지털로 10길 9, 현대아울렛</span></p>
+            </div>
+            <hr>
+            <ul class="traffic-info-list">
+                <li>
+                    <ul class="traffic-info-sub-list">
+                        <li>남부순환도로 공항 방면으로 시흥IC를 500M 지나, 디지털단지 오거리를 건넌 후, 고가 아래에서 U턴 → 가산로를 따라 100M 이동 후, 지웰에스테이트 골목으로
+                            우회전 → 현대아울렛 후문에서 좌회전</li>
+                    </ul>
+                </li>
+                <li>주차
+                    <ul class="traffic-info-sub-list">
+                        <li>가산디지털 쇼핑몰 지하 2F~5F / 총 902대</li>
+                    </ul>
+                </li>
+                <li>주차요금 안내
+                    <ul class="traffic-info-sub-list">
+                        <li>티켓 제시시 3시간 무료주차/ 추가 10분당 500원</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         let swiper = new Swiper(".special-theater", {
             loop: true,
             slidesPerView: 5,
-            spaceBetween: 20,   
+            spaceBetween: 20,
             autoplay: {
                 delay: 2000
             }
