@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스토어-롯데시네마</title>
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
     <link rel="stylesheet" href="./css/store-style.css">
     <link rel="stylesheet" href="./css/pretendard-font.css">
+    <script src="../js/header-footer.js"></script>
     <script defer src="./js/sub-store.js"></script>
+    <link rel="shortcut icon" href="./images/logo-icon/favicon.ico">
 </head>
 
 <body>
+    <header>
+        <!-- js 로 -->
+    </header>
+
     <div class="banner">
         <a href="#"><img src="./images/banner.png" alt=""></a>
     </div>
@@ -79,129 +86,43 @@
             <section>
                 <h2 class="section-title">스토어</h2>
                 <div class="store-sub-tab-wrap">
-                    <ul class="store-sub-tab-menu-list">
-                        <li class="active"><a href="#">전체</a></li>
-                        <li><a href="#">관람권</a></li>
-                        <li><a href="#">스낵음료</a></li>
-                        <li><a href="#">굿즈</a></li>
-                    </ul>
-                    <div class="store-sub-wrap">
-                        <ul class="store-sub-list">
-                            <li>
-                                <a href="#">
-                                    <div class="img-box"><img src="./images/store1.png" alt="일반 관람권(2D)"></div>
-                                    <div class="text-wrap">
-                                        <div class="text-box">
-                                            <p>일반 관람권(2D)</p>
-                                            <p>13,000원</p>
-                                        </div>
-                                        <div class="buy-btn"><img src="./images/shop-icon.png" alt="구매하기 버튼"></div>
-                                    </div>
-                                </a>
+                    <div class="store-sub-tab-wrap">
+                        <ul class="store-sub-tab-menu-list">
+                            <li class="active">
+                                <a href="#" data-category="all">전체</a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <div class="img-box"><img src="./images/store4.png" alt="BEST COMBO 교환권"></div>
-                                    <div class="text-wrap">
-                                        <div class="text-box">
-                                            <p>BEST COMBO 교환권 </p>
-                                            <p>12,500원</p>
-                                        </div>
-                                        <div class="buy-btn"><img src="./images/shop-icon.png" alt="구매하기 버튼"></div>
-                                    </div>
-                                </a>
+                                <a href="#" data-category="ticket">관람권</a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <div class="img-box"><img src="./images/store3.png" alt="드래곤 길들이기 투슬리스 키링 굿즈">
-                                    </div>
-                                    <div class="text-wrap">
-                                        <div class="text-box">
-                                            <p>드래곤 길들이기 투슬리스 키링 굿즈 </p>
-                                            <p>12,900원</p>
-                                        </div>
-                                        <div class="buy-btn"><img src="./images/shop-icon.png" alt="구매하기 버튼"></div>
-                                    </div>
-                                </a>
+                                <a href="#" data-category="snack">스낵음료</a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <div class="img-box"><img src="./images/store2.png" alt="텔레토비 터비 토스트 인형 키링"></div>
-                                    <div class="text-wrap">
-                                        <div class="text-box">
-                                            <p>텔레토비 터비 토스트 인형 키링 </p>
-                                            <p>9,900원</p>
-                                        </div>
-                                        <div class="buy-btn"><img src="./images/shop-icon.png" alt="구매하기 버튼"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="img-box"><img src="./images/store5.png" alt="미니언즈 영화 밥앤팀 팝콘 키링 굿즈">
-                                    </div>
-                                    <div class="text-wrap">
-                                        <div class="text-box">
-                                            <p>미니언즈 영화 밥앤팀 팝콘 키링 굿즈 </p>
-                                            <p>8,000원</p>
-                                        </div>
-                                        <div class="buy-btn"><img src="./images/shop-icon.png" alt="구매하기 버튼"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="img-box"><img src="./images/store6.png" alt="영화 위키드 우정 키링 트윙클 굿즈">
-                                    </div>
-                                    <div class="text-wrap">
-                                        <div class="text-box">
-                                            <p>영화 위키드 우정 키링 트윙클 굿즈 </p>
-                                            <p>10,900원</p>
-                                        </div>
-                                        <div class="buy-btn"><img src="./images/shop-icon.png" alt="구매하기 버튼"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="img-box"><img src="./images/store7.png" alt="애니 짱구는 못말려 침낭 피규어">
-                                    </div>
-                                    <div class="text-wrap">
-                                        <div class="text-box">
-                                            <p>애니 짱구는 못말려 침낭 피규어 </p>
-                                            <p>7,500원</p>
-                                        </div>
-                                        <div class="buy-btn"><img src="./images/shop-icon.png" alt="구매하기 버튼"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="img-box"><img src="./images/store8.png" alt="포켓몬스터 굿즈 영화관 인형 키링">
-                                    </div>
-                                    <div class="text-wrap">
-                                        <div class="text-box">
-                                            <p>포켓몬스터 굿즈 영화관 인형 키링</p>
-                                            <p>11,900원</p>
-                                        </div>
-                                        <div class="buy-btn"><img src="./images/shop-icon.png" alt="구매하기 버튼"></div>
-                                    </div>
-                                </a>
+                                <a href="#" data-category="goods">굿즈</a>
                             </li>
                         </ul>
-                        <!-- page -->
-                        <div class="page">
-                            <a href="#"><img src="./images/pg-left.png" alt="왼쪽 페이지"></a>
-                            <div class="pagenb"> <span>1 </span><span>/ 10</span></div>
-                            <a href="#"><img src="./images/pg-right.png" alt="오른쪽 페이지"></a>
+
+                        <div class="store-sub-wrap">
+                            <ul class="store-sub-list">
+                                <!-- JS가 자동 생성 -->
+                            </ul>
+                            <div class="page">
+                                <a href="#"><img src="./images/pg-left.png" alt="왼쪽 페이지"></a>
+                                <div class="pagenb"> <span>1 </span><span>/ 2</span></div>
+                                <a href="#"><img src="./images/pg-right.png" alt="오른쪽 페이지"></a>
+                            </div>
+                            <div class="naver-store"><a href="#"><img src="./images/naver-store-icon.png"
+                                        alt="네이버스토어 바로가기"><span> 바로가기</span></a></div>
+
                         </div>
-                        <div class="naver-store"><a href="#"><img src="./images/naver-store-icon.png"
-                                    alt="네이버스토어 바로가기"><span> 바로가기</span></a></div>
                     </div>
                 </div>
             </section>
         </div>
     </main>
+    <footer>
+        <!-- js로  -->
+    </footer>
     <!-- <script>
         let arco = document.querySelectorAll(".store-arco-list>li");
         arco.forEach((v) => {

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스토어-롯데시네마</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./respond.css">
+    <link rel="stylesheet" href="./sub-store/css/store-style.css">
+    <link rel="stylesheet" href="./css/pretendard-font.css">
+    <script src="./js/header-footer.js"></script>
+    <script defer src="./sub-store/js/sub-store.js"></script>
+    <link rel="shortcut icon" href="./images/logo-icon/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <!-- js 로 -->
+    </header>
+
+    <div class="banner">
+        <a href="#"><img src="./sub-store/images/banner.png" alt=""></a>
+    </div>
+    <!-- main -->
+    <main>
+        <div class="inner">
+            <section class="store-arcodian">
+                <h2 class="section-title">이달의 추천 상품</h2>
+                <div class="store-arco-wrap">
+                    <ul class="store-arco-list">
+                        <li class="active">
+                            <a href="#">
+                                <div class="img-box"><img src="./sub-store/images/store-arco1.png" alt="스낵음료 구매">
+                                </div>
+                                <div class="text-box">
+                                    <p class="arco-category">스낵음료</p>
+                                    <p class="arco-title">스토어에서 간편구매</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-box"><img src="./sub-store/images/store-arco2.png" alt="스폰지밥 인형 키링">
+                                </div>
+                                <div class="text-box">
+                                    <p class="arco-category">굿즈</p>
+                                    <p class="arco-title">극장판 스폰지밥 인형 키링 굿즈 (2종 중 1택) 출시</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-box"><img src="./sub-store/images/store-arco3.png"
+                                        alt="텔레토비 터비 토스트 인형 키링">
+                                </div>
+                                <div class="text-box">
+                                    <p class="arco-category">굿즈</p>
+                                    <p class="arco-title">텔레토비 터비 토스트 인형 키링 (4개 중 1택) 출시</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-box"><img src="./sub-store/images/store-arco4.png" alt="옥토넛 실리콘 파우치 가방">
+                                </div>
+                                <div class="text-box">
+                                    <p class="arco-category">굿즈</p>
+                                    <p class="arco-title">옥토넛 영화 굿즈 실리콘 파우치 가방 출시</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-box"><img src="./sub-store/images/store-arco5.png" alt="모아나2 키링">
+                                </div>
+                                <div class="text-box">
+                                    <p class="arco-category">굿즈</p>
+                                    <p class="arco-title">모아나2 영화 키링 세트 굿즈 출시</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">스토어</h2>
+                <div class="store-sub-tab-wrap">
+                    <div class="store-sub-tab-wrap">
+                        <ul class="store-sub-tab-menu-list">
+                            <li class="active">
+                                <a href="#" data-category="all">전체</a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="ticket">관람권</a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="snack">스낵음료</a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="goods">굿즈</a>
+                            </li>
+                        </ul>
+
+                        <div class="store-sub-wrap">
+                            <ul class="store-sub-list">
+                                <!-- JS가 자동 생성 -->
+                            </ul>
+                            <div class="page">
+                                <a href="#"><img src="./sub-store/images/pg-left.png" alt="왼쪽 페이지"></a>
+                                <div class="pagenb"> <span>1 </span><span>/ 2</span></div>
+                                <a href="#"><img src="./sub-store/images/pg-right.png" alt="오른쪽 페이지"></a>
+                            </div>
+                            <div class="naver-store"><a href="#"><img src="./sub-store/images/naver-store-icon.png"
+                                        alt="네이버스토어 바로가기"><span> 바로가기</span></a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <!-- js로  -->
+    </footer>
+    <!-- <script>
+        let arco = document.querySelectorAll(".store-arco-list>li");
+        arco.forEach((v) => {
+            v.addEventListener("click", () => {
+                arco.forEach(vv => vv.classList.remove("active"))
+                v.classList.add("active");
+            })
+        })
+        // let current = 0;
+        // function slideMove() {
+        //     current++;
+        //     if (current == 5) {
+        //         current = 0;
+        //     }
+        //     arco.forEach(vv => classList.remove("active"));
+        //     arco[current].classList.add("active");
+        // }
+        let tabTitles = document.querySelectorAll(".store-sub-tab-menu-list>li");
+        tabTitles.forEach((tab, id) => {
+            tab.addEventListener("click", (e) => {
+                e.preventDefault();
+                tabTitles.forEach((t, i) => {
+                    t.classList.remove("active");
+                })
+                tab.classList.add("active");
+            })
+        })
+
+    </script> -->
+</body>
+
+</html>

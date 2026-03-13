@@ -7,67 +7,25 @@
     <title>롯데시네마</title>
     <link rel="stylesheet" href="./css/pretendard-font.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/sub-movie.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/respond.css">
     <link rel="stylesheet" href="./css/respond-movie.css">
+
     <link rel="shortcut icon" href="./images/logo-icon/favicon.ico">
+    <script defer src="./js/header-footer.js"></script>
 </head>
 
 <body>
     <main>
         <header>
-            <div class="inner">
-                <h1 class="main-logo"><a href="index.html"><img src="./images/logo-icon/main-logo.png" alt="롯데시네마"></a>
-                </h1>
-                <nav>
-                    <ul class="main-menu">
-                        <li>
-                            <a href="#">예매</a>
-                        </li>
-                        <li>
-                            <a href="./sub-movie.html">영화</a>
-                            <ul class="sub-menu">
-                                <li><a href="#">박스오피스</a></li>
-                                <li><a href="#">상영예정작</a></li>
-                                <li><a href="#">롯데온리</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="./sub-cinema.html">영화관</a>
-                            <ul class="sub-menu">
-                                <li><a href="#">전체극장</a></li>
-                                <li><a href="#">특별관</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="./sub-event/event-index.html">이벤트</a>
-                            <ul class="sub-menu">
-                                <li><a href="#">현재 진행중인 이벤트</a></li>
-                                <li><a href="#">영화관련 이벤트</a></li>
-                                <li><a href="#">시사회</a></li>
-                                <li><a href="#">제휴할인</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="./sub-store/store-index.html">스토어</a>
-                            <ul class="sub-menu">
-                                <li><a href="#">굿즈</a></li>
-                                <li><a href="#">관람권</a></li>
-                                <li><a href="#">스낵&음료</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="gnb-list">
-                    <li><a href="#"><img src="./images/logo-icon/user-icon.png" alt="사용자"></a></li>
-                    <li><a href="#"><img src="./images/logo-icon/ticket-icon.png" alt="티켓"></a></li>
-                    <li><a href="#"><img src="./images/logo-icon/search-icon.png" alt="검색"></a></li>
-                </ul>
-            </div>
+            <!-- js 로 -->
         </header>
         <div class="movie-slider-wrap">
-            <div class="movie-slider-inner">
-                <ul class="movie-slider-list">
-                    <li>
+            <div class="movie-slider-inner mySwiper">
+                <ul class="movie-slider-list swiper-wrapper">
+                    <li class="swiper-slide">
                         <div class="movie-slider-image">
                             <!-- <img src="./images/sub-movie/sub-slider-img-01.jpg" alt="아바타-movie-image"> -->
                             <video src="./video/video-movie-avatar3.mp4" autoplay muted loop playsinline></video>
@@ -98,7 +56,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <div class="movie-slider-image">
                             <!-- <img src="./images/sub-movie/sub-slider-img-02.jpg" alt="주토피아-movie-image"> -->
                             <video src="./video/video-movie-zootopia2.mp4" autoplay muted loop playsinline></video>
@@ -130,7 +88,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="swiper-slide">
                         <div class="movie-slider-image">
                             <img src="./images/sub-movie/sub-slider-img-03.jpeg" alt="만약에우리-movie-image">
                         </div>
@@ -164,614 +122,562 @@
             </div>
             <div class="arrow-btn-wrap">
                 <ul class="arrow-btn">
-                    <li class="left-btn"><a href="#">
-                            <img src="./images/logo-icon/icon-arrow-left.png" alt="arrow-left"></a>
+                    <li class="left-btn swiper-button-prev">
+                        <img src="./images/logo-icon/icon-arrow-left.png" alt="arrow-left">
                     </li>
-                    <li class="right-btn"><a href="#">
-                            <img src="./images/logo-icon/icon-arrow-right.png" alt="arrow-right"></a></li>
+                    <li class="right-btn swiper-button-next">
+                        <img src="./images/logo-icon/icon-arrow-right.png" alt="arrow-right">
+                    </li>
                 </ul>
             </div>
         </div>
+
+        <section class="top5-section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">현재 상영작<span>TOP5</span></h2>
+                <p>+</p>
+            </div>
+            <div class="top5-list-wrap">
+                <ul class="top5-list">
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-01.jpg"
+                                        alt="아바타 불과재 영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">1</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-12.png" alt="12세이용가">
+                                <p>아바타-불과재</p>
+                            </div>
+                            <div class="movie-rating">
+                                <img src="./images/logo-icon/icon-star.png" alt="별점">
+                                <p>평점 9.8</p>
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>22.6%</span></p>
+                                <p>개봉일<span>2025.12.30</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-02.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">2</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-ALL.png" alt="전체이용가">
+                                <p>주토피아2</p>
+                            </div>
+                            <div class="movie-rating">
+                                <img src="./images/logo-icon/icon-star.png" alt="별점">
+                                <p>평점 9.8</p>
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>20.5%</span></p>
+                                <p>개봉일<span>2025.11.11</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-03.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">3</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-15.png" alt="15세이용가">
+                                <p>만약에우리</p>
+                            </div>
+                            <div class="movie-rating">
+                                <img src="./images/logo-icon/icon-star.png" alt="별점">
+                                <p>평점 8.5</p>
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>8.5%</span></p>
+                                <p>개봉일<span>2025.12.25</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-04.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">4</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-12.png" alt="12세이용가">
+                                <p>더 퍼스트 슬램덩크</p>
+                            </div>
+                            <div class="movie-rating">
+                                <img src="./images/logo-icon/icon-star.png" alt="별점">
+                                <p>평점 9.3</p>
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>5.3%</span></p>
+                                <p>개봉일<span>2026.01.14</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-05.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">5</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-12.png" alt="12세이용가">
+                                <p>하트맨</p>
+                            </div>
+                            <div class="movie-rating">
+                                <img src="./images/logo-icon/icon-star.png" alt="별점">
+                                <p>평점 9.1</p>
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>4.5%</span></p>
+                                <p>개봉일<span>2026.01.14</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="top5-section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">개봉 예정작<span>TOP5</span></h2>
+                <p>+</p>
+            </div>
+            <div class="top5-list-wrap">
+                <ul class="top5-list">
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-06.jpg"
+                                        alt="아바타 불과재 영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">1</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-15.png" alt="15세이용가">
+                                <p>휴민트</p>
+                            </div>
+                            <div class="movie-rating">
+                                <!-- <img src="./images/logo-icon/icon-star.png" alt="별점"> -->
+                                <!-- <p>평점 9.0</p> -->
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>18.2%</span></p>
+                                <p>개봉일<span>2026.02.11</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-07.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">2</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-ALL.png" alt="전체이용가">
+                                <p>극장판 짱구는 못말려: 초화...</p>
+                            </div>
+                            <div class="movie-rating">
+                                <!-- <img src="./images/logo-icon/icon-star.png" alt="별점"> -->
+                                <!-- <p>평점 9.5</p> -->
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>15.2%</span></p>
+                                <p>개봉일<span>2025.12.24</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-08.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">3</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-12.png" alt="12세이용가">
+                                <p>끝이 없는 스칼렛</p>
+                            </div>
+                            <div class="movie-rating">
+                                <!-- <img src="./images/logo-icon/icon-star.png" alt="별점"> -->
+                                <!-- <p>평점 6.4</p> -->
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>5.7%</span></p>
+                                <p>개봉일<span>2026.01.14</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-09.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">4</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-12.png" alt="12세이용가">
+                                <p>왕과 사는 남자</p>
+                            </div>
+                            <div class="movie-rating">
+                                <!-- <img src="./images/logo-icon/icon-star.png" alt="별점"> -->
+                                <!-- <p>평점 9.5</p> -->
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>4.5%</span></p>
+                                <p>개봉일<span>2026.02.04</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-10.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">5</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-15.png" alt="15세이용가">
+                                <p>프로젝트Y</p>
+                            </div>
+                            <div class="movie-rating">
+                                <!-- <img src="./images/logo-icon/icon-star.png" alt="별점"> -->
+                                <!-- <p>평점 6.4</p> -->
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>3.1%</span></p>
+                                <p>개봉일<span>2026.01.21</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="top5-section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">아르떼 영화<span>TOP5</span></h2>
+                <p>+</p>
+            </div>
+            <div class="top5-list-wrap">
+                <ul class="top5-list">
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-11.jpg"
+                                        alt="아바타 불과재 영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">1</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-15.png" alt="15세이용가">
+                                <p>731</p>
+                            </div>
+                            <div class="movie-rating">
+                                <img src="./images/logo-icon/icon-star.png" alt="별점">
+                                <p>평점 8.3</p>
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>14.2%</span></p>
+                                <p>개봉일<span>2026.01.21</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-12.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">2</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-12.png" alt="12세이용가">
+                                <p>초속5센티미터</p>
+                            </div>
+                            <div class="movie-rating">
+                                <img src="./images/logo-icon/icon-star.png" alt="별점">
+                                <p>평점 7.9</p>
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>12.8%</span></p>
+                                <p>개봉일<span>2026.02.25</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-13.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">3</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-12.png" alt="12세이용가">
+                                <p>햄넷</p>
+                            </div>
+                            <div class="movie-rating">
+                                <img src="./images/logo-icon/icon-star.png" alt="별점">
+                                <p>평점 9.0</p>
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>9.3%</span></p>
+                                <p>개봉일<span>2026.02.25</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-14.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">4</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-15.png" alt="15세이용가">
+                                <p>센티멘탈 밸류</p>
+                            </div>
+                            <div class="movie-rating">
+                                <img src="./images/logo-icon/icon-star.png" alt="별점">
+                                <p>평점 8.2</p>
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>8.9%</span></p>
+                                <p>개봉일<span>2026.02.18</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <div class="movie-img">
+                                <a href="#"><img src="./images/movie-poster/movie-poster-15.jpg" alt="영화 포스터"></a>
+                            </div>
+                            <div class="poster-logo">
+                                <div class="a-logo">아르떼</div>
+                                <div class="l-logo">롯시픽</div>
+                            </div>
+                            <div class="like-icon">
+                                <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
+                            </div>
+                            <div class="rank">5</div>
+                        </div>
+                        <div class="movie-info-wrap">
+                            <div class="movie-name">
+                                <img src="./images/curator/Age-12.png" alt="12세이용가">
+                                <p>렌탈 패밀리:가족을 빌려드립...</p>
+                            </div>
+                            <div class="movie-rating">
+                                <img src="./images/logo-icon/icon-star.png" alt="별점">
+                                <p>평점 9.3</p>
+                            </div>
+                            <div class="movie-info">
+                                <p>예매율<span>6.4%</span></p>
+                                <p>개봉일<span>2026.02.25</span></p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="info-btn">영화정보</a>
+                                <a href="#" class="reserve-btn">예매하기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <section class="top5-section">
-        <div class="section-title-wrap">
-            <h2 class="section-title">현재 상영작<span>TOP5</span></h2>
-            <p>+</p>
-        </div>
-        <div class="top5-list-wrap">
-            <ul class="top5-list">
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-01.jpg" alt="아바타 불과재 영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">1</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-12.png" alt="12세이용가">
-                            <p>아바타-불과재</p>
-                        </div>
-                        <div class="movie-rating">
-                            <img src="./images/logo-icon/icon-star.png" alt="별점">
-                            <p>평점 9.8</p>
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>22.6%</span></p>
-                            <p>개봉일<span>2025.12.30</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-02.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">2</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-ALL.png" alt="전체이용가">
-                            <p>주토피아2</p>
-                        </div>
-                        <div class="movie-rating">
-                            <img src="./images/logo-icon/icon-star.png" alt="별점">
-                            <p>평점 9.8</p>
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>20.5%</span></p>
-                            <p>개봉일<span>2025.11.11</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-03.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">3</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-15.png" alt="15세이용가">
-                            <p>만약에우리</p>
-                        </div>
-                        <div class="movie-rating">
-                            <img src="./images/logo-icon/icon-star.png" alt="별점">
-                            <p>평점 8.5</p>
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>8.5%</span></p>
-                            <p>개봉일<span>2025.12.25</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-04.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">4</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-12.png" alt="12세이용가">
-                            <p>더 퍼스트 슬램덩크</p>
-                        </div>
-                        <div class="movie-rating">
-                            <img src="./images/logo-icon/icon-star.png" alt="별점">
-                            <p>평점 9.3</p>
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>5.3%</span></p>
-                            <p>개봉일<span>2026.01.14</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-05.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">5</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-12.png" alt="12세이용가">
-                            <p>하트맨</p>
-                        </div>
-                        <div class="movie-rating">
-                            <img src="./images/logo-icon/icon-star.png" alt="별점">
-                            <p>평점 9.1</p>
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>4.5%</span></p>
-                            <p>개봉일<span>2026.01.14</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="top5-section">
-        <div class="section-title-wrap">
-            <h2 class="section-title">개봉 예정작<span>TOP5</span></h2>
-            <p>+</p>
-        </div>
-        <div class="top5-list-wrap">
-            <ul class="top5-list">
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-06.jpg" alt="아바타 불과재 영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">1</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-15.png" alt="15세이용가">
-                            <p>휴민트</p>
-                        </div>
-                        <div class="movie-rating">
-                            <!-- <img src="./images/logo-icon/icon-star.png" alt="별점"> -->
-                            <!-- <p>평점 9.0</p> -->
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>18.2%</span></p>
-                            <p>개봉일<span>2026.02.11</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-07.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">2</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-ALL.png" alt="전체이용가">
-                            <p>극장판 짱구는 못말려: 초화...</p>
-                        </div>
-                        <div class="movie-rating">
-                            <!-- <img src="./images/logo-icon/icon-star.png" alt="별점"> -->
-                            <!-- <p>평점 9.5</p> -->
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>15.2%</span></p>
-                            <p>개봉일<span>2025.12.24</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-08.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">3</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-12.png" alt="12세이용가">
-                            <p>끝이 없는 스칼렛</p>
-                        </div>
-                        <div class="movie-rating">
-                            <!-- <img src="./images/logo-icon/icon-star.png" alt="별점"> -->
-                            <!-- <p>평점 6.4</p> -->
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>5.7%</span></p>
-                            <p>개봉일<span>2026.01.14</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-09.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">4</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-12.png" alt="12세이용가">
-                            <p>왕과 사는 남자</p>
-                        </div>
-                        <div class="movie-rating">
-                            <!-- <img src="./images/logo-icon/icon-star.png" alt="별점"> -->
-                            <!-- <p>평점 9.5</p> -->
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>4.5%</span></p>
-                            <p>개봉일<span>2026.02.04</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-10.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">5</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-15.png" alt="15세이용가">
-                            <p>프로젝트Y</p>
-                        </div>
-                        <div class="movie-rating">
-                            <!-- <img src="./images/logo-icon/icon-star.png" alt="별점"> -->
-                            <!-- <p>평점 6.4</p> -->
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>3.1%</span></p>
-                            <p>개봉일<span>2026.01.21</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="top5-section">
-        <div class="section-title-wrap">
-            <h2 class="section-title">아르떼 영화<span>TOP5</span></h2>
-            <p>+</p>
-        </div>
-        <div class="top5-list-wrap">
-            <ul class="top5-list">
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-11.jpg" alt="아바타 불과재 영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">1</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-15.png" alt="15세이용가">
-                            <p>731</p>
-                        </div>
-                        <div class="movie-rating">
-                            <img src="./images/logo-icon/icon-star.png" alt="별점">
-                            <p>평점 8.3</p>
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>14.2%</span></p>
-                            <p>개봉일<span>2026.01.21</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-12.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">2</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-12.png" alt="12세이용가">
-                            <p>초속5센티미터</p>
-                        </div>
-                        <div class="movie-rating">
-                            <img src="./images/logo-icon/icon-star.png" alt="별점">
-                            <p>평점 7.9</p>
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>12.8%</span></p>
-                            <p>개봉일<span>2026.02.25</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-13.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">3</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-12.png" alt="12세이용가">
-                            <p>햄넷</p>
-                        </div>
-                        <div class="movie-rating">
-                            <img src="./images/logo-icon/icon-star.png" alt="별점">
-                            <p>평점 9.0</p>
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>9.3%</span></p>
-                            <p>개봉일<span>2026.02.25</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-14.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">4</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-15.png" alt="15세이용가">
-                            <p>센티멘탈 밸류</p>
-                        </div>
-                        <div class="movie-rating">
-                            <img src="./images/logo-icon/icon-star.png" alt="별점">
-                            <p>평점 8.2</p>
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>8.9%</span></p>
-                            <p>개봉일<span>2026.02.18</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="poster">
-                        <div class="movie-img">
-                            <a href="#"><img src="./images/movie-poster/movie-poster-15.jpg" alt="영화 포스터"></a>
-                        </div>
-                        <div class="poster-logo">
-                            <div class="a-logo">아르떼</div>
-                            <div class="l-logo">롯시픽</div>
-                        </div>
-                        <div class="like-icon">
-                            <img src="./images/logo-icon/like-before-icon.png" alt="찜하기">
-                        </div>
-                        <div class="rank">5</div>
-                    </div>
-                    <div class="movie-info-wrap">
-                        <div class="movie-name">
-                            <img src="./images/curator/Age-12.png" alt="12세이용가">
-                            <p>렌탈 패밀리:가족을 빌려드립...</p>
-                        </div>
-                        <div class="movie-rating">
-                            <img src="./images/logo-icon/icon-star.png" alt="별점">
-                            <p>평점 9.3</p>
-                        </div>
-                        <div class="movie-info">
-                            <p>예매율<span>6.4%</span></p>
-                            <p>개봉일<span>2026.02.25</span></p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="info-btn">영화정보</a>
-                            <a href="#" class="reserve-btn">예매하기</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
     <!-- footer -->
     <footer>
-        <div class="inner">
-            <!-- <div class="footer-left"> -->
-            <div class="footer-top">
-                <ul class="util-menu">
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">이메일무단수집거부</a></li>
-                    <li><a href="#">고정형 영상정보처리기기 운영 및 </a></li>
-                    <li><a href="#">L.POINT회원안내</a></li>
-                    <li><a href="#">배정기준</a></li>
-                    <li><a href="#">채용안내</a></li>
-                    <li><a href="#">광고/임대문의</a></li>
-                    <li><a href="#">사회적책임</a></li>
-                </ul>
-
-                <div class="search-wrap search">
-                    <a href="#">
-                        <img src="./images/logo-icon/search-icon.png" alt="극장찾기">
-                        <p>극장찾기</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-bottom-left">
-                    <p class="footer-logo"><img src="./images/logo-icon/footer-logo.png" alt="롯데시네마"></p>
-                    <address>
-                        <p>
-                            <strong>롯데컬처웍스㈜</strong>
-                            <span>서울특별시 송파구 올림픽로 295 삼성생명 잠실빌딩 18F</span>
-                        </p>
-                        <p>
-                            <span>대표 이메일 lottecultureworks@lotte.net</span>
-                            <span>고객센터 1544-8855 (유료)</span>
-                            <span>사업자등록번호 313-87-00979</span>
-                            <span>통신판매신고번호 2018-서울송파-1184</span>
-                        </p>
-                        <p>
-                            <span>대표이사 김종열</span>
-                            <span>개인정보 보호 책임자 이수민</span>
-                            <span>호스팅 제공자 롯데이노베이트</span>
-                        </p>
-                        <p class="copy">Copyright © LOTTE Cultureworks All Right Reserved.</p>
-                    </address>
-                </div>
-
-                <div class="footer-bottom-right">
-                    <div class="search-wrap-mobile search">
-                        <a href="#">
-                            <img src="./images/logo-icon/search-icon.png" alt="극장찾기">
-                            <p>극장찾기</p>
-                        </a>
-                    </div>
-
-                    <div class="family">
-                        <img src="./images/logo-icon/family-friendly.png" alt="가족친화 인증기업선정">
-                        <p>가족친화<br> 인증기업<br> 선정</p>
-                    </div>
-
-                    <ul class="sns-list">
-                        <li><a href="#"><img src="./images/logo-icon/youtube-icon.png" alt="youtube"></a></li>
-                        <li><a href="#"><img src="./images/logo-icon/insta-icon.png" alt="insta"></a></li>
-                        <li><a href="#"><img src="./images/logo-icon/facebook-icon.png" alt="facebook"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- </div> -->
-            <!-- <div class="footer-right"> -->
-            <!-- </div> -->
-        </div>
+        <!-- js 로 -->
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- movie-slider-wrap Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

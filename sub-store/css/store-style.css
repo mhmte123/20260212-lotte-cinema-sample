@@ -16,7 +16,7 @@ body {
 }
 
 .inner {
-    background-color: rgba(127, 255, 212, 0.342);
+    /* background-color: rgba(127, 255, 212, 0.342); */
     margin: 0 auto;
     padding: 20px;
     max-width: 1600px;
@@ -146,7 +146,7 @@ main section>h2 {
 }
 
 .store-sub-list .img-box {
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     border-radius: 30px;
     background: #333;
     overflow: hidden;
