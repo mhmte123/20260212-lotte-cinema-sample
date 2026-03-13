@@ -102,3 +102,43 @@ moreBtn.addEventListener("click", (e)=>{
     movieWrap.style.height = mHeight + "px";
     moreBtn.style.display = "none";
 })
+
+let busClose = document.querySelector(".bus-hover .close-btn");
+let subwayClose = document.querySelector(".subway-hover .close-btn");
+let carClose = document.querySelector(".car-hover .close-btn");
+let busPop = document.querySelector(".bus-wrap");
+let subwayPop = document.querySelector(".subway-wrap");
+let carPop = document.querySelector(".car-wrap");
+let busBox = document.querySelector(".bus .link");
+let subwayBox = document.querySelector(".subway .link");
+let carBox = document.querySelector(".car .link");
+
+busBox.addEventListener("click", (e)=>{
+    e.preventDefault();
+    busPop.style.display = "block";
+})
+
+busClose.addEventListener("click", (e)=>{
+    e.preventDefault();
+    busPop.style.display = "none"
+})
+
+subwayBox.addEventListener("click", (e)=>{
+    e.preventDefault();
+    subwayPop.style.display = "block";
+})
+
+subwayClose.addEventListener("click", (e)=>{
+    e.preventDefault();
+    subwayPop.style.display = "none"
+})
+
+carBox.addEventListener("click", (e)=>{
+    e.preventDefault();
+    carPop.style.display = "block";
+})
+
+carClose.addEventListener("click", (e)=>{
+    e.preventDefault();
+    carPop.style.display = "none"
+})

@@ -71,6 +71,7 @@
     header {
         position: fixed;
         width: 100%;
+        background: #000;
     }
 
     .main-logo {
