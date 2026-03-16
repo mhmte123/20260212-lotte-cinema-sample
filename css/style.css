@@ -949,6 +949,11 @@ section {
     flex: 1;
 }
 
+.info-list>li:hover p {
+    text-decoration: underline;
+}
+
+
 .info-list>li i {
     display: none;
 }
@@ -956,4 +961,3 @@ section {
 .info-list>li>img {
     margin-bottom: 12px;
 }
-
